@@ -84,7 +84,7 @@ results/
 ## 🚀 Запуск
 
 ```bash
-pip install torch numpy scipy matplotlib pandas optuna
+pip install -r requirements.txt
 
 # Прямая задача (численное решение)
 python forward/pinn_forward.py
@@ -98,7 +98,11 @@ GPU (CUDA) подхватывается автоматически при нал
 ## 🛠️ Стек
 
 Python · PyTorch (autograd, L-BFGS) · NumPy / SciPy (DOP853, BDF) · Optuna (HPO) ·
-Matplotlib · pandas
+Matplotlib · Pillow
+
+## 📄 Лицензия
+
+[MIT](LICENSE) — свободное использование с указанием авторства.
 
 ---
 

@@ -1,0 +1,7 @@
+# Основные зависимости
+torch>=2.2
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+optuna>=3.5
+pillow>=10.0
