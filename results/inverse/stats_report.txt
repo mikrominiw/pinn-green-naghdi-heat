@@ -1,0 +1,31 @@
+========================================================================
+STATISTICAL REPORT
+========================================================================
+
+Descriptive (mean +- std, 95% bootstrap CI):
+              kappa_homo: n=5 mean=1.1934e-04 std=4.5943e-07 median=1.1954e-04  CI95=[1.1895e-04, 1.1965e-04]
+              kappa_inho: n=5 mean=1.1795e-04 std=4.7228e-06 median=1.1742e-04  CI95=[1.1438e-04, 1.2170e-04]
+            rel_err_homo: n=5 mean=5.5294e-01 std=3.8286e-01 median=3.8285e-01  CI95=[2.9345e-01, 8.7345e-01]
+            rel_err_inho: n=5 mean=3.4095e+00 std=2.1466e+00 median=3.8193e+00  CI95=[1.6530e+00, 5.0208e+00]
+           l2_field_homo: n=5 mean=3.9076e-03 std=5.9393e-04 median=3.6537e-03  CI95=[3.4505e-03, 4.3647e-03]
+           l2_field_inho: n=5 mean=5.0451e-02 std=8.1770e-03 median=5.3743e-02  CI95=[4.3601e-02, 5.5772e-02]
+     log_loss_slope_homo: n=5 mean=-4.2507e-01 std=3.4984e-02 median=-4.2892e-01  CI95=[-4.5229e-01, -3.9745e-01]
+     log_loss_slope_inho: n=5 mean=-2.1915e-01 std=1.7013e-02 median=-2.1790e-01  CI95=[-2.3338e-01, -2.0797e-01]
+
+Shapiro-Wilk normality test (H0: normal):
+              kappa_homo: W=0.9090  p=0.4615  -> fail to reject H0
+              kappa_inho: W=0.9517  p=0.7493  -> fail to reject H0
+            rel_err_homo: W=0.9090  p=0.4615  -> fail to reject H0
+            rel_err_inho: W=0.9701  p=0.8760  -> fail to reject H0
+
+One-sample t-test (H0: mean(kappa) == kappa_true=1.2000e-04):
+              kappa_homo: t=-3.229  p=0.0320  -> reject H0
+              kappa_inho: t=-0.971  p=0.3867  -> fail to reject H0
+
+Two-sample tests (homo vs inho):
+  homo_vs_inho_kappa:
+    Welch t: t=0.653  p=0.5485
+    MW-U   : U=15.000  p=0.6905
+  homo_vs_inho_rel_err:
+    Welch t: t=-2.929  p=0.0397
+    MW-U   : U=2.000  p=0.0317

@@ -1,0 +1,965 @@
+11:27:42  Run ID: 20260526_112742
+11:27:42  Root dir: <repo>\results_diploma\20260526_112742
+11:27:42  Device: cuda
+11:27:42  GPU: NVIDIA GeForce RTX 3060 Laptop GPU
+11:27:42  
+11:27:42  Configuration:
+11:27:42    SEEDS=[1, 7, 13, 42, 123]
+11:27:42    FLAT_EPOCHS=15000  LBFGS_STEPS=300
+11:27:42    N_PDE=10000  T_MAX=500.0  N_TIME=200
+11:27:42    noise_default=0.01  kappa_init_default=0.001
+11:27:42    W_PDE=1.0  W_DATA=2000.0
+11:27:42    sensors=[(0.25, 0.25), (0.25, 0.75), (0.5, 0.5), (0.75, 0.25), (0.75, 0.75)]
+11:27:42    ablation kappa values=[1e-05, 0.0001, 0.001, 0.01]
+11:27:42    ablation noise values=[0.01, 0.05, 0.1]
+11:27:42  
+11:27:42  ========================================================================
+11:27:42  Run: main_homo_seed1  kind=homo  seed=1  kappa_init=1.0e-03  noise=1.0e-02
+11:27:42  ========================================================================
+11:27:42  params=25,410  sensors=5  data_points=1000
+11:27:43  === Adam (15000 epochs, T=500.0) ===
+11:27:43     ep=    0  loss=6.935e+01  pde=3.12e+00  data=3.31e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:28:20     ep=  500  loss=8.572e-02  pde=3.83e-03  data=4.09e-05  kappa=2.3805e-04  err= 98.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:28:55     ep= 1000  loss=5.248e-02  pde=2.58e-03  data=2.49e-05  kappa=1.6765e-04  err= 39.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:29:32     ep= 1500  loss=4.351e-02  pde=2.41e-03  data=2.06e-05  kappa=1.3857e-04  err= 15.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:30:10     ep= 2000  loss=3.895e-02  pde=2.12e-03  data=1.84e-05  kappa=1.2752e-04  err=  6.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:30:45     ep= 2500  loss=3.391e-02  pde=1.69e-03  data=1.61e-05  kappa=1.2149e-04  err=  1.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:31:21     ep= 3000  loss=3.168e-02  pde=1.52e-03  data=1.51e-05  kappa=1.1768e-04  err=  1.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:31:56     ep= 3500  loss=3.014e-02  pde=1.37e-03  data=1.44e-05  kappa=1.2260e-04  err=  2.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:32:33     ep= 4000  loss=2.929e-02  pde=1.42e-03  data=1.39e-05  kappa=1.1946e-04  err=  0.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:33:07     ep= 4500  loss=2.794e-02  pde=1.22e-03  data=1.34e-05  kappa=1.1870e-04  err=  1.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:33:42     ep= 5000  loss=2.768e-02  pde=1.33e-03  data=1.32e-05  kappa=1.1664e-04  err=  2.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:34:16     ep= 5500  loss=7.573e-02  pde=6.18e-03  data=3.48e-05  kappa=1.1935e-04  err=  0.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:34:50     ep= 6000  loss=2.764e-02  pde=1.20e-03  data=1.32e-05  kappa=1.1744e-04  err=  2.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:35:25     ep= 6500  loss=2.679e-02  pde=1.17e-03  data=1.28e-05  kappa=1.1652e-04  err=  2.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:35:59     ep= 7000  loss=2.501e-02  pde=9.19e-04  data=1.20e-05  kappa=1.1915e-04  err=  0.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:36:33     ep= 7500  loss=2.470e-02  pde=9.38e-04  data=1.19e-05  kappa=1.1833e-04  err=  1.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:37:07     ep= 8000  loss=2.444e-02  pde=9.23e-04  data=1.18e-05  kappa=1.2134e-04  err=  1.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:37:41     ep= 8500  loss=2.400e-02  pde=7.92e-04  data=1.16e-05  kappa=1.2092e-04  err=  0.8%  lr_net=5.00e-04  lr_kap=5.00e-03
+11:38:16     ep= 9000  loss=2.378e-02  pde=7.93e-04  data=1.15e-05  kappa=1.1961e-04  err=  0.3%  lr_net=5.00e-04  lr_kap=5.00e-03
+11:38:50     ep= 9500  loss=2.364e-02  pde=7.75e-04  data=1.14e-05  kappa=1.1851e-04  err=  1.2%  lr_net=2.50e-04  lr_kap=2.50e-03
+11:39:24     ep=10000  loss=2.358e-02  pde=7.95e-04  data=1.14e-05  kappa=1.1849e-04  err=  1.3%  lr_net=1.25e-04  lr_kap=1.25e-03
+11:39:58     ep=10500  loss=2.349e-02  pde=7.57e-04  data=1.14e-05  kappa=1.1865e-04  err=  1.1%  lr_net=6.25e-05  lr_kap=6.25e-04
+11:40:32     ep=11000  loss=2.345e-02  pde=7.74e-04  data=1.13e-05  kappa=1.1954e-04  err=  0.4%  lr_net=6.25e-05  lr_kap=6.25e-04
+11:41:06     ep=11500  loss=2.345e-02  pde=7.91e-04  data=1.13e-05  kappa=1.1979e-04  err=  0.2%  lr_net=3.13e-05  lr_kap=3.13e-04
+11:41:40     ep=12000  loss=2.340e-02  pde=7.63e-04  data=1.13e-05  kappa=1.1890e-04  err=  0.9%  lr_net=1.56e-05  lr_kap=1.56e-04
+11:42:14     ep=12500  loss=2.335e-02  pde=7.35e-04  data=1.13e-05  kappa=1.1850e-04  err=  1.2%  lr_net=7.81e-06  lr_kap=7.81e-05
+11:42:49     ep=13000  loss=2.338e-02  pde=7.70e-04  data=1.13e-05  kappa=1.1858e-04  err=  1.2%  lr_net=3.91e-06  lr_kap=3.91e-05
+11:43:23     ep=13500  loss=2.340e-02  pde=7.89e-04  data=1.13e-05  kappa=1.1864e-04  err=  1.1%  lr_net=1.95e-06  lr_kap=1.95e-05
+11:43:57     ep=14000  loss=2.339e-02  pde=7.74e-04  data=1.13e-05  kappa=1.1864e-04  err=  1.1%  lr_net=1.00e-06  lr_kap=9.77e-06
+11:44:31     ep=14500  loss=2.336e-02  pde=7.70e-04  data=1.13e-05  kappa=1.1862e-04  err=  1.1%  lr_net=1.00e-06  lr_kap=4.88e-06
+11:45:05  === L-BFGS (300 steps) ===
+11:45:05     step=   0  loss=2.343e-02  kappa=1.1862e-04  err=  1.2%
+11:45:15     step=  50  loss=2.343e-02  kappa=1.1862e-04  err=  1.2%
+11:45:26     step= 100  loss=2.343e-02  kappa=1.1862e-04  err=  1.2%
+11:45:36     step= 150  loss=2.343e-02  kappa=1.1862e-04  err=  1.2%
+11:45:47     step= 200  loss=2.343e-02  kappa=1.1862e-04  err=  1.2%
+11:45:57     step= 250  loss=2.343e-02  kappa=1.1862e-04  err=  1.2%
+11:46:07  
+11:46:07  FINAL  main_homo_seed1  kappa=1.186179e-04  rel_err=1.15%  L2_field=3.6537e-03  loss=2.343e-02  elapsed=1104.0s  log_loss_slope=-0.412  conv_epoch=-1  |PDE|_mean=1.899e-02  |PDE|_max=2.703e-01
+11:46:07  
+11:46:07  ========================================================================
+11:46:07  Run: main_homo_seed7  kind=homo  seed=7  kappa_init=1.0e-03  noise=1.0e-02
+11:46:07  ========================================================================
+11:46:07  params=25,410  sensors=5  data_points=1000
+11:46:07  === Adam (15000 epochs, T=500.0) ===
+11:46:07     ep=    0  loss=1.066e+02  pde=6.75e+00  data=4.99e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:46:42     ep=  500  loss=1.121e-01  pde=6.35e-03  data=5.29e-05  kappa=2.8339e-04  err=136.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:47:16     ep= 1000  loss=6.336e-02  pde=3.49e-03  data=2.99e-05  kappa=1.9256e-04  err= 60.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:47:50     ep= 1500  loss=4.822e-02  pde=2.68e-03  data=2.28e-05  kappa=1.5518e-04  err= 29.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:48:25     ep= 2000  loss=1.886e-01  pde=1.87e-02  data=8.49e-05  kappa=1.3763e-04  err= 14.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:48:59     ep= 2500  loss=3.798e-02  pde=1.94e-03  data=1.80e-05  kappa=1.2761e-04  err=  6.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:49:34     ep= 3000  loss=3.522e-02  pde=1.56e-03  data=1.68e-05  kappa=1.2273e-04  err=  2.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:50:09     ep= 3500  loss=3.351e-02  pde=1.61e-03  data=1.60e-05  kappa=1.2116e-04  err=  1.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:50:44     ep= 4000  loss=3.614e-02  pde=1.94e-03  data=1.71e-05  kappa=1.1916e-04  err=  0.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:51:19     ep= 4500  loss=4.105e-02  pde=2.61e-03  data=1.92e-05  kappa=1.1896e-04  err=  0.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:51:53     ep= 5000  loss=3.155e-02  pde=1.32e-03  data=1.51e-05  kappa=1.2017e-04  err=  0.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:52:28     ep= 5500  loss=2.983e-02  pde=1.18e-03  data=1.43e-05  kappa=1.1829e-04  err=  1.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:53:02     ep= 6000  loss=2.764e-02  pde=1.08e-03  data=1.33e-05  kappa=1.1981e-04  err=  0.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:53:37     ep= 6500  loss=2.907e-02  pde=1.50e-03  data=1.38e-05  kappa=1.1991e-04  err=  0.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:54:12     ep= 7000  loss=2.977e-02  pde=1.65e-03  data=1.41e-05  kappa=1.1912e-04  err=  0.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:54:50     ep= 7500  loss=2.607e-02  pde=1.04e-03  data=1.25e-05  kappa=1.1892e-04  err=  0.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:55:28     ep= 8000  loss=5.116e-02  pde=4.42e-03  data=2.34e-05  kappa=1.2091e-04  err=  0.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:56:07     ep= 8500  loss=2.529e-02  pde=1.13e-03  data=1.21e-05  kappa=1.2176e-04  err=  1.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:56:46     ep= 9000  loss=3.246e-02  pde=2.30e-03  data=1.51e-05  kappa=1.1366e-04  err=  5.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+11:57:25     ep= 9500  loss=2.454e-02  pde=9.26e-04  data=1.18e-05  kappa=1.2366e-04  err=  3.0%  lr_net=5.00e-04  lr_kap=5.00e-03
+11:58:02     ep=10000  loss=2.430e-02  pde=9.33e-04  data=1.17e-05  kappa=1.1948e-04  err=  0.4%  lr_net=5.00e-04  lr_kap=5.00e-03
+11:58:37     ep=10500  loss=2.400e-02  pde=8.60e-04  data=1.16e-05  kappa=1.2312e-04  err=  2.6%  lr_net=5.00e-04  lr_kap=5.00e-03
+11:59:14     ep=11000  loss=2.385e-02  pde=8.44e-04  data=1.15e-05  kappa=1.1742e-04  err=  2.1%  lr_net=2.50e-04  lr_kap=2.50e-03
+11:59:51     ep=11500  loss=2.379e-02  pde=8.72e-04  data=1.15e-05  kappa=1.2005e-04  err=  0.0%  lr_net=1.25e-04  lr_kap=1.25e-03
+12:00:29     ep=12000  loss=2.370e-02  pde=8.61e-04  data=1.14e-05  kappa=1.2011e-04  err=  0.1%  lr_net=6.25e-05  lr_kap=6.25e-04
+12:01:06     ep=12500  loss=2.365e-02  pde=8.37e-04  data=1.14e-05  kappa=1.2002e-04  err=  0.0%  lr_net=3.13e-05  lr_kap=3.13e-04
+12:01:43     ep=13000  loss=2.363e-02  pde=8.44e-04  data=1.14e-05  kappa=1.1968e-04  err=  0.3%  lr_net=1.56e-05  lr_kap=1.56e-04
+12:02:20     ep=13500  loss=2.365e-02  pde=8.65e-04  data=1.14e-05  kappa=1.1947e-04  err=  0.4%  lr_net=7.81e-06  lr_kap=7.81e-05
+12:02:57     ep=14000  loss=2.366e-02  pde=8.85e-04  data=1.14e-05  kappa=1.1940e-04  err=  0.5%  lr_net=3.91e-06  lr_kap=3.91e-05
+12:03:35     ep=14500  loss=2.366e-02  pde=8.94e-04  data=1.14e-05  kappa=1.1947e-04  err=  0.4%  lr_net=1.95e-06  lr_kap=1.95e-05
+12:04:12  === L-BFGS (300 steps) ===
+12:04:13     step=   0  loss=2.362e-02  kappa=1.1954e-04  err=  0.4%
+12:04:24     step=  50  loss=2.361e-02  kappa=1.1954e-04  err=  0.4%
+12:04:35     step= 100  loss=2.361e-02  kappa=1.1954e-04  err=  0.4%
+12:04:47     step= 150  loss=2.361e-02  kappa=1.1954e-04  err=  0.4%
+12:04:57     step= 200  loss=2.361e-02  kappa=1.1954e-04  err=  0.4%
+12:05:08     step= 250  loss=2.361e-02  kappa=1.1954e-04  err=  0.4%
+12:05:18  
+12:05:18  FINAL  main_homo_seed7  kappa=1.195406e-04  rel_err=0.38%  L2_field=3.3888e-03  loss=2.361e-02  elapsed=1151.0s  log_loss_slope=-0.470  conv_epoch=-1  |PDE|_mean=1.884e-02  |PDE|_max=2.698e-01
+12:05:18  
+12:05:18  ========================================================================
+12:05:18  Run: main_homo_seed13  kind=homo  seed=13  kappa_init=1.0e-03  noise=1.0e-02
+12:05:18  ========================================================================
+12:05:18  params=25,410  sensors=5  data_points=1000
+12:05:18  === Adam (15000 epochs, T=500.0) ===
+12:05:18     ep=    0  loss=1.939e+02  pde=1.48e+01  data=8.95e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:05:53     ep=  500  loss=1.402e-01  pde=1.05e-02  data=6.48e-05  kappa=3.2454e-04  err=170.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:06:27     ep= 1000  loss=6.681e-02  pde=5.36e-03  data=3.07e-05  kappa=2.1795e-04  err= 81.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:07:02     ep= 1500  loss=4.733e-02  pde=3.51e-03  data=2.19e-05  kappa=1.7301e-04  err= 44.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:07:36     ep= 2000  loss=7.493e-02  pde=6.64e-03  data=3.41e-05  kappa=1.5017e-04  err= 25.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:08:10     ep= 2500  loss=4.084e-02  pde=2.84e-03  data=1.90e-05  kappa=1.3671e-04  err= 13.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:08:44     ep= 3000  loss=3.730e-02  pde=2.37e-03  data=1.75e-05  kappa=1.2862e-04  err=  7.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:09:18     ep= 3500  loss=3.403e-02  pde=1.81e-03  data=1.61e-05  kappa=1.2323e-04  err=  2.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:09:52     ep= 4000  loss=3.033e-02  pde=1.45e-03  data=1.44e-05  kappa=1.2134e-04  err=  1.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:10:26     ep= 4500  loss=1.839e-01  pde=1.94e-02  data=8.23e-05  kappa=1.1925e-04  err=  0.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:11:01     ep= 5000  loss=3.159e-02  pde=1.71e-03  data=1.49e-05  kappa=1.1900e-04  err=  0.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:11:35     ep= 5500  loss=1.327e-01  pde=1.23e-02  data=6.02e-05  kappa=1.1680e-04  err=  2.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:12:09     ep= 6000  loss=2.717e-02  pde=1.09e-03  data=1.30e-05  kappa=1.1931e-04  err=  0.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:12:44     ep= 6500  loss=2.679e-02  pde=9.97e-04  data=1.29e-05  kappa=1.1930e-04  err=  0.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:13:28     ep= 7000  loss=2.645e-02  pde=9.50e-04  data=1.28e-05  kappa=1.2036e-04  err=  0.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:14:07     ep= 7500  loss=2.610e-02  pde=9.35e-04  data=1.26e-05  kappa=1.2003e-04  err=  0.0%  lr_net=5.00e-04  lr_kap=5.00e-03
+12:14:48     ep= 8000  loss=2.585e-02  pde=8.43e-04  data=1.25e-05  kappa=1.1915e-04  err=  0.7%  lr_net=5.00e-04  lr_kap=5.00e-03
+12:15:29     ep= 8500  loss=2.573e-02  pde=8.23e-04  data=1.25e-05  kappa=1.2037e-04  err=  0.3%  lr_net=2.50e-04  lr_kap=2.50e-03
+12:16:09     ep= 9000  loss=2.555e-02  pde=7.82e-04  data=1.24e-05  kappa=1.1814e-04  err=  1.6%  lr_net=1.25e-04  lr_kap=1.25e-03
+12:16:49     ep= 9500  loss=2.550e-02  pde=7.79e-04  data=1.24e-05  kappa=1.1964e-04  err=  0.3%  lr_net=6.25e-05  lr_kap=6.25e-04
+12:17:29     ep=10000  loss=2.542e-02  pde=7.19e-04  data=1.23e-05  kappa=1.1950e-04  err=  0.4%  lr_net=3.13e-05  lr_kap=3.13e-04
+12:18:09     ep=10500  loss=2.535e-02  pde=7.10e-04  data=1.23e-05  kappa=1.1967e-04  err=  0.3%  lr_net=1.56e-05  lr_kap=1.56e-04
+12:18:49     ep=11000  loss=2.532e-02  pde=6.95e-04  data=1.23e-05  kappa=1.1967e-04  err=  0.3%  lr_net=7.81e-06  lr_kap=7.81e-05
+12:19:30     ep=11500  loss=2.536e-02  pde=7.54e-04  data=1.23e-05  kappa=1.1949e-04  err=  0.4%  lr_net=3.91e-06  lr_kap=3.91e-05
+12:20:10     ep=12000  loss=2.538e-02  pde=7.50e-04  data=1.23e-05  kappa=1.1947e-04  err=  0.4%  lr_net=1.95e-06  lr_kap=1.95e-05
+12:20:50     ep=12500  loss=2.535e-02  pde=7.33e-04  data=1.23e-05  kappa=1.1953e-04  err=  0.4%  lr_net=1.00e-06  lr_kap=9.77e-06
+12:21:30     ep=13000  loss=2.532e-02  pde=7.06e-04  data=1.23e-05  kappa=1.1952e-04  err=  0.4%  lr_net=1.00e-06  lr_kap=4.88e-06
+12:22:05     ep=13500  loss=2.537e-02  pde=7.71e-04  data=1.23e-05  kappa=1.1955e-04  err=  0.4%  lr_net=1.00e-06  lr_kap=2.44e-06
+12:22:40     ep=14000  loss=2.532e-02  pde=7.30e-04  data=1.23e-05  kappa=1.1955e-04  err=  0.4%  lr_net=1.00e-06  lr_kap=1.22e-06
+12:23:17     ep=14500  loss=2.534e-02  pde=7.17e-04  data=1.23e-05  kappa=1.1955e-04  err=  0.4%  lr_net=1.00e-06  lr_kap=1.22e-06
+12:23:56  === L-BFGS (300 steps) ===
+12:23:56     step=   0  loss=2.534e-02  kappa=1.1955e-04  err=  0.4%
+12:24:08     step=  50  loss=2.533e-02  kappa=1.1955e-04  err=  0.4%
+12:24:19     step= 100  loss=2.533e-02  kappa=1.1955e-04  err=  0.4%
+12:24:30     step= 150  loss=2.533e-02  kappa=1.1955e-04  err=  0.4%
+12:24:42     step= 200  loss=2.533e-02  kappa=1.1955e-04  err=  0.4%
+12:24:55     step= 250  loss=2.533e-02  kappa=1.1955e-04  err=  0.4%
+12:25:07  
+12:25:07  FINAL  main_homo_seed13  kappa=1.195496e-04  rel_err=0.38%  L2_field=4.4327e-03  loss=2.533e-02  elapsed=1188.4s  log_loss_slope=-0.439  conv_epoch=-1  |PDE|_mean=1.838e-02  |PDE|_max=2.329e-01
+12:25:07  
+12:25:07  ========================================================================
+12:25:07  Run: main_homo_seed42  kind=homo  seed=42  kappa_init=1.0e-03  noise=1.0e-02
+12:25:07  ========================================================================
+12:25:07  params=25,410  sensors=5  data_points=1000
+12:25:07  === Adam (15000 epochs, T=500.0) ===
+12:25:07     ep=    0  loss=8.725e+01  pde=5.39e+00  data=4.09e-02  kappa=1.0100e-03  err=741.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:25:46     ep=  500  loss=9.741e-02  pde=6.96e-03  data=4.52e-05  kappa=2.2476e-04  err= 87.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:26:22     ep= 1000  loss=5.661e-02  pde=3.44e-03  data=2.66e-05  kappa=1.5949e-04  err= 32.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:26:56     ep= 1500  loss=3.181e-01  pde=3.28e-02  data=1.43e-04  kappa=1.3807e-04  err= 15.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:27:34     ep= 2000  loss=3.853e-02  pde=2.44e-03  data=1.80e-05  kappa=1.2598e-04  err=  5.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:28:10     ep= 2500  loss=3.486e-02  pde=1.97e-03  data=1.64e-05  kappa=1.2072e-04  err=  0.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:28:44     ep= 3000  loss=3.226e-02  pde=1.53e-03  data=1.54e-05  kappa=1.1790e-04  err=  1.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:29:18     ep= 3500  loss=3.100e-02  pde=1.28e-03  data=1.49e-05  kappa=1.1828e-04  err=  1.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:29:53     ep= 4000  loss=3.005e-02  pde=1.13e-03  data=1.45e-05  kappa=1.1812e-04  err=  1.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:30:28     ep= 4500  loss=5.089e-02  pde=3.31e-03  data=2.38e-05  kappa=1.1860e-04  err=  1.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:31:03     ep= 5000  loss=2.819e-02  pde=9.11e-04  data=1.36e-05  kappa=1.1597e-04  err=  3.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:31:37     ep= 5500  loss=2.749e-02  pde=8.16e-04  data=1.33e-05  kappa=1.2178e-04  err=  1.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:32:15     ep= 6000  loss=4.783e-02  pde=3.41e-03  data=2.22e-05  kappa=1.1802e-04  err=  1.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:32:53     ep= 6500  loss=2.881e-02  pde=1.09e-03  data=1.39e-05  kappa=1.1821e-04  err=  1.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:33:31     ep= 7000  loss=4.103e-02  pde=2.61e-03  data=1.92e-05  kappa=1.1932e-04  err=  0.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:34:10     ep= 7500  loss=2.529e-02  pde=6.94e-04  data=1.23e-05  kappa=1.1585e-04  err=  3.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:34:47     ep= 8000  loss=2.475e-02  pde=6.81e-04  data=1.20e-05  kappa=1.2192e-04  err=  1.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:35:25     ep= 8500  loss=3.872e-02  pde=2.51e-03  data=1.81e-05  kappa=1.4309e-04  err= 19.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:36:04     ep= 9000  loss=2.413e-02  pde=7.40e-04  data=1.17e-05  kappa=1.1459e-04  err=  4.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:36:42     ep= 9500  loss=2.379e-02  pde=7.46e-04  data=1.15e-05  kappa=1.2653e-04  err=  5.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:37:17     ep=10000  loss=2.362e-02  pde=7.74e-04  data=1.14e-05  kappa=1.1740e-04  err=  2.2%  lr_net=5.00e-04  lr_kap=5.00e-03
+12:37:55     ep=10500  loss=2.346e-02  pde=7.57e-04  data=1.14e-05  kappa=1.1897e-04  err=  0.9%  lr_net=2.50e-04  lr_kap=2.50e-03
+12:38:34     ep=11000  loss=2.331e-02  pde=7.01e-04  data=1.13e-05  kappa=1.1980e-04  err=  0.2%  lr_net=1.25e-04  lr_kap=1.25e-03
+12:39:08     ep=11500  loss=2.329e-02  pde=7.14e-04  data=1.13e-05  kappa=1.2102e-04  err=  0.9%  lr_net=6.25e-05  lr_kap=6.25e-04
+12:39:42     ep=12000  loss=2.319e-02  pde=6.62e-04  data=1.13e-05  kappa=1.1891e-04  err=  0.9%  lr_net=3.13e-05  lr_kap=3.13e-04
+12:40:17     ep=12500  loss=2.322e-02  pde=7.10e-04  data=1.13e-05  kappa=1.1918e-04  err=  0.7%  lr_net=1.56e-05  lr_kap=1.56e-04
+12:40:51     ep=13000  loss=2.316e-02  pde=6.63e-04  data=1.12e-05  kappa=1.1913e-04  err=  0.7%  lr_net=7.81e-06  lr_kap=7.81e-05
+12:41:27     ep=13500  loss=2.317e-02  pde=6.63e-04  data=1.13e-05  kappa=1.1918e-04  err=  0.7%  lr_net=3.91e-06  lr_kap=3.91e-05
+12:42:04     ep=14000  loss=2.318e-02  pde=6.87e-04  data=1.12e-05  kappa=1.1917e-04  err=  0.7%  lr_net=1.95e-06  lr_kap=1.95e-05
+12:42:43     ep=14500  loss=2.317e-02  pde=6.63e-04  data=1.13e-05  kappa=1.1910e-04  err=  0.8%  lr_net=1.95e-06  lr_kap=1.95e-05
+12:43:24  === L-BFGS (300 steps) ===
+12:43:24     step=   0  loss=2.315e-02  kappa=1.1917e-04  err=  0.7%
+12:43:37     step=  50  loss=2.315e-02  kappa=1.1917e-04  err=  0.7%
+12:43:49     step= 100  loss=2.315e-02  kappa=1.1917e-04  err=  0.7%
+12:44:02     step= 150  loss=2.315e-02  kappa=1.1917e-04  err=  0.7%
+12:44:14     step= 200  loss=2.315e-02  kappa=1.1917e-04  err=  0.7%
+12:44:26     step= 250  loss=2.315e-02  kappa=1.1917e-04  err=  0.7%
+12:44:37  
+12:44:37  FINAL  main_homo_seed42  kappa=1.191745e-04  rel_err=0.69%  L2_field=3.4105e-03  loss=2.315e-02  elapsed=1170.4s  log_loss_slope=-0.429  conv_epoch=-1  |PDE|_mean=1.755e-02  |PDE|_max=2.647e-01
+12:44:37  
+12:44:37  ========================================================================
+12:44:37  Run: main_homo_seed123  kind=homo  seed=123  kappa_init=1.0e-03  noise=1.0e-02
+12:44:37  ========================================================================
+12:44:37  params=25,410  sensors=5  data_points=1000
+12:44:37  === Adam (15000 epochs, T=500.0) ===
+12:44:38     ep=    0  loss=2.399e+01  pde=2.39e+00  data=1.08e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:45:19     ep=  500  loss=8.071e-02  pde=5.64e-03  data=3.75e-05  kappa=2.2423e-04  err= 86.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:46:00     ep= 1000  loss=4.841e-02  pde=2.99e-03  data=2.27e-05  kappa=1.5846e-04  err= 32.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:46:35     ep= 1500  loss=4.175e-02  pde=2.49e-03  data=1.96e-05  kappa=1.3391e-04  err= 11.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:47:10     ep= 2000  loss=3.512e-02  pde=1.99e-03  data=1.66e-05  kappa=1.2534e-04  err=  4.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:47:45     ep= 2500  loss=1.484e-01  pde=1.47e-02  data=6.69e-05  kappa=1.2103e-04  err=  0.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:48:23     ep= 3000  loss=3.031e-02  pde=1.72e-03  data=1.43e-05  kappa=1.2004e-04  err=  0.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:49:04     ep= 3500  loss=3.447e-02  pde=2.25e-03  data=1.61e-05  kappa=1.1884e-04  err=  1.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:49:46     ep= 4000  loss=6.755e-02  pde=6.08e-03  data=3.07e-05  kappa=1.1758e-04  err=  2.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:50:26     ep= 4500  loss=2.724e-02  pde=1.60e-03  data=1.28e-05  kappa=1.1771e-04  err=  1.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:51:07     ep= 5000  loss=2.729e-02  pde=1.61e-03  data=1.28e-05  kappa=1.1934e-04  err=  0.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:51:47     ep= 5500  loss=2.644e-02  pde=1.30e-03  data=1.26e-05  kappa=1.2322e-04  err=  2.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:52:25     ep= 6000  loss=2.527e-02  pde=1.16e-03  data=1.21e-05  kappa=1.2156e-04  err=  1.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:53:02     ep= 6500  loss=2.476e-02  pde=1.02e-03  data=1.19e-05  kappa=1.2195e-04  err=  1.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:53:38     ep= 7000  loss=2.460e-02  pde=1.05e-03  data=1.18e-05  kappa=1.1799e-04  err=  1.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+12:54:16     ep= 7500  loss=2.410e-02  pde=9.34e-04  data=1.16e-05  kappa=1.2176e-04  err=  1.5%  lr_net=5.00e-04  lr_kap=5.00e-03
+12:54:53     ep= 8000  loss=2.386e-02  pde=9.07e-04  data=1.15e-05  kappa=1.1735e-04  err=  2.2%  lr_net=5.00e-04  lr_kap=5.00e-03
+12:55:30     ep= 8500  loss=2.366e-02  pde=9.03e-04  data=1.14e-05  kappa=1.1814e-04  err=  1.5%  lr_net=2.50e-04  lr_kap=2.50e-03
+12:56:08     ep= 9000  loss=2.354e-02  pde=8.89e-04  data=1.13e-05  kappa=1.1895e-04  err=  0.9%  lr_net=1.25e-04  lr_kap=1.25e-03
+12:56:45     ep= 9500  loss=2.343e-02  pde=8.26e-04  data=1.13e-05  kappa=1.1844e-04  err=  1.3%  lr_net=6.25e-05  lr_kap=6.25e-04
+12:57:21     ep=10000  loss=2.341e-02  pde=8.57e-04  data=1.13e-05  kappa=1.2039e-04  err=  0.3%  lr_net=6.25e-05  lr_kap=6.25e-04
+12:58:01     ep=10500  loss=2.336e-02  pde=8.39e-04  data=1.13e-05  kappa=1.1939e-04  err=  0.5%  lr_net=3.13e-05  lr_kap=3.13e-04
+12:58:38     ep=11000  loss=2.338e-02  pde=8.91e-04  data=1.12e-05  kappa=1.1932e-04  err=  0.6%  lr_net=1.56e-05  lr_kap=1.56e-04
+12:59:16     ep=11500  loss=2.332e-02  pde=8.56e-04  data=1.12e-05  kappa=1.1997e-04  err=  0.0%  lr_net=7.81e-06  lr_kap=7.81e-05
+12:59:53     ep=12000  loss=2.331e-02  pde=8.43e-04  data=1.12e-05  kappa=1.1988e-04  err=  0.1%  lr_net=3.91e-06  lr_kap=3.91e-05
+13:00:30     ep=12500  loss=2.332e-02  pde=8.60e-04  data=1.12e-05  kappa=1.1980e-04  err=  0.2%  lr_net=1.95e-06  lr_kap=1.95e-05
+13:01:07     ep=13000  loss=2.327e-02  pde=8.20e-04  data=1.12e-05  kappa=1.1980e-04  err=  0.2%  lr_net=1.00e-06  lr_kap=9.77e-06
+13:01:43     ep=13500  loss=2.326e-02  pde=8.27e-04  data=1.12e-05  kappa=1.1981e-04  err=  0.2%  lr_net=1.00e-06  lr_kap=4.88e-06
+13:02:24     ep=14000  loss=2.326e-02  pde=8.30e-04  data=1.12e-05  kappa=1.1980e-04  err=  0.2%  lr_net=1.00e-06  lr_kap=2.44e-06
+13:03:04     ep=14500  loss=2.328e-02  pde=8.45e-04  data=1.12e-05  kappa=1.1980e-04  err=  0.2%  lr_net=1.00e-06  lr_kap=1.22e-06
+13:03:39  === L-BFGS (300 steps) ===
+13:03:39     step=   0  loss=2.327e-02  kappa=1.1980e-04  err=  0.2%
+13:03:53     step=  50  loss=2.327e-02  kappa=1.1980e-04  err=  0.2%
+13:04:07     step= 100  loss=2.327e-02  kappa=1.1980e-04  err=  0.2%
+13:04:21     step= 150  loss=2.327e-02  kappa=1.1980e-04  err=  0.2%
+13:04:34     step= 200  loss=2.327e-02  kappa=1.1980e-04  err=  0.2%
+13:04:48     step= 250  loss=2.327e-02  kappa=1.1980e-04  err=  0.2%
+13:05:02  
+13:05:02  FINAL  main_homo_seed123  kappa=1.197998e-04  rel_err=0.17%  L2_field=4.6523e-03  loss=2.327e-02  elapsed=1224.3s  log_loss_slope=-0.375  conv_epoch=-1  |PDE|_mean=2.000e-02  |PDE|_max=2.616e-01
+13:05:02  
+13:05:02  ========================================================================
+13:05:02  Run: main_inhomo_seed1  kind=inhomo  seed=1  kappa_init=1.0e-03  noise=1.0e-02
+13:05:02  ========================================================================
+13:05:02  params=25,410  sensors=5  data_points=1000
+13:05:02  === Adam (15000 epochs, T=500.0) ===
+13:05:02     ep=    0  loss=8.814e+01  pde=3.71e+00  data=4.22e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:06:26     ep=  500  loss=1.359e+00  pde=2.71e-01  data=5.44e-04  kappa=2.5200e-04  err=110.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:07:53     ep= 1000  loss=1.163e+00  pde=2.49e-01  data=4.57e-04  kappa=1.7683e-04  err= 47.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:09:26     ep= 1500  loss=1.071e+00  pde=2.33e-01  data=4.19e-04  kappa=1.4692e-04  err= 22.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:10:59     ep= 2000  loss=9.957e-01  pde=2.14e-01  data=3.91e-04  kappa=1.3253e-04  err= 10.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:12:54     ep= 2500  loss=9.700e-01  pde=2.11e-01  data=3.80e-04  kappa=1.2059e-04  err=  0.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:14:41     ep= 3000  loss=9.391e-01  pde=1.94e-01  data=3.72e-04  kappa=1.1961e-04  err=  0.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:16:16     ep= 3500  loss=8.890e-01  pde=1.85e-01  data=3.52e-04  kappa=1.1924e-04  err=  0.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:17:45     ep= 4000  loss=8.655e-01  pde=1.78e-01  data=3.44e-04  kappa=1.1345e-04  err=  5.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:19:21     ep= 4500  loss=8.405e-01  pde=1.68e-01  data=3.36e-04  kappa=1.1651e-04  err=  2.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:20:57     ep= 5000  loss=8.185e-01  pde=1.58e-01  data=3.31e-04  kappa=1.0262e-04  err= 14.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:22:33     ep= 5500  loss=8.065e-01  pde=1.56e-01  data=3.25e-04  kappa=1.1181e-04  err=  6.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:24:00     ep= 6000  loss=8.025e-01  pde=1.55e-01  data=3.24e-04  kappa=1.1862e-04  err=  1.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:25:24     ep= 6500  loss=7.793e-01  pde=1.51e-01  data=3.14e-04  kappa=1.0786e-04  err= 10.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:26:50     ep= 7000  loss=7.683e-01  pde=1.47e-01  data=3.11e-04  kappa=1.0204e-04  err= 15.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:28:15     ep= 7500  loss=7.642e-01  pde=1.50e-01  data=3.07e-04  kappa=1.2264e-04  err=  2.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:29:41     ep= 8000  loss=7.561e-01  pde=1.43e-01  data=3.07e-04  kappa=1.3466e-04  err= 12.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:31:07     ep= 8500  loss=7.420e-01  pde=1.44e-01  data=2.99e-04  kappa=1.2390e-04  err=  3.2%  lr_net=5.00e-04  lr_kap=5.00e-03
+13:32:33     ep= 9000  loss=7.373e-01  pde=1.44e-01  data=2.97e-04  kappa=1.2510e-04  err=  4.3%  lr_net=2.50e-04  lr_kap=2.50e-03
+13:33:58     ep= 9500  loss=7.171e-01  pde=1.27e-01  data=2.95e-04  kappa=1.2591e-04  err=  4.9%  lr_net=1.25e-04  lr_kap=1.25e-03
+13:35:31     ep=10000  loss=7.221e-01  pde=1.34e-01  data=2.94e-04  kappa=1.2454e-04  err=  3.8%  lr_net=1.25e-04  lr_kap=1.25e-03
+13:37:09     ep=10500  loss=7.174e-01  pde=1.32e-01  data=2.93e-04  kappa=1.2354e-04  err=  2.9%  lr_net=6.25e-05  lr_kap=6.25e-04
+13:38:41     ep=11000  loss=7.112e-01  pde=1.27e-01  data=2.92e-04  kappa=1.2224e-04  err=  1.9%  lr_net=3.13e-05  lr_kap=3.13e-04
+13:40:16     ep=11500  loss=7.144e-01  pde=1.31e-01  data=2.92e-04  kappa=1.2090e-04  err=  0.7%  lr_net=1.56e-05  lr_kap=1.56e-04
+13:41:53     ep=12000  loss=7.113e-01  pde=1.28e-01  data=2.92e-04  kappa=1.2092e-04  err=  0.8%  lr_net=7.81e-06  lr_kap=7.81e-05
+13:43:34     ep=12500  loss=6.999e-01  pde=1.17e-01  data=2.91e-04  kappa=1.2049e-04  err=  0.4%  lr_net=3.91e-06  lr_kap=3.91e-05
+13:45:11     ep=13000  loss=7.119e-01  pde=1.29e-01  data=2.91e-04  kappa=1.2050e-04  err=  0.4%  lr_net=3.91e-06  lr_kap=3.91e-05
+13:46:44     ep=13500  loss=7.078e-01  pde=1.26e-01  data=2.91e-04  kappa=1.2055e-04  err=  0.5%  lr_net=1.95e-06  lr_kap=1.95e-05
+13:48:20     ep=14000  loss=7.054e-01  pde=1.23e-01  data=2.91e-04  kappa=1.2053e-04  err=  0.4%  lr_net=1.00e-06  lr_kap=9.77e-06
+13:49:55     ep=14500  loss=7.007e-01  pde=1.19e-01  data=2.91e-04  kappa=1.2052e-04  err=  0.4%  lr_net=1.00e-06  lr_kap=4.88e-06
+13:51:33  === L-BFGS (300 steps) ===
+13:51:35     step=   0  loss=6.963e-01  kappa=1.2052e-04  err=  0.4%
+13:52:39     step=  50  loss=6.963e-01  kappa=1.2052e-04  err=  0.4%
+13:53:42     step= 100  loss=6.963e-01  kappa=1.2052e-04  err=  0.4%
+13:54:46     step= 150  loss=6.963e-01  kappa=1.2052e-04  err=  0.4%
+13:55:46     step= 200  loss=6.963e-01  kappa=1.2052e-04  err=  0.4%
+13:56:47     step= 250  loss=6.963e-01  kappa=1.2052e-04  err=  0.4%
+13:57:48  
+13:57:48  FINAL  main_inhomo_seed1  kappa=1.205196e-04  rel_err=0.43%  L2_field=5.3743e-02  loss=6.963e-01  elapsed=3165.8s  log_loss_slope=-0.209  conv_epoch=-1  |PDE|_mean=1.743e-01  |PDE|_max=1.997e+00
+13:57:48  
+13:57:48  ========================================================================
+13:57:48  Run: main_inhomo_seed7  kind=inhomo  seed=7  kappa_init=1.0e-03  noise=1.0e-02
+13:57:48  ========================================================================
+13:57:48  params=25,410  sensors=5  data_points=1000
+13:57:48  === Adam (15000 epochs, T=500.0) ===
+13:57:48     ep=    0  loss=1.288e+02  pde=7.54e+00  data=6.06e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+13:59:30     ep=  500  loss=1.611e+00  pde=3.04e-01  data=6.54e-04  kappa=3.0358e-04  err=153.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:01:11     ep= 1000  loss=1.198e+00  pde=2.49e-01  data=4.75e-04  kappa=1.9736e-04  err= 64.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:02:45     ep= 1500  loss=1.093e+00  pde=2.31e-01  data=4.31e-04  kappa=1.5550e-04  err= 29.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:04:17     ep= 2000  loss=1.026e+00  pde=2.15e-01  data=4.06e-04  kappa=1.3709e-04  err= 14.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:05:40     ep= 2500  loss=9.799e-01  pde=2.06e-01  data=3.87e-04  kappa=1.2906e-04  err=  7.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:07:03     ep= 3000  loss=9.611e-01  pde=1.97e-01  data=3.82e-04  kappa=1.2699e-04  err=  5.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:08:25     ep= 3500  loss=9.199e-01  pde=1.95e-01  data=3.63e-04  kappa=1.2337e-04  err=  2.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:09:47     ep= 4000  loss=9.220e-01  pde=1.90e-01  data=3.66e-04  kappa=1.1264e-04  err=  6.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:11:10     ep= 4500  loss=8.803e-01  pde=1.85e-01  data=3.48e-04  kappa=1.1484e-04  err=  4.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:12:32     ep= 5000  loss=9.309e-01  pde=1.83e-01  data=3.74e-04  kappa=1.1082e-04  err=  7.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:13:54     ep= 5500  loss=8.379e-01  pde=1.66e-01  data=3.36e-04  kappa=1.2651e-04  err=  5.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:15:17     ep= 6000  loss=8.227e-01  pde=1.68e-01  data=3.28e-04  kappa=1.2248e-04  err=  2.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:16:39     ep= 6500  loss=7.991e-01  pde=1.55e-01  data=3.22e-04  kappa=1.0913e-04  err=  9.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:18:01     ep= 7000  loss=8.030e-01  pde=1.69e-01  data=3.17e-04  kappa=1.4321e-04  err= 19.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:19:24     ep= 7500  loss=7.776e-01  pde=1.53e-01  data=3.13e-04  kappa=1.1723e-04  err=  2.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:20:46     ep= 8000  loss=7.544e-01  pde=1.38e-01  data=3.08e-04  kappa=1.2277e-04  err=  2.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:22:08     ep= 8500  loss=7.658e-01  pde=1.56e-01  data=3.05e-04  kappa=1.2350e-04  err=  2.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:23:31     ep= 9000  loss=7.521e-01  pde=1.48e-01  data=3.02e-04  kappa=1.1777e-04  err=  1.9%  lr_net=5.00e-04  lr_kap=5.00e-03
+14:25:08     ep= 9500  loss=7.374e-01  pde=1.37e-01  data=3.00e-04  kappa=1.0578e-04  err= 11.9%  lr_net=2.50e-04  lr_kap=2.50e-03
+14:26:43     ep=10000  loss=7.399e-01  pde=1.42e-01  data=2.99e-04  kappa=1.0806e-04  err=  9.9%  lr_net=1.25e-04  lr_kap=1.25e-03
+14:28:21     ep=10500  loss=7.481e-01  pde=1.51e-01  data=2.98e-04  kappa=1.1195e-04  err=  6.7%  lr_net=6.25e-05  lr_kap=6.25e-04
+14:29:59     ep=11000  loss=7.288e-01  pde=1.33e-01  data=2.98e-04  kappa=1.1202e-04  err=  6.7%  lr_net=3.13e-05  lr_kap=3.13e-04
+14:31:39     ep=11500  loss=7.402e-01  pde=1.46e-01  data=2.97e-04  kappa=1.1272e-04  err=  6.1%  lr_net=1.56e-05  lr_kap=1.56e-04
+14:33:32     ep=12000  loss=7.382e-01  pde=1.44e-01  data=2.97e-04  kappa=1.1278e-04  err=  6.0%  lr_net=7.81e-06  lr_kap=7.81e-05
+14:35:39     ep=12500  loss=7.371e-01  pde=1.43e-01  data=2.97e-04  kappa=1.1282e-04  err=  6.0%  lr_net=3.91e-06  lr_kap=3.91e-05
+14:37:34     ep=13000  loss=7.324e-01  pde=1.39e-01  data=2.97e-04  kappa=1.1296e-04  err=  5.9%  lr_net=1.95e-06  lr_kap=1.95e-05
+14:39:21     ep=13500  loss=7.369e-01  pde=1.43e-01  data=2.97e-04  kappa=1.1297e-04  err=  5.9%  lr_net=1.00e-06  lr_kap=9.77e-06
+14:40:55     ep=14000  loss=7.472e-01  pde=1.54e-01  data=2.97e-04  kappa=1.1299e-04  err=  5.8%  lr_net=1.00e-06  lr_kap=4.88e-06
+14:42:28     ep=14500  loss=7.373e-01  pde=1.44e-01  data=2.97e-04  kappa=1.1301e-04  err=  5.8%  lr_net=1.00e-06  lr_kap=2.44e-06
+14:44:03  === L-BFGS (300 steps) ===
+14:44:07     step=   0  loss=7.285e-01  kappa=1.1301e-04  err=  5.8%
+14:45:02     step=  50  loss=7.285e-01  kappa=1.1301e-04  err=  5.8%
+14:46:00     step= 100  loss=7.285e-01  kappa=1.1301e-04  err=  5.8%
+14:46:57     step= 150  loss=7.285e-01  kappa=1.1301e-04  err=  5.8%
+14:47:54     step= 200  loss=7.285e-01  kappa=1.1301e-04  err=  5.8%
+14:48:51     step= 250  loss=7.285e-01  kappa=1.1301e-04  err=  5.8%
+14:49:45  
+14:49:45  FINAL  main_inhomo_seed7  kappa=1.130051e-04  rel_err=5.83%  L2_field=4.9117e-02  loss=7.285e-01  elapsed=3117.6s  log_loss_slope=-0.218  conv_epoch=-1  |PDE|_mean=1.975e-01  |PDE|_max=1.994e+00
+14:49:45  
+14:49:45  ========================================================================
+14:49:45  Run: main_inhomo_seed13  kind=inhomo  seed=13  kappa_init=1.0e-03  noise=1.0e-02
+14:49:45  ========================================================================
+14:49:46  params=25,410  sensors=5  data_points=1000
+14:49:46  === Adam (15000 epochs, T=500.0) ===
+14:49:46     ep=    0  loss=2.063e+02  pde=1.47e+01  data=9.58e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:51:17     ep=  500  loss=1.644e+00  pde=3.16e-01  data=6.64e-04  kappa=3.3088e-04  err=175.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:52:49     ep= 1000  loss=1.260e+00  pde=2.77e-01  data=4.91e-04  kappa=2.2221e-04  err= 85.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:54:18     ep= 1500  loss=1.112e+00  pde=2.45e-01  data=4.34e-04  kappa=1.7318e-04  err= 44.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:55:54     ep= 2000  loss=1.066e+00  pde=2.35e-01  data=4.15e-04  kappa=1.5097e-04  err= 25.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:57:28     ep= 2500  loss=9.914e-01  pde=2.18e-01  data=3.87e-04  kappa=1.3515e-04  err= 12.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+14:59:03     ep= 3000  loss=9.359e-01  pde=2.05e-01  data=3.66e-04  kappa=1.2838e-04  err=  7.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:00:39     ep= 3500  loss=9.005e-01  pde=1.91e-01  data=3.55e-04  kappa=1.2142e-04  err=  1.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:02:14     ep= 4000  loss=8.815e-01  pde=1.91e-01  data=3.45e-04  kappa=1.1651e-04  err=  2.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:03:53     ep= 4500  loss=8.489e-01  pde=1.78e-01  data=3.35e-04  kappa=1.1293e-04  err=  5.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:05:28     ep= 5000  loss=8.395e-01  pde=1.84e-01  data=3.28e-04  kappa=1.2708e-04  err=  5.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:07:01     ep= 5500  loss=8.468e-01  pde=1.76e-01  data=3.35e-04  kappa=1.2289e-04  err=  2.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:08:38     ep= 6000  loss=8.001e-01  pde=1.68e-01  data=3.16e-04  kappa=1.1420e-04  err=  4.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:10:16     ep= 6500  loss=7.763e-01  pde=1.54e-01  data=3.11e-04  kappa=1.2418e-04  err=  3.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:11:47     ep= 7000  loss=7.667e-01  pde=1.51e-01  data=3.08e-04  kappa=1.2461e-04  err=  3.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:13:11     ep= 7500  loss=7.585e-01  pde=1.54e-01  data=3.02e-04  kappa=1.2112e-04  err=  0.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:14:37     ep= 8000  loss=7.494e-01  pde=1.52e-01  data=2.99e-04  kappa=1.2959e-04  err=  8.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:16:02     ep= 8500  loss=7.452e-01  pde=1.55e-01  data=2.95e-04  kappa=1.1213e-04  err=  6.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:17:27     ep= 9000  loss=7.321e-01  pde=1.48e-01  data=2.92e-04  kappa=1.1831e-04  err=  1.4%  lr_net=5.00e-04  lr_kap=5.00e-03
+15:18:52     ep= 9500  loss=7.181e-01  pde=1.38e-01  data=2.90e-04  kappa=1.2097e-04  err=  0.8%  lr_net=5.00e-04  lr_kap=5.00e-03
+15:20:17     ep=10000  loss=7.280e-01  pde=1.52e-01  data=2.88e-04  kappa=1.1558e-04  err=  3.7%  lr_net=2.50e-04  lr_kap=2.50e-03
+15:21:45     ep=10500  loss=7.201e-01  pde=1.47e-01  data=2.87e-04  kappa=1.1753e-04  err=  2.1%  lr_net=1.25e-04  lr_kap=1.25e-03
+15:23:12     ep=11000  loss=7.125e-01  pde=1.41e-01  data=2.86e-04  kappa=1.1698e-04  err=  2.5%  lr_net=6.25e-05  lr_kap=6.25e-04
+15:24:40     ep=11500  loss=7.044e-01  pde=1.34e-01  data=2.85e-04  kappa=1.1725e-04  err=  2.3%  lr_net=3.13e-05  lr_kap=3.13e-04
+15:26:13     ep=12000  loss=7.069e-01  pde=1.38e-01  data=2.85e-04  kappa=1.1727e-04  err=  2.3%  lr_net=1.56e-05  lr_kap=1.56e-04
+15:27:51     ep=12500  loss=7.101e-01  pde=1.42e-01  data=2.84e-04  kappa=1.1766e-04  err=  1.9%  lr_net=1.56e-05  lr_kap=1.56e-04
+15:29:25     ep=13000  loss=7.070e-01  pde=1.39e-01  data=2.84e-04  kappa=1.1784e-04  err=  1.8%  lr_net=7.81e-06  lr_kap=7.81e-05
+15:31:01     ep=13500  loss=7.009e-01  pde=1.33e-01  data=2.84e-04  kappa=1.1749e-04  err=  2.1%  lr_net=3.91e-06  lr_kap=3.91e-05
+15:32:38     ep=14000  loss=7.134e-01  pde=1.46e-01  data=2.84e-04  kappa=1.1740e-04  err=  2.2%  lr_net=1.95e-06  lr_kap=1.95e-05
+15:34:15     ep=14500  loss=7.081e-01  pde=1.41e-01  data=2.83e-04  kappa=1.1741e-04  err=  2.2%  lr_net=1.00e-06  lr_kap=9.77e-06
+15:35:57  === L-BFGS (300 steps) ===
+15:35:59     step=   0  loss=7.096e-01  kappa=1.1742e-04  err=  2.2%
+15:36:49     step=  50  loss=7.096e-01  kappa=1.1742e-04  err=  2.2%
+15:37:40     step= 100  loss=7.096e-01  kappa=1.1742e-04  err=  2.2%
+15:38:28     step= 150  loss=7.096e-01  kappa=1.1742e-04  err=  2.2%
+15:39:19     step= 200  loss=7.096e-01  kappa=1.1742e-04  err=  2.2%
+15:40:11     step= 250  loss=7.096e-01  kappa=1.1742e-04  err=  2.2%
+15:41:01  
+15:41:01  FINAL  main_inhomo_seed13  kappa=1.174168e-04  rel_err=2.15%  L2_field=5.7179e-02  loss=7.096e-01  elapsed=3074.9s  log_loss_slope=-0.247  conv_epoch=-1  |PDE|_mean=1.979e-01  |PDE|_max=1.983e+00
+15:41:01  
+15:41:01  ========================================================================
+15:41:01  Run: main_inhomo_seed42  kind=inhomo  seed=42  kappa_init=1.0e-03  noise=1.0e-02
+15:41:01  ========================================================================
+15:41:01  params=25,410  sensors=5  data_points=1000
+15:41:01  === Adam (15000 epochs, T=500.0) ===
+15:41:01     ep=    0  loss=9.931e+01  pde=5.64e+00  data=4.68e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:42:43     ep=  500  loss=1.382e+00  pde=2.68e-01  data=5.57e-04  kappa=2.2863e-04  err= 90.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:44:15     ep= 1000  loss=1.151e+00  pde=2.47e-01  data=4.52e-04  kappa=1.6194e-04  err= 35.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:45:46     ep= 1500  loss=1.043e+00  pde=2.35e-01  data=4.04e-04  kappa=1.4814e-04  err= 23.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:47:21     ep= 2000  loss=1.109e+00  pde=2.39e-01  data=4.35e-04  kappa=1.3263e-04  err= 10.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:48:56     ep= 2500  loss=9.359e-01  pde=2.11e-01  data=3.62e-04  kappa=1.1203e-04  err=  6.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:50:37     ep= 3000  loss=8.917e-01  pde=1.90e-01  data=3.51e-04  kappa=1.0987e-04  err=  8.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:52:10     ep= 3500  loss=8.694e-01  pde=1.84e-01  data=3.43e-04  kappa=1.1702e-04  err=  2.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:53:38     ep= 4000  loss=8.585e-01  pde=1.83e-01  data=3.38e-04  kappa=1.1961e-04  err=  0.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:55:12     ep= 4500  loss=1.039e+00  pde=2.04e-01  data=4.17e-04  kappa=1.2298e-04  err=  2.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:56:47     ep= 5000  loss=8.030e-01  pde=1.64e-01  data=3.20e-04  kappa=1.2259e-04  err=  2.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:58:22     ep= 5500  loss=7.892e-01  pde=1.54e-01  data=3.18e-04  kappa=1.1430e-04  err=  4.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+15:59:58     ep= 6000  loss=8.115e-01  pde=1.64e-01  data=3.24e-04  kappa=8.9884e-05  err= 25.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:01:35     ep= 6500  loss=7.986e-01  pde=1.64e-01  data=3.17e-04  kappa=9.2062e-05  err= 23.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:03:11     ep= 7000  loss=7.595e-01  pde=1.53e-01  data=3.03e-04  kappa=1.0302e-04  err= 14.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:04:46     ep= 7500  loss=7.404e-01  pde=1.44e-01  data=2.98e-04  kappa=1.0921e-04  err=  9.0%  lr_net=5.00e-04  lr_kap=5.00e-03
+16:06:22     ep= 8000  loss=7.497e-01  pde=1.57e-01  data=2.96e-04  kappa=1.1616e-04  err=  3.2%  lr_net=2.50e-04  lr_kap=2.50e-03
+16:07:57     ep= 8500  loss=7.338e-01  pde=1.45e-01  data=2.95e-04  kappa=1.1099e-04  err=  7.5%  lr_net=2.50e-04  lr_kap=2.50e-03
+16:09:32     ep= 9000  loss=7.270e-01  pde=1.40e-01  data=2.93e-04  kappa=1.1142e-04  err=  7.1%  lr_net=1.25e-04  lr_kap=1.25e-03
+16:11:09     ep= 9500  loss=7.213e-01  pde=1.36e-01  data=2.92e-04  kappa=1.1298e-04  err=  5.8%  lr_net=6.25e-05  lr_kap=6.25e-04
+16:12:44     ep=10000  loss=7.297e-01  pde=1.46e-01  data=2.92e-04  kappa=1.1224e-04  err=  6.5%  lr_net=3.13e-05  lr_kap=3.13e-04
+16:14:21     ep=10500  loss=7.291e-01  pde=1.46e-01  data=2.91e-04  kappa=1.1342e-04  err=  5.5%  lr_net=3.13e-05  lr_kap=3.13e-04
+16:15:56     ep=11000  loss=7.204e-01  pde=1.38e-01  data=2.91e-04  kappa=1.1361e-04  err=  5.3%  lr_net=1.56e-05  lr_kap=1.56e-04
+16:17:32     ep=11500  loss=7.214e-01  pde=1.40e-01  data=2.91e-04  kappa=1.1406e-04  err=  5.0%  lr_net=7.81e-06  lr_kap=7.81e-05
+16:19:08     ep=12000  loss=7.271e-01  pde=1.46e-01  data=2.91e-04  kappa=1.1422e-04  err=  4.8%  lr_net=3.91e-06  lr_kap=3.91e-05
+16:20:43     ep=12500  loss=7.203e-01  pde=1.39e-01  data=2.90e-04  kappa=1.1423e-04  err=  4.8%  lr_net=1.95e-06  lr_kap=1.95e-05
+16:22:18     ep=13000  loss=7.174e-01  pde=1.37e-01  data=2.90e-04  kappa=1.1427e-04  err=  4.8%  lr_net=1.00e-06  lr_kap=9.77e-06
+16:23:53     ep=13500  loss=7.191e-01  pde=1.38e-01  data=2.90e-04  kappa=1.1426e-04  err=  4.8%  lr_net=1.00e-06  lr_kap=4.88e-06
+16:25:30     ep=14000  loss=7.220e-01  pde=1.42e-01  data=2.90e-04  kappa=1.1426e-04  err=  4.8%  lr_net=1.00e-06  lr_kap=2.44e-06
+16:27:06     ep=14500  loss=7.208e-01  pde=1.41e-01  data=2.90e-04  kappa=1.1426e-04  err=  4.8%  lr_net=1.00e-06  lr_kap=1.22e-06
+16:28:35  === L-BFGS (300 steps) ===
+16:28:45     step=   0  loss=7.176e-01  kappa=1.1426e-04  err=  4.8%
+16:30:45     step=  50  loss=4.351e-01  kappa=1.1422e-04  err=  4.8%
+16:31:59     step= 100  loss=4.351e-01  kappa=1.1422e-04  err=  4.8%
+16:33:08     step= 150  loss=4.351e-01  kappa=1.1422e-04  err=  4.8%
+16:34:13     step= 200  loss=4.351e-01  kappa=1.1422e-04  err=  4.8%
+16:35:20     step= 250  loss=4.351e-01  kappa=1.1422e-04  err=  4.8%
+16:36:28  
+16:36:28  FINAL  main_inhomo_seed42  kappa=1.142242e-04  rel_err=4.81%  L2_field=3.6839e-02  loss=4.351e-01  elapsed=3327.6s  log_loss_slope=-0.202  conv_epoch=-1  |PDE|_mean=2.229e-01  |PDE|_max=1.965e+00
+16:36:28  
+16:36:28  ========================================================================
+16:36:28  Run: main_inhomo_seed123  kind=inhomo  seed=123  kappa_init=1.0e-03  noise=1.0e-02
+16:36:28  ========================================================================
+16:36:28  params=25,410  sensors=5  data_points=1000
+16:36:28  === Adam (15000 epochs, T=500.0) ===
+16:36:29     ep=    0  loss=3.622e+01  pde=2.94e+00  data=1.66e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:38:03     ep=  500  loss=1.317e+00  pde=2.77e-01  data=5.20e-04  kappa=2.4746e-04  err=106.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:39:39     ep= 1000  loss=1.150e+00  pde=2.55e-01  data=4.48e-04  kappa=1.6635e-04  err= 38.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:41:15     ep= 1500  loss=1.064e+00  pde=2.34e-01  data=4.15e-04  kappa=1.3972e-04  err= 16.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:42:50     ep= 2000  loss=1.054e+00  pde=2.16e-01  data=4.19e-04  kappa=1.2486e-04  err=  4.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:44:26     ep= 2500  loss=9.402e-01  pde=1.86e-01  data=3.77e-04  kappa=1.2775e-04  err=  6.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:46:01     ep= 3000  loss=9.088e-01  pde=1.80e-01  data=3.65e-04  kappa=1.0829e-04  err=  9.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:47:37     ep= 3500  loss=9.002e-01  pde=1.72e-01  data=3.64e-04  kappa=1.1968e-04  err=  0.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:49:13     ep= 4000  loss=8.634e-01  pde=1.74e-01  data=3.45e-04  kappa=1.2139e-04  err=  1.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:50:48     ep= 4500  loss=8.337e-01  pde=1.60e-01  data=3.37e-04  kappa=1.1230e-04  err=  6.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:52:17     ep= 5000  loss=8.322e-01  pde=1.72e-01  data=3.30e-04  kappa=1.3501e-04  err= 12.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:53:41     ep= 5500  loss=8.145e-01  pde=1.63e-01  data=3.26e-04  kappa=1.2183e-04  err=  1.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:55:05     ep= 6000  loss=7.818e-01  pde=1.44e-01  data=3.19e-04  kappa=1.0895e-04  err=  9.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:56:28     ep= 6500  loss=7.859e-01  pde=1.52e-01  data=3.17e-04  kappa=1.1673e-04  err=  2.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:57:52     ep= 7000  loss=7.527e-01  pde=1.33e-01  data=3.10e-04  kappa=1.2687e-04  err=  5.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+16:59:16     ep= 7500  loss=7.467e-01  pde=1.37e-01  data=3.05e-04  kappa=1.0551e-04  err= 12.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:00:39     ep= 8000  loss=7.720e-01  pde=1.19e-01  data=3.26e-04  kappa=1.2082e-04  err=  0.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:02:03     ep= 8500  loss=7.119e-01  pde=1.19e-01  data=2.97e-04  kappa=1.2388e-04  err=  3.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:03:26     ep= 9000  loss=1.298e+00  pde=1.81e-01  data=5.58e-04  kappa=1.1307e-04  err=  5.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:04:50     ep= 9500  loss=6.936e-01  pde=1.12e-01  data=2.91e-04  kappa=1.2627e-04  err=  5.2%  lr_net=5.00e-04  lr_kap=5.00e-03
+17:06:14     ep=10000  loss=6.972e-01  pde=1.19e-01  data=2.89e-04  kappa=1.2381e-04  err=  3.2%  lr_net=2.50e-04  lr_kap=2.50e-03
+17:07:37     ep=10500  loss=6.852e-01  pde=1.10e-01  data=2.88e-04  kappa=1.1976e-04  err=  0.2%  lr_net=1.25e-04  lr_kap=1.25e-03
+17:09:00     ep=11000  loss=6.792e-01  pde=1.05e-01  data=2.87e-04  kappa=1.2705e-04  err=  5.9%  lr_net=1.25e-04  lr_kap=1.25e-03
+17:10:32     ep=11500  loss=6.844e-01  pde=1.12e-01  data=2.86e-04  kappa=1.2671e-04  err=  5.6%  lr_net=6.25e-05  lr_kap=6.25e-04
+17:12:05     ep=12000  loss=6.800e-01  pde=1.09e-01  data=2.86e-04  kappa=1.2574e-04  err=  4.8%  lr_net=3.13e-05  lr_kap=3.13e-04
+17:13:41     ep=12500  loss=6.869e-01  pde=1.16e-01  data=2.85e-04  kappa=1.2521e-04  err=  4.3%  lr_net=1.56e-05  lr_kap=1.56e-04
+17:15:15     ep=13000  loss=6.762e-01  pde=1.06e-01  data=2.85e-04  kappa=1.2489e-04  err=  4.1%  lr_net=7.81e-06  lr_kap=7.81e-05
+17:16:52     ep=13500  loss=6.723e-01  pde=1.03e-01  data=2.85e-04  kappa=1.2489e-04  err=  4.1%  lr_net=3.91e-06  lr_kap=3.91e-05
+17:18:27     ep=14000  loss=6.791e-01  pde=1.10e-01  data=2.85e-04  kappa=1.2459e-04  err=  3.8%  lr_net=1.95e-06  lr_kap=1.95e-05
+17:20:06     ep=14500  loss=6.731e-01  pde=1.04e-01  data=2.85e-04  kappa=1.2459e-04  err=  3.8%  lr_net=1.00e-06  lr_kap=9.77e-06
+17:21:46  === L-BFGS (300 steps) ===
+17:21:48     step=   0  loss=6.832e-01  kappa=1.2458e-04  err=  3.8%
+17:22:36     step=  50  loss=6.832e-01  kappa=1.2458e-04  err=  3.8%
+17:23:23     step= 100  loss=6.832e-01  kappa=1.2458e-04  err=  3.8%
+17:24:11     step= 150  loss=6.832e-01  kappa=1.2458e-04  err=  3.8%
+17:24:58     step= 200  loss=6.832e-01  kappa=1.2458e-04  err=  3.8%
+17:25:46     step= 250  loss=6.832e-01  kappa=1.2458e-04  err=  3.8%
+17:26:33  
+17:26:33  FINAL  main_inhomo_seed123  kappa=1.245832e-04  rel_err=3.82%  L2_field=5.5378e-02  loss=6.832e-01  elapsed=3004.0s  log_loss_slope=-0.220  conv_epoch=-1  |PDE|_mean=1.556e-01  |PDE|_max=1.983e+00
+17:26:33  
+17:26:33  Plotting per-seed figures ...
+17:26:44  Rendering field plots for main_homo_seed123 (rel_err=0.17%)
+17:26:47  Rendering field plots for main_inhomo_seed1 (rel_err=0.43%)
+17:26:53  
+17:26:54  ========================================================================
+17:26:54  STATISTICAL REPORT
+17:26:54  ========================================================================
+17:26:54  
+17:26:54  Descriptive (mean +- std, 95% bootstrap CI):
+17:26:54                kappa_homo: n=5 mean=1.1934e-04 std=4.5943e-07 median=1.1954e-04  CI95=[1.1895e-04, 1.1965e-04]
+17:26:54                kappa_inho: n=5 mean=1.1795e-04 std=4.7228e-06 median=1.1742e-04  CI95=[1.1438e-04, 1.2170e-04]
+17:26:54              rel_err_homo: n=5 mean=5.5294e-01 std=3.8286e-01 median=3.8285e-01  CI95=[2.9345e-01, 8.7345e-01]
+17:26:54              rel_err_inho: n=5 mean=3.4095e+00 std=2.1466e+00 median=3.8193e+00  CI95=[1.6530e+00, 5.0208e+00]
+17:26:54             l2_field_homo: n=5 mean=3.9076e-03 std=5.9393e-04 median=3.6537e-03  CI95=[3.4505e-03, 4.3647e-03]
+17:26:54             l2_field_inho: n=5 mean=5.0451e-02 std=8.1770e-03 median=5.3743e-02  CI95=[4.3601e-02, 5.5772e-02]
+17:26:54       log_loss_slope_homo: n=5 mean=-4.2507e-01 std=3.4984e-02 median=-4.2892e-01  CI95=[-4.5229e-01, -3.9745e-01]
+17:26:54       log_loss_slope_inho: n=5 mean=-2.1915e-01 std=1.7013e-02 median=-2.1790e-01  CI95=[-2.3338e-01, -2.0797e-01]
+17:26:54  
+17:26:54  Shapiro-Wilk normality test (H0: normal):
+17:26:54                kappa_homo: W=0.9090  p=0.4615  -> fail to reject H0
+17:26:54                kappa_inho: W=0.9517  p=0.7493  -> fail to reject H0
+17:26:54              rel_err_homo: W=0.9090  p=0.4615  -> fail to reject H0
+17:26:54              rel_err_inho: W=0.9701  p=0.8760  -> fail to reject H0
+17:26:54  
+17:26:54  One-sample t-test (H0: mean(kappa) == kappa_true=1.2000e-04):
+17:26:54                kappa_homo: t=-3.229  p=0.0320  -> reject H0
+17:26:54                kappa_inho: t=-0.971  p=0.3867  -> fail to reject H0
+17:26:54  
+17:26:54  Two-sample tests (homo vs inho):
+17:26:54    homo_vs_inho_kappa:
+17:26:54      Welch t: t=0.653  p=0.5485
+17:26:54      MW-U   : U=15.000  p=0.6905
+17:26:54    homo_vs_inho_rel_err:
+17:26:54      Welch t: t=-2.929  p=0.0397
+17:26:54      MW-U   : U=2.000  p=0.0317
+17:26:54  
+17:26:54  ========================================================================
+17:26:54  ABLATION: kappa_init  (both homo and inhomo, seed=1)
+17:26:54  ========================================================================
+17:26:54  
+17:26:54  ========================================================================
+17:26:54  Run: abl_kappa_init_homo_1e-5  kind=homo  seed=1  kappa_init=1.0e-05  noise=1.0e-02
+17:26:54  ========================================================================
+17:26:54  params=25,410  sensors=5  data_points=1000
+17:26:54  === Adam (15000 epochs, T=500.0) ===
+17:26:54     ep=    0  loss=6.935e+01  pde=3.12e+00  data=3.31e-02  kappa=1.0100e-05  err= 91.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:27:32     ep=  500  loss=8.459e-02  pde=3.75e-03  data=4.04e-05  kappa=1.2192e-04  err=  1.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:28:10     ep= 1000  loss=5.176e-02  pde=2.52e-03  data=2.46e-05  kappa=1.2287e-04  err=  2.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:28:47     ep= 1500  loss=4.797e-02  pde=2.94e-03  data=2.25e-05  kappa=1.2397e-04  err=  3.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:29:25     ep= 2000  loss=3.691e-02  pde=1.86e-03  data=1.75e-05  kappa=1.1903e-04  err=  0.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:30:02     ep= 2500  loss=3.421e-02  pde=1.73e-03  data=1.62e-05  kappa=1.1428e-04  err=  4.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:30:40     ep= 3000  loss=3.217e-02  pde=1.58e-03  data=1.53e-05  kappa=1.2148e-04  err=  1.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:31:17     ep= 3500  loss=3.074e-02  pde=1.56e-03  data=1.46e-05  kappa=1.1599e-04  err=  3.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:31:55     ep= 4000  loss=2.885e-02  pde=1.33e-03  data=1.38e-05  kappa=1.1419e-04  err=  4.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:32:33     ep= 4500  loss=2.785e-02  pde=1.13e-03  data=1.34e-05  kappa=1.1732e-04  err=  2.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:33:11     ep= 5000  loss=2.709e-02  pde=1.01e-03  data=1.30e-05  kappa=1.1855e-04  err=  1.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:33:48     ep= 5500  loss=2.986e-02  pde=1.37e-03  data=1.42e-05  kappa=1.1731e-04  err=  2.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:34:26     ep= 6000  loss=2.789e-02  pde=1.25e-03  data=1.33e-05  kappa=1.1982e-04  err=  0.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:35:03     ep= 6500  loss=2.637e-02  pde=1.05e-03  data=1.27e-05  kappa=1.1907e-04  err=  0.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:35:41     ep= 7000  loss=1.044e-01  pde=9.97e-03  data=4.72e-05  kappa=1.1767e-04  err=  1.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:36:19     ep= 7500  loss=2.482e-02  pde=9.64e-04  data=1.19e-05  kappa=1.1616e-04  err=  3.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:36:57     ep= 8000  loss=2.506e-02  pde=9.95e-04  data=1.20e-05  kappa=1.1558e-04  err=  3.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:37:35     ep= 8500  loss=2.427e-02  pde=8.18e-04  data=1.17e-05  kappa=1.1977e-04  err=  0.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:38:12     ep= 9000  loss=2.373e-02  pde=8.21e-04  data=1.15e-05  kappa=1.2023e-04  err=  0.2%  lr_net=5.00e-04  lr_kap=5.00e-03
+17:38:50     ep= 9500  loss=2.353e-02  pde=7.92e-04  data=1.14e-05  kappa=1.1703e-04  err=  2.5%  lr_net=5.00e-04  lr_kap=5.00e-03
+17:39:27     ep=10000  loss=2.343e-02  pde=8.02e-04  data=1.13e-05  kappa=1.1874e-04  err=  1.0%  lr_net=2.50e-04  lr_kap=2.50e-03
+17:40:07     ep=10500  loss=2.333e-02  pde=7.70e-04  data=1.13e-05  kappa=1.1809e-04  err=  1.6%  lr_net=1.25e-04  lr_kap=1.25e-03
+17:40:45     ep=11000  loss=2.329e-02  pde=7.79e-04  data=1.13e-05  kappa=1.1957e-04  err=  0.4%  lr_net=6.25e-05  lr_kap=6.25e-04
+17:41:23     ep=11500  loss=2.328e-02  pde=7.92e-04  data=1.12e-05  kappa=1.1983e-04  err=  0.1%  lr_net=3.13e-05  lr_kap=3.13e-04
+17:42:02     ep=12000  loss=2.324e-02  pde=7.73e-04  data=1.12e-05  kappa=1.1883e-04  err=  1.0%  lr_net=1.56e-05  lr_kap=1.56e-04
+17:42:39     ep=12500  loss=2.320e-02  pde=7.41e-04  data=1.12e-05  kappa=1.1835e-04  err=  1.4%  lr_net=7.81e-06  lr_kap=7.81e-05
+17:43:17     ep=13000  loss=2.323e-02  pde=7.83e-04  data=1.12e-05  kappa=1.1843e-04  err=  1.3%  lr_net=3.91e-06  lr_kap=3.91e-05
+17:43:56     ep=13500  loss=2.325e-02  pde=8.00e-04  data=1.12e-05  kappa=1.1848e-04  err=  1.3%  lr_net=1.95e-06  lr_kap=1.95e-05
+17:44:35     ep=14000  loss=2.321e-02  pde=7.80e-04  data=1.12e-05  kappa=1.1849e-04  err=  1.3%  lr_net=1.00e-06  lr_kap=9.77e-06
+17:45:13     ep=14500  loss=2.321e-02  pde=7.78e-04  data=1.12e-05  kappa=1.1848e-04  err=  1.3%  lr_net=1.00e-06  lr_kap=4.88e-06
+17:45:50  === L-BFGS (300 steps) ===
+17:45:51     step=   0  loss=2.327e-02  kappa=1.1847e-04  err=  1.3%
+17:46:10     step=  50  loss=2.327e-02  kappa=1.1847e-04  err=  1.3%
+17:46:29     step= 100  loss=2.327e-02  kappa=1.1847e-04  err=  1.3%
+17:46:48     step= 150  loss=2.327e-02  kappa=1.1847e-04  err=  1.3%
+17:47:07     step= 200  loss=2.327e-02  kappa=1.1847e-04  err=  1.3%
+17:47:27     step= 250  loss=2.327e-02  kappa=1.1847e-04  err=  1.3%
+17:47:46  
+17:47:46  FINAL  abl_kappa_init_homo_1e-5  kappa=1.184697e-04  rel_err=1.28%  L2_field=3.6081e-03  loss=2.327e-02  elapsed=1252.2s  log_loss_slope=-0.407  conv_epoch=-1  |PDE|_mean=1.909e-02  |PDE|_max=2.781e-01
+17:47:47  
+17:47:47  ========================================================================
+17:47:47  Run: abl_kappa_init_homo_1e-4  kind=homo  seed=1  kappa_init=1.0e-04  noise=1.0e-02
+17:47:47  ========================================================================
+17:47:47  params=25,410  sensors=5  data_points=1000
+17:47:47  === Adam (15000 epochs, T=500.0) ===
+17:47:47     ep=    0  loss=6.935e+01  pde=3.12e+00  data=3.31e-02  kappa=1.0100e-04  err= 15.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:48:25     ep=  500  loss=8.498e-02  pde=3.77e-03  data=4.06e-05  kappa=1.1894e-04  err=  0.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:49:04     ep= 1000  loss=9.724e-02  pde=7.47e-03  data=4.49e-05  kappa=1.2231e-04  err=  1.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:49:43     ep= 1500  loss=4.256e-02  pde=2.24e-03  data=2.02e-05  kappa=1.2259e-04  err=  2.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:50:20     ep= 2000  loss=3.776e-02  pde=1.89e-03  data=1.79e-05  kappa=1.1844e-04  err=  1.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:50:58     ep= 2500  loss=3.403e-02  pde=1.71e-03  data=1.62e-05  kappa=1.1578e-04  err=  3.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:51:36     ep= 3000  loss=3.195e-02  pde=1.53e-03  data=1.52e-05  kappa=1.2123e-04  err=  1.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:52:14     ep= 3500  loss=7.618e-02  pde=6.25e-03  data=3.50e-05  kappa=1.2167e-04  err=  1.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:52:53     ep= 4000  loss=2.892e-02  pde=1.36e-03  data=1.38e-05  kappa=1.1437e-04  err=  4.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:53:30     ep= 4500  loss=2.797e-02  pde=1.21e-03  data=1.34e-05  kappa=1.1615e-04  err=  3.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:54:08     ep= 5000  loss=5.159e-02  pde=3.54e-03  data=2.40e-05  kappa=1.1700e-04  err=  2.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:54:46     ep= 5500  loss=2.652e-02  pde=1.08e-03  data=1.27e-05  kappa=1.2084e-04  err=  0.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:55:24     ep= 6000  loss=2.869e-02  pde=1.31e-03  data=1.37e-05  kappa=1.1630e-04  err=  3.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:56:03     ep= 6500  loss=2.541e-02  pde=9.53e-04  data=1.22e-05  kappa=1.1879e-04  err=  1.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:56:41     ep= 7000  loss=2.499e-02  pde=9.14e-04  data=1.20e-05  kappa=1.1668e-04  err=  2.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:57:19     ep= 7500  loss=2.474e-02  pde=9.94e-04  data=1.19e-05  kappa=1.1844e-04  err=  1.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:57:56     ep= 8000  loss=2.433e-02  pde=9.13e-04  data=1.17e-05  kappa=1.2317e-04  err=  2.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:58:33     ep= 8500  loss=2.398e-02  pde=8.15e-04  data=1.16e-05  kappa=1.1976e-04  err=  0.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+17:59:11     ep= 9000  loss=2.374e-02  pde=8.10e-04  data=1.15e-05  kappa=1.1987e-04  err=  0.1%  lr_net=5.00e-04  lr_kap=5.00e-03
+17:59:50     ep= 9500  loss=2.357e-02  pde=7.86e-04  data=1.14e-05  kappa=1.1802e-04  err=  1.6%  lr_net=2.50e-04  lr_kap=2.50e-03
+18:00:29     ep=10000  loss=2.348e-02  pde=8.01e-04  data=1.13e-05  kappa=1.1874e-04  err=  1.1%  lr_net=2.50e-04  lr_kap=2.50e-03
+18:01:08     ep=10500  loss=2.338e-02  pde=7.67e-04  data=1.13e-05  kappa=1.1804e-04  err=  1.6%  lr_net=1.25e-04  lr_kap=1.25e-03
+18:01:51     ep=11000  loss=2.337e-02  pde=7.79e-04  data=1.13e-05  kappa=1.1957e-04  err=  0.4%  lr_net=6.25e-05  lr_kap=6.25e-04
+18:02:26     ep=11500  loss=2.333e-02  pde=7.92e-04  data=1.13e-05  kappa=1.1966e-04  err=  0.3%  lr_net=3.13e-05  lr_kap=3.13e-04
+18:03:01     ep=12000  loss=2.329e-02  pde=7.69e-04  data=1.13e-05  kappa=1.1835e-04  err=  1.4%  lr_net=1.56e-05  lr_kap=1.56e-04
+18:03:36     ep=12500  loss=2.324e-02  pde=7.39e-04  data=1.13e-05  kappa=1.1796e-04  err=  1.7%  lr_net=7.81e-06  lr_kap=7.81e-05
+18:04:10     ep=13000  loss=2.328e-02  pde=7.80e-04  data=1.12e-05  kappa=1.1818e-04  err=  1.5%  lr_net=3.91e-06  lr_kap=3.91e-05
+18:04:45     ep=13500  loss=2.329e-02  pde=7.97e-04  data=1.12e-05  kappa=1.1825e-04  err=  1.5%  lr_net=1.95e-06  lr_kap=1.95e-05
+18:05:19     ep=14000  loss=2.326e-02  pde=7.77e-04  data=1.12e-05  kappa=1.1829e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=9.77e-06
+18:05:55     ep=14500  loss=2.326e-02  pde=7.74e-04  data=1.12e-05  kappa=1.1827e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=4.88e-06
+18:06:29  === L-BFGS (300 steps) ===
+18:06:30     step=   0  loss=2.330e-02  kappa=1.1827e-04  err=  1.4%
+18:06:40     step=  50  loss=2.330e-02  kappa=1.1827e-04  err=  1.4%
+18:06:51     step= 100  loss=2.330e-02  kappa=1.1827e-04  err=  1.4%
+18:07:02     step= 150  loss=2.330e-02  kappa=1.1827e-04  err=  1.4%
+18:07:13     step= 200  loss=2.330e-02  kappa=1.1827e-04  err=  1.4%
+18:07:23     step= 250  loss=2.330e-02  kappa=1.1827e-04  err=  1.4%
+18:07:34  
+18:07:34  FINAL  abl_kappa_init_homo_1e-4  kappa=1.182659e-04  rel_err=1.45%  L2_field=3.6220e-03  loss=2.330e-02  elapsed=1186.8s  log_loss_slope=-0.412  conv_epoch=-1  |PDE|_mean=1.905e-02  |PDE|_max=2.759e-01
+18:07:35    reuse main result for homo kappa_init=1.0e-03: main_homo_seed1 (kappa=1.1862e-04 err=1.15%)
+18:07:36  
+18:07:36  ========================================================================
+18:07:36  Run: abl_kappa_init_homo_1e-2  kind=homo  seed=1  kappa_init=1.0e-02  noise=1.0e-02
+18:07:36  ========================================================================
+18:07:36  params=25,410  sensors=5  data_points=1000
+18:07:36  === Adam (15000 epochs, T=500.0) ===
+18:07:36     ep=    0  loss=6.944e+01  pde=3.22e+00  data=3.31e-02  kappa=9.9005e-03  err=8150.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:08:11     ep=  500  loss=9.987e-02  pde=7.25e-03  data=4.63e-05  kappa=1.9373e-03  err=1514.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:08:45     ep= 1000  loss=6.598e-02  pde=4.48e-03  data=3.08e-05  kappa=1.1690e-03  err=874.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:09:21     ep= 1500  loss=4.210e-02  pde=2.52e-03  data=1.98e-05  kappa=8.4765e-04  err=606.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:09:59     ep= 2000  loss=3.703e-02  pde=2.01e-03  data=1.75e-05  kappa=6.6624e-04  err=455.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:10:35     ep= 2500  loss=3.670e-02  pde=2.04e-03  data=1.73e-05  kappa=5.4620e-04  err=355.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:11:11     ep= 3000  loss=3.174e-02  pde=1.60e-03  data=1.51e-05  kappa=4.6022e-04  err=283.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:11:46     ep= 3500  loss=5.620e-02  pde=4.47e-03  data=2.59e-05  kappa=3.9511e-04  err=229.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:12:21     ep= 4000  loss=2.896e-02  pde=1.36e-03  data=1.38e-05  kappa=3.4399e-04  err=186.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:12:56     ep= 4500  loss=2.783e-02  pde=1.15e-03  data=1.33e-05  kappa=3.0266e-04  err=152.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:13:31     ep= 5000  loss=2.861e-02  pde=1.17e-03  data=1.37e-05  kappa=2.6893e-04  err=124.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:14:07     ep= 5500  loss=2.665e-02  pde=1.11e-03  data=1.28e-05  kappa=2.4082e-04  err=100.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:14:43     ep= 6000  loss=2.825e-02  pde=1.29e-03  data=1.35e-05  kappa=2.1733e-04  err= 81.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:15:18     ep= 6500  loss=2.563e-02  pde=1.04e-03  data=1.23e-05  kappa=1.9736e-04  err= 64.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:15:53     ep= 7000  loss=2.579e-02  pde=1.09e-03  data=1.23e-05  kappa=1.8075e-04  err= 50.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:16:28     ep= 7500  loss=2.465e-02  pde=9.36e-04  data=1.19e-05  kappa=1.6646e-04  err= 38.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:17:03     ep= 8000  loss=3.046e-02  pde=1.57e-03  data=1.44e-05  kappa=1.5476e-04  err= 29.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:17:38     ep= 8500  loss=2.420e-02  pde=9.05e-04  data=1.16e-05  kappa=1.4545e-04  err= 21.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:18:14     ep= 9000  loss=2.375e-02  pde=8.28e-04  data=1.15e-05  kappa=1.3803e-04  err= 15.0%  lr_net=5.00e-04  lr_kap=5.00e-03
+18:18:49     ep= 9500  loss=2.356e-02  pde=7.97e-04  data=1.14e-05  kappa=1.3487e-04  err= 12.4%  lr_net=2.50e-04  lr_kap=2.50e-03
+18:19:24     ep=10000  loss=2.346e-02  pde=8.08e-04  data=1.13e-05  kappa=1.3273e-04  err= 10.6%  lr_net=2.50e-04  lr_kap=2.50e-03
+18:20:00     ep=10500  loss=2.336e-02  pde=7.72e-04  data=1.13e-05  kappa=1.3153e-04  err=  9.6%  lr_net=1.25e-04  lr_kap=1.25e-03
+18:20:35     ep=11000  loss=2.333e-02  pde=7.82e-04  data=1.13e-05  kappa=1.3081e-04  err=  9.0%  lr_net=6.25e-05  lr_kap=6.25e-04
+18:21:10     ep=11500  loss=2.334e-02  pde=7.98e-04  data=1.13e-05  kappa=1.3041e-04  err=  8.7%  lr_net=3.13e-05  lr_kap=3.13e-04
+18:21:45     ep=12000  loss=2.328e-02  pde=7.77e-04  data=1.13e-05  kappa=1.3001e-04  err=  8.3%  lr_net=1.56e-05  lr_kap=1.56e-04
+18:22:21     ep=12500  loss=2.327e-02  pde=7.44e-04  data=1.13e-05  kappa=1.2976e-04  err=  8.1%  lr_net=7.81e-06  lr_kap=7.81e-05
+18:22:56     ep=13000  loss=2.328e-02  pde=7.86e-04  data=1.12e-05  kappa=1.2962e-04  err=  8.0%  lr_net=3.91e-06  lr_kap=3.91e-05
+18:23:31     ep=13500  loss=2.330e-02  pde=8.03e-04  data=1.12e-05  kappa=1.2953e-04  err=  7.9%  lr_net=1.95e-06  lr_kap=1.95e-05
+18:24:06     ep=14000  loss=2.328e-02  pde=7.84e-04  data=1.12e-05  kappa=1.2947e-04  err=  7.9%  lr_net=1.00e-06  lr_kap=9.77e-06
+18:24:40     ep=14500  loss=2.327e-02  pde=7.82e-04  data=1.12e-05  kappa=1.2943e-04  err=  7.9%  lr_net=1.00e-06  lr_kap=4.88e-06
+18:25:14  === L-BFGS (300 steps) ===
+18:25:16     step=   0  loss=2.333e-02  kappa=1.2942e-04  err=  7.8%
+18:25:30     step=  50  loss=2.332e-02  kappa=1.2942e-04  err=  7.8%
+18:25:45     step= 100  loss=2.332e-02  kappa=1.2942e-04  err=  7.8%
+18:25:59     step= 150  loss=2.332e-02  kappa=1.2942e-04  err=  7.8%
+18:26:14     step= 200  loss=2.332e-02  kappa=1.2942e-04  err=  7.8%
+18:26:28     step= 250  loss=2.332e-02  kappa=1.2942e-04  err=  7.8%
+18:26:42  
+18:26:42  FINAL  abl_kappa_init_homo_1e-2  kappa=1.294170e-04  rel_err=7.85%  L2_field=3.6212e-03  loss=2.332e-02  elapsed=1146.3s  log_loss_slope=-0.414  conv_epoch=-1  |PDE|_mean=1.915e-02  |PDE|_max=2.771e-01
+18:26:43  
+18:26:43  ========================================================================
+18:26:43  Run: abl_kappa_init_inhomo_1e-5  kind=inhomo  seed=1  kappa_init=1.0e-05  noise=1.0e-02
+18:26:43  ========================================================================
+18:26:43  params=25,410  sensors=5  data_points=1000
+18:26:43  === Adam (15000 epochs, T=500.0) ===
+18:26:44     ep=    0  loss=8.814e+01  pde=3.71e+00  data=4.22e-02  kappa=1.0100e-05  err= 91.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:28:16     ep=  500  loss=1.352e+00  pde=2.70e-01  data=5.41e-04  kappa=6.0823e-05  err= 49.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:30:17     ep= 1000  loss=1.147e+00  pde=2.47e-01  data=4.50e-04  kappa=1.1685e-04  err=  2.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:32:09     ep= 1500  loss=1.057e+00  pde=2.32e-01  data=4.13e-04  kappa=1.2162e-04  err=  1.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:33:52     ep= 2000  loss=9.944e-01  pde=2.12e-01  data=3.91e-04  kappa=1.1924e-04  err=  0.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:35:18     ep= 2500  loss=1.104e+00  pde=2.28e-01  data=4.38e-04  kappa=1.2017e-04  err=  0.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:36:42     ep= 3000  loss=9.331e-01  pde=1.94e-01  data=3.69e-04  kappa=1.1865e-04  err=  1.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:38:08     ep= 3500  loss=8.898e-01  pde=1.85e-01  data=3.53e-04  kappa=1.0832e-04  err=  9.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:39:34     ep= 4000  loss=8.667e-01  pde=1.78e-01  data=3.44e-04  kappa=1.1258e-04  err=  6.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:40:59     ep= 4500  loss=8.494e-01  pde=1.69e-01  data=3.40e-04  kappa=1.1769e-04  err=  1.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:42:24     ep= 5000  loss=8.194e-01  pde=1.58e-01  data=3.31e-04  kappa=1.0080e-04  err= 16.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:43:53     ep= 5500  loss=8.075e-01  pde=1.57e-01  data=3.25e-04  kappa=1.1200e-04  err=  6.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:45:21     ep= 6000  loss=8.117e-01  pde=1.55e-01  data=3.28e-04  kappa=1.1820e-04  err=  1.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+18:46:47     ep= 6500  loss=7.838e-01  pde=1.52e-01  data=3.16e-04  kappa=1.0932e-04  err=  8.9%  lr_net=5.00e-04  lr_kap=5.00e-03
+18:48:13     ep= 7000  loss=7.780e-01  pde=1.50e-01  data=3.14e-04  kappa=1.0713e-04  err= 10.7%  lr_net=2.50e-04  lr_kap=2.50e-03
+18:49:42     ep= 7500  loss=7.796e-01  pde=1.55e-01  data=3.12e-04  kappa=1.1452e-04  err=  4.6%  lr_net=1.25e-04  lr_kap=1.25e-03
+18:51:09     ep= 8000  loss=7.709e-01  pde=1.48e-01  data=3.11e-04  kappa=1.1999e-04  err=  0.0%  lr_net=6.25e-05  lr_kap=6.25e-04
+18:52:35     ep= 8500  loss=7.750e-01  pde=1.53e-01  data=3.11e-04  kappa=1.2101e-04  err=  0.8%  lr_net=3.13e-05  lr_kap=3.13e-04
+18:54:01     ep= 9000  loss=7.753e-01  pde=1.55e-01  data=3.10e-04  kappa=1.2137e-04  err=  1.1%  lr_net=1.56e-05  lr_kap=1.56e-04
+18:55:27     ep= 9500  loss=7.606e-01  pde=1.40e-01  data=3.10e-04  kappa=1.2158e-04  err=  1.3%  lr_net=7.81e-06  lr_kap=7.81e-05
+18:56:53     ep=10000  loss=7.684e-01  pde=1.49e-01  data=3.10e-04  kappa=1.2171e-04  err=  1.4%  lr_net=3.91e-06  lr_kap=3.91e-05
+18:58:19     ep=10500  loss=7.668e-01  pde=1.47e-01  data=3.10e-04  kappa=1.2169e-04  err=  1.4%  lr_net=1.95e-06  lr_kap=1.95e-05
+18:59:45     ep=11000  loss=7.669e-01  pde=1.48e-01  data=3.10e-04  kappa=1.2166e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=9.77e-06
+19:01:10     ep=11500  loss=7.694e-01  pde=1.50e-01  data=3.10e-04  kappa=1.2163e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=9.77e-06
+19:02:36     ep=12000  loss=7.686e-01  pde=1.49e-01  data=3.10e-04  kappa=1.2163e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=4.88e-06
+19:04:01     ep=12500  loss=7.565e-01  pde=1.37e-01  data=3.10e-04  kappa=1.2162e-04  err=  1.3%  lr_net=1.00e-06  lr_kap=2.44e-06
+19:05:27     ep=13000  loss=7.686e-01  pde=1.50e-01  data=3.09e-04  kappa=1.2162e-04  err=  1.3%  lr_net=1.00e-06  lr_kap=1.22e-06
+19:06:53     ep=13500  loss=7.670e-01  pde=1.48e-01  data=3.09e-04  kappa=1.2162e-04  err=  1.3%  lr_net=1.00e-06  lr_kap=1.00e-06
+19:08:18     ep=14000  loss=7.630e-01  pde=1.45e-01  data=3.09e-04  kappa=1.2162e-04  err=  1.3%  lr_net=1.00e-06  lr_kap=1.00e-06
+19:09:44     ep=14500  loss=7.585e-01  pde=1.41e-01  data=3.09e-04  kappa=1.2162e-04  err=  1.3%  lr_net=1.00e-06  lr_kap=1.00e-06
+19:11:11  === L-BFGS (300 steps) ===
+19:11:12     step=   0  loss=7.516e-01  kappa=1.2161e-04  err=  1.3%
+19:12:09     step=  50  loss=7.515e-01  kappa=1.2161e-04  err=  1.3%
+19:13:01     step= 100  loss=7.515e-01  kappa=1.2161e-04  err=  1.3%
+19:13:53     step= 150  loss=7.515e-01  kappa=1.2161e-04  err=  1.3%
+19:14:45     step= 200  loss=7.515e-01  kappa=1.2161e-04  err=  1.3%
+19:15:37     step= 250  loss=7.515e-01  kappa=1.2161e-04  err=  1.3%
+19:16:28  
+19:16:28  FINAL  abl_kappa_init_inhomo_1e-5  kappa=1.216144e-04  rel_err=1.35%  L2_field=5.5120e-02  loss=7.515e-01  elapsed=2984.1s  log_loss_slope=-0.179  conv_epoch=-1  |PDE|_mean=1.907e-01  |PDE|_max=1.997e+00
+19:16:28  
+19:16:28  ========================================================================
+19:16:28  Run: abl_kappa_init_inhomo_1e-4  kind=inhomo  seed=1  kappa_init=1.0e-04  noise=1.0e-02
+19:16:28  ========================================================================
+19:16:28  params=25,410  sensors=5  data_points=1000
+19:16:28  === Adam (15000 epochs, T=500.0) ===
+19:16:29     ep=    0  loss=8.814e+01  pde=3.71e+00  data=4.22e-02  kappa=1.0100e-04  err= 15.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:17:55     ep=  500  loss=1.352e+00  pde=2.70e-01  data=5.41e-04  kappa=1.1028e-04  err=  8.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:19:22     ep= 1000  loss=1.143e+00  pde=2.46e-01  data=4.48e-04  kappa=1.2124e-04  err=  1.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:20:48     ep= 1500  loss=1.051e+00  pde=2.30e-01  data=4.11e-04  kappa=1.1886e-04  err=  0.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:22:29     ep= 2000  loss=1.010e+00  pde=2.14e-01  data=3.98e-04  kappa=1.1972e-04  err=  0.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:23:58     ep= 2500  loss=9.561e-01  pde=2.09e-01  data=3.73e-04  kappa=1.1394e-04  err=  5.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:25:28     ep= 3000  loss=9.150e-01  pde=1.91e-01  data=3.62e-04  kappa=1.1896e-04  err=  0.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:26:57     ep= 3500  loss=8.901e-01  pde=1.84e-01  data=3.53e-04  kappa=1.0898e-04  err=  9.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:28:27     ep= 4000  loss=8.640e-01  pde=1.77e-01  data=3.43e-04  kappa=1.0976e-04  err=  8.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:30:00     ep= 4500  loss=8.399e-01  pde=1.68e-01  data=3.36e-04  kappa=1.1818e-04  err=  1.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:31:29     ep= 5000  loss=8.320e-01  pde=1.59e-01  data=3.37e-04  kappa=1.0265e-04  err= 14.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:32:55     ep= 5500  loss=8.056e-01  pde=1.56e-01  data=3.25e-04  kappa=1.1333e-04  err=  5.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:34:21     ep= 6000  loss=8.176e-01  pde=1.56e-01  data=3.31e-04  kappa=1.1790e-04  err=  1.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+19:35:47     ep= 6500  loss=7.828e-01  pde=1.51e-01  data=3.16e-04  kappa=1.0932e-04  err=  8.9%  lr_net=5.00e-04  lr_kap=5.00e-03
+19:37:13     ep= 7000  loss=7.766e-01  pde=1.50e-01  data=3.13e-04  kappa=1.0724e-04  err= 10.6%  lr_net=2.50e-04  lr_kap=2.50e-03
+19:38:40     ep= 7500  loss=7.781e-01  pde=1.54e-01  data=3.12e-04  kappa=1.1457e-04  err=  4.5%  lr_net=1.25e-04  lr_kap=1.25e-03
+19:40:06     ep= 8000  loss=7.694e-01  pde=1.48e-01  data=3.11e-04  kappa=1.2003e-04  err=  0.0%  lr_net=6.25e-05  lr_kap=6.25e-04
+19:41:37     ep= 8500  loss=7.734e-01  pde=1.53e-01  data=3.10e-04  kappa=1.2105e-04  err=  0.9%  lr_net=3.13e-05  lr_kap=3.13e-04
+19:43:14     ep= 9000  loss=7.737e-01  pde=1.54e-01  data=3.10e-04  kappa=1.2141e-04  err=  1.2%  lr_net=1.56e-05  lr_kap=1.56e-04
+19:44:53     ep= 9500  loss=7.589e-01  pde=1.40e-01  data=3.09e-04  kappa=1.2162e-04  err=  1.3%  lr_net=7.81e-06  lr_kap=7.81e-05
+19:46:30     ep=10000  loss=7.667e-01  pde=1.48e-01  data=3.09e-04  kappa=1.2175e-04  err=  1.5%  lr_net=3.91e-06  lr_kap=3.91e-05
+19:48:08     ep=10500  loss=7.652e-01  pde=1.47e-01  data=3.09e-04  kappa=1.2172e-04  err=  1.4%  lr_net=1.95e-06  lr_kap=1.95e-05
+19:49:47     ep=11000  loss=7.652e-01  pde=1.47e-01  data=3.09e-04  kappa=1.2169e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=9.77e-06
+19:51:18     ep=11500  loss=7.677e-01  pde=1.50e-01  data=3.09e-04  kappa=1.2166e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=9.77e-06
+19:52:43     ep=12000  loss=7.669e-01  pde=1.49e-01  data=3.09e-04  kappa=1.2166e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=4.88e-06
+19:54:08     ep=12500  loss=7.548e-01  pde=1.37e-01  data=3.09e-04  kappa=1.2165e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=2.44e-06
+19:55:34     ep=13000  loss=7.668e-01  pde=1.49e-01  data=3.09e-04  kappa=1.2165e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=1.22e-06
+19:57:00     ep=13500  loss=7.652e-01  pde=1.48e-01  data=3.09e-04  kappa=1.2165e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+19:58:25     ep=14000  loss=7.614e-01  pde=1.44e-01  data=3.08e-04  kappa=1.2165e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+19:59:51     ep=14500  loss=7.567e-01  pde=1.40e-01  data=3.08e-04  kappa=1.2165e-04  err=  1.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+20:01:15  === L-BFGS (300 steps) ===
+20:01:19     step=   0  loss=7.498e-01  kappa=1.2165e-04  err=  1.4%
+20:02:11     step=  50  loss=7.497e-01  kappa=1.2165e-04  err=  1.4%
+20:03:03     step= 100  loss=7.497e-01  kappa=1.2165e-04  err=  1.4%
+20:03:54     step= 150  loss=7.497e-01  kappa=1.2165e-04  err=  1.4%
+20:04:45     step= 200  loss=7.497e-01  kappa=1.2165e-04  err=  1.4%
+20:05:36     step= 250  loss=7.497e-01  kappa=1.2165e-04  err=  1.4%
+20:06:27  
+20:06:27  FINAL  abl_kappa_init_inhomo_1e-4  kappa=1.216475e-04  rel_err=1.37%  L2_field=5.5060e-02  loss=7.497e-01  elapsed=2998.3s  log_loss_slope=-0.180  conv_epoch=-1  |PDE|_mean=1.904e-01  |PDE|_max=1.997e+00
+20:06:28    reuse main result for inhomo kappa_init=1.0e-03: main_inhomo_seed1 (kappa=1.2052e-04 err=0.43%)
+20:06:29  
+20:06:29  ========================================================================
+20:06:29  Run: abl_kappa_init_inhomo_1e-2  kind=inhomo  seed=1  kappa_init=1.0e-02  noise=1.0e-02
+20:06:29  ========================================================================
+20:06:29  params=25,410  sensors=5  data_points=1000
+20:06:29  === Adam (15000 epochs, T=500.0) ===
+20:06:29     ep=    0  loss=8.824e+01  pde=3.81e+00  data=4.22e-02  kappa=9.9005e-03  err=8150.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:07:55     ep=  500  loss=1.360e+00  pde=2.72e-01  data=5.44e-04  kappa=2.0058e-03  err=1571.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:09:20     ep= 1000  loss=1.142e+00  pde=2.47e-01  data=4.48e-04  kappa=1.2161e-03  err=913.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:10:45     ep= 1500  loss=1.052e+00  pde=2.31e-01  data=4.11e-04  kappa=8.8466e-04  err=637.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:12:10     ep= 2000  loss=1.005e+00  pde=2.14e-01  data=3.95e-04  kappa=6.9367e-04  err=478.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:13:36     ep= 2500  loss=9.617e-01  pde=2.11e-01  data=3.75e-04  kappa=5.6609e-04  err=371.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:15:01     ep= 3000  loss=9.261e-01  pde=1.93e-01  data=3.67e-04  kappa=4.7755e-04  err=298.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:16:25     ep= 3500  loss=9.084e-01  pde=1.88e-01  data=3.60e-04  kappa=4.1108e-04  err=242.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:17:50     ep= 4000  loss=1.078e+00  pde=2.01e-01  data=4.39e-04  kappa=3.5613e-04  err=196.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:19:15     ep= 4500  loss=8.409e-01  pde=1.68e-01  data=3.36e-04  kappa=3.1246e-04  err=160.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:20:40     ep= 5000  loss=8.231e-01  pde=1.58e-01  data=3.33e-04  kappa=2.7496e-04  err=129.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:22:05     ep= 5500  loss=8.055e-01  pde=1.56e-01  data=3.25e-04  kappa=2.4538e-04  err=104.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:23:30     ep= 6000  loss=7.921e-01  pde=1.53e-01  data=3.19e-04  kappa=2.2146e-04  err= 84.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:24:55     ep= 6500  loss=8.038e-01  pde=1.54e-01  data=3.25e-04  kappa=2.0048e-04  err= 67.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:26:20     ep= 7000  loss=7.778e-01  pde=1.49e-01  data=3.14e-04  kappa=1.8142e-04  err= 51.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:27:45     ep= 7500  loss=7.612e-01  pde=1.50e-01  data=3.05e-04  kappa=1.6950e-04  err= 41.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:29:10     ep= 8000  loss=7.450e-01  pde=1.41e-01  data=3.02e-04  kappa=1.6152e-04  err= 34.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:30:36     ep= 8500  loss=7.409e-01  pde=1.44e-01  data=2.99e-04  kappa=1.5559e-04  err= 29.7%  lr_net=5.00e-04  lr_kap=5.00e-03
+20:32:01     ep= 9000  loss=7.363e-01  pde=1.44e-01  data=2.96e-04  kappa=1.5147e-04  err= 26.2%  lr_net=2.50e-04  lr_kap=2.50e-03
+20:33:26     ep= 9500  loss=7.160e-01  pde=1.27e-01  data=2.95e-04  kappa=1.4885e-04  err= 24.0%  lr_net=1.25e-04  lr_kap=1.25e-03
+20:34:50     ep=10000  loss=7.210e-01  pde=1.34e-01  data=2.94e-04  kappa=1.4692e-04  err= 22.4%  lr_net=1.25e-04  lr_kap=1.25e-03
+20:36:15     ep=10500  loss=7.163e-01  pde=1.32e-01  data=2.92e-04  kappa=1.4492e-04  err= 20.8%  lr_net=6.25e-05  lr_kap=6.25e-04
+20:37:40     ep=11000  loss=7.103e-01  pde=1.27e-01  data=2.92e-04  kappa=1.4348e-04  err= 19.6%  lr_net=3.13e-05  lr_kap=3.13e-04
+20:39:05     ep=11500  loss=7.135e-01  pde=1.31e-01  data=2.91e-04  kappa=1.4227e-04  err= 18.6%  lr_net=1.56e-05  lr_kap=1.56e-04
+20:40:31     ep=12000  loss=7.103e-01  pde=1.28e-01  data=2.91e-04  kappa=1.4186e-04  err= 18.2%  lr_net=7.81e-06  lr_kap=7.81e-05
+20:41:55     ep=12500  loss=6.990e-01  pde=1.18e-01  data=2.91e-04  kappa=1.4135e-04  err= 17.8%  lr_net=3.91e-06  lr_kap=3.91e-05
+20:43:21     ep=13000  loss=7.109e-01  pde=1.30e-01  data=2.91e-04  kappa=1.4119e-04  err= 17.7%  lr_net=3.91e-06  lr_kap=3.91e-05
+20:44:46     ep=13500  loss=7.068e-01  pde=1.26e-01  data=2.90e-04  kappa=1.4108e-04  err= 17.6%  lr_net=1.95e-06  lr_kap=1.95e-05
+20:46:11     ep=14000  loss=7.044e-01  pde=1.24e-01  data=2.90e-04  kappa=1.4098e-04  err= 17.5%  lr_net=1.00e-06  lr_kap=9.77e-06
+20:47:36     ep=14500  loss=6.998e-01  pde=1.19e-01  data=2.90e-04  kappa=1.4092e-04  err= 17.4%  lr_net=1.00e-06  lr_kap=4.88e-06
+20:49:01  === L-BFGS (300 steps) ===
+20:49:11     step=   0  loss=6.954e-01  kappa=1.4088e-04  err= 17.4%
+20:51:06     step=  50  loss=3.796e-01  kappa=1.4057e-04  err= 17.1%
+20:52:15     step= 100  loss=3.796e-01  kappa=1.4057e-04  err= 17.1%
+20:53:24     step= 150  loss=3.796e-01  kappa=1.4057e-04  err= 17.1%
+20:54:33     step= 200  loss=3.796e-01  kappa=1.4057e-04  err= 17.1%
+20:55:43     step= 250  loss=3.796e-01  kappa=1.4057e-04  err= 17.1%
+20:56:56  
+20:56:56  FINAL  abl_kappa_init_inhomo_1e-2  kappa=1.405653e-04  rel_err=17.14%  L2_field=3.6942e-02  loss=3.796e-01  elapsed=3027.4s  log_loss_slope=-0.209  conv_epoch=-1  |PDE|_mean=1.981e-01  |PDE|_max=1.992e+00
+20:56:58  
+20:56:58  ========================================================================
+20:56:58  ABLATION: noise  (both homo and inhomo, seed=1)
+20:56:58  ========================================================================
+20:56:58    reuse main result for homo noise=1.0e-02: main_homo_seed1 (kappa=1.1862e-04 err=1.15%)
+20:56:59  
+20:56:59  ========================================================================
+20:56:59  Run: abl_noise_homo_5e-2  kind=homo  seed=1  kappa_init=1.0e-03  noise=5.0e-02
+20:56:59  ========================================================================
+20:56:59  params=25,410  sensors=5  data_points=1000
+20:56:59  === Adam (15000 epochs, T=500.0) ===
+20:56:59     ep=    0  loss=6.975e+01  pde=3.12e+00  data=3.33e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:57:44     ep=  500  loss=6.197e-01  pde=9.52e-03  data=3.05e-04  kappa=2.3614e-04  err= 96.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:58:28     ep= 1000  loss=5.499e-01  pde=6.44e-03  data=2.72e-04  kappa=1.6698e-04  err= 39.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:59:08     ep= 1500  loss=5.403e-01  pde=7.20e-03  data=2.67e-04  kappa=1.3649e-04  err= 13.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+20:59:50     ep= 2000  loss=5.344e-01  pde=7.59e-03  data=2.63e-04  kappa=1.2276e-04  err=  2.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:00:32     ep= 2500  loss=5.285e-01  pde=8.09e-03  data=2.60e-04  kappa=1.1617e-04  err=  3.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:01:12     ep= 3000  loss=5.248e-01  pde=8.24e-03  data=2.58e-04  kappa=1.1325e-04  err=  5.6%  lr_net=5.00e-04  lr_kap=5.00e-03
+21:01:51     ep= 3500  loss=5.229e-01  pde=8.91e-03  data=2.57e-04  kappa=1.1417e-04  err=  4.9%  lr_net=2.50e-04  lr_kap=2.50e-03
+21:02:32     ep= 4000  loss=5.211e-01  pde=8.62e-03  data=2.56e-04  kappa=1.1451e-04  err=  4.6%  lr_net=1.25e-04  lr_kap=1.25e-03
+21:03:08     ep= 4500  loss=5.203e-01  pde=9.03e-03  data=2.56e-04  kappa=1.1497e-04  err=  4.2%  lr_net=1.25e-04  lr_kap=1.25e-03
+21:03:45     ep= 5000  loss=5.192e-01  pde=8.77e-03  data=2.55e-04  kappa=1.1523e-04  err=  4.0%  lr_net=6.25e-05  lr_kap=6.25e-04
+21:04:22     ep= 5500  loss=5.187e-01  pde=8.88e-03  data=2.55e-04  kappa=1.1577e-04  err=  3.5%  lr_net=3.13e-05  lr_kap=3.13e-04
+21:04:59     ep= 6000  loss=5.186e-01  pde=9.17e-03  data=2.55e-04  kappa=1.1592e-04  err=  3.4%  lr_net=1.56e-05  lr_kap=1.56e-04
+21:05:36     ep= 6500  loss=5.183e-01  pde=8.98e-03  data=2.55e-04  kappa=1.1586e-04  err=  3.5%  lr_net=7.81e-06  lr_kap=7.81e-05
+21:06:12     ep= 7000  loss=5.183e-01  pde=9.12e-03  data=2.55e-04  kappa=1.1591e-04  err=  3.4%  lr_net=3.91e-06  lr_kap=3.91e-05
+21:06:49     ep= 7500  loss=5.180e-01  pde=9.01e-03  data=2.54e-04  kappa=1.1583e-04  err=  3.5%  lr_net=1.95e-06  lr_kap=1.95e-05
+21:07:30     ep= 8000  loss=5.182e-01  pde=9.36e-03  data=2.54e-04  kappa=1.1587e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=9.77e-06
+21:08:08     ep= 8500  loss=5.179e-01  pde=9.00e-03  data=2.54e-04  kappa=1.1590e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=4.88e-06
+21:08:46     ep= 9000  loss=5.176e-01  pde=8.82e-03  data=2.54e-04  kappa=1.1590e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=2.44e-06
+21:09:29     ep= 9500  loss=5.180e-01  pde=9.28e-03  data=2.54e-04  kappa=1.1590e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=1.22e-06
+21:10:11     ep=10000  loss=5.179e-01  pde=9.26e-03  data=2.54e-04  kappa=1.1590e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:10:53     ep=10500  loss=5.177e-01  pde=9.21e-03  data=2.54e-04  kappa=1.1591e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:11:35     ep=11000  loss=5.173e-01  pde=9.03e-03  data=2.54e-04  kappa=1.1591e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:12:17     ep=11500  loss=5.172e-01  pde=9.25e-03  data=2.54e-04  kappa=1.1591e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:12:58     ep=12000  loss=5.169e-01  pde=9.21e-03  data=2.54e-04  kappa=1.1591e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:13:40     ep=12500  loss=5.167e-01  pde=9.31e-03  data=2.54e-04  kappa=1.1591e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:14:23     ep=13000  loss=5.165e-01  pde=9.36e-03  data=2.54e-04  kappa=1.1591e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:15:05     ep=13500  loss=5.163e-01  pde=9.50e-03  data=2.53e-04  kappa=1.1591e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:15:48     ep=14000  loss=5.157e-01  pde=9.29e-03  data=2.53e-04  kappa=1.1591e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:16:30     ep=14500  loss=5.154e-01  pde=9.16e-03  data=2.53e-04  kappa=1.1591e-04  err=  3.4%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:17:11  === L-BFGS (300 steps) ===
+21:17:12     step=   0  loss=5.156e-01  kappa=1.1591e-04  err=  3.4%
+21:17:29     step=  50  loss=5.156e-01  kappa=1.1591e-04  err=  3.4%
+21:17:46     step= 100  loss=5.156e-01  kappa=1.1591e-04  err=  3.4%
+21:18:03     step= 150  loss=5.156e-01  kappa=1.1591e-04  err=  3.4%
+21:18:20     step= 200  loss=5.156e-01  kappa=1.1591e-04  err=  3.4%
+21:18:37     step= 250  loss=5.156e-01  kappa=1.1591e-04  err=  3.4%
+21:18:54  
+21:18:54  FINAL  abl_noise_homo_5e-2  kappa=1.159060e-04  rel_err=3.41%  L2_field=9.8954e-03  loss=5.156e-01  elapsed=1315.1s  log_loss_slope=-0.040  conv_epoch=-1  |PDE|_mean=7.162e-02  |PDE|_max=5.728e-01
+21:18:55  
+21:18:55  ========================================================================
+21:18:55  Run: abl_noise_homo_1e-1  kind=homo  seed=1  kappa_init=1.0e-03  noise=1.0e-01
+21:18:55  ========================================================================
+21:18:55  params=25,410  sensors=5  data_points=1000
+21:18:55  === Adam (15000 epochs, T=500.0) ===
+21:18:55     ep=    0  loss=7.122e+01  pde=3.12e+00  data=3.40e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:19:37     ep=  500  loss=2.135e+00  pde=1.77e-02  data=1.06e-03  kappa=2.3493e-04  err= 95.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:20:18     ep= 1000  loss=2.133e+00  pde=2.87e-02  data=1.05e-03  kappa=1.6693e-04  err= 39.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:20:58     ep= 1500  loss=2.068e+00  pde=2.81e-02  data=1.02e-03  kappa=1.3417e-04  err= 11.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:21:38     ep= 2000  loss=2.058e+00  pde=3.22e-02  data=1.01e-03  kappa=1.2427e-04  err=  3.6%  lr_net=5.00e-04  lr_kap=5.00e-03
+21:22:18     ep= 2500  loss=2.050e+00  pde=3.29e-02  data=1.01e-03  kappa=1.1933e-04  err=  0.6%  lr_net=2.50e-04  lr_kap=2.50e-03
+21:22:58     ep= 3000  loss=2.045e+00  pde=3.36e-02  data=1.01e-03  kappa=1.1716e-04  err=  2.4%  lr_net=1.25e-04  lr_kap=1.25e-03
+21:23:37     ep= 3500  loss=2.041e+00  pde=3.51e-02  data=1.00e-03  kappa=1.1539e-04  err=  3.8%  lr_net=6.25e-05  lr_kap=6.25e-04
+21:24:15     ep= 4000  loss=2.037e+00  pde=3.52e-02  data=1.00e-03  kappa=1.1468e-04  err=  4.4%  lr_net=3.13e-05  lr_kap=3.13e-04
+21:24:51     ep= 4500  loss=2.037e+00  pde=3.71e-02  data=1.00e-03  kappa=1.1440e-04  err=  4.7%  lr_net=1.56e-05  lr_kap=1.56e-04
+21:25:28     ep= 5000  loss=2.034e+00  pde=3.53e-02  data=9.99e-04  kappa=1.1429e-04  err=  4.8%  lr_net=7.81e-06  lr_kap=7.81e-05
+21:26:05     ep= 5500  loss=2.033e+00  pde=3.58e-02  data=9.99e-04  kappa=1.1427e-04  err=  4.8%  lr_net=3.91e-06  lr_kap=3.91e-05
+21:26:45     ep= 6000  loss=2.034e+00  pde=3.71e-02  data=9.98e-04  kappa=1.1424e-04  err=  4.8%  lr_net=1.95e-06  lr_kap=1.95e-05
+21:27:28     ep= 6500  loss=2.033e+00  pde=3.65e-02  data=9.98e-04  kappa=1.1417e-04  err=  4.9%  lr_net=1.95e-06  lr_kap=1.95e-05
+21:28:10     ep= 7000  loss=2.033e+00  pde=3.74e-02  data=9.98e-04  kappa=1.1417e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=9.77e-06
+21:28:51     ep= 7500  loss=2.031e+00  pde=3.55e-02  data=9.98e-04  kappa=1.1414e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=4.88e-06
+21:29:33     ep= 8000  loss=2.032e+00  pde=3.70e-02  data=9.98e-04  kappa=1.1414e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=2.44e-06
+21:30:15     ep= 8500  loss=2.031e+00  pde=3.63e-02  data=9.97e-04  kappa=1.1414e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.22e-06
+21:30:57     ep= 9000  loss=2.030e+00  pde=3.58e-02  data=9.97e-04  kappa=1.1414e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:31:38     ep= 9500  loss=2.031e+00  pde=3.72e-02  data=9.97e-04  kappa=1.1414e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:32:20     ep=10000  loss=2.030e+00  pde=3.69e-02  data=9.96e-04  kappa=1.1414e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:33:01     ep=10500  loss=2.030e+00  pde=3.73e-02  data=9.96e-04  kappa=1.1414e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:33:42     ep=11000  loss=2.029e+00  pde=3.67e-02  data=9.96e-04  kappa=1.1414e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:34:24     ep=11500  loss=2.029e+00  pde=3.78e-02  data=9.95e-04  kappa=1.1414e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:35:01     ep=12000  loss=2.028e+00  pde=3.78e-02  data=9.95e-04  kappa=1.1414e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:35:39     ep=12500  loss=2.026e+00  pde=3.79e-02  data=9.94e-04  kappa=1.1413e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:36:16     ep=13000  loss=2.027e+00  pde=3.94e-02  data=9.94e-04  kappa=1.1413e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:36:58     ep=13500  loss=2.025e+00  pde=3.86e-02  data=9.93e-04  kappa=1.1413e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:37:37     ep=14000  loss=2.023e+00  pde=3.82e-02  data=9.93e-04  kappa=1.1413e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:38:19     ep=14500  loss=2.022e+00  pde=3.76e-02  data=9.92e-04  kappa=1.1413e-04  err=  4.9%  lr_net=1.00e-06  lr_kap=1.00e-06
+21:39:02  === L-BFGS (300 steps) ===
+21:39:03     step=   0  loss=2.024e+00  kappa=1.1413e-04  err=  4.9%
+21:39:19     step=  50  loss=2.024e+00  kappa=1.1413e-04  err=  4.9%
+21:39:36     step= 100  loss=2.024e+00  kappa=1.1413e-04  err=  4.9%
+21:39:53     step= 150  loss=2.024e+00  kappa=1.1413e-04  err=  4.9%
+21:40:10     step= 200  loss=2.024e+00  kappa=1.1413e-04  err=  4.9%
+21:40:26     step= 250  loss=2.024e+00  kappa=1.1413e-04  err=  4.9%
+21:40:43  
+21:40:43  FINAL  abl_noise_homo_1e-1  kappa=1.141302e-04  rel_err=4.89%  L2_field=1.8317e-02  loss=2.024e+00  elapsed=1308.0s  log_loss_slope=-0.015  conv_epoch=-1  |PDE|_mean=1.421e-01  |PDE|_max=1.427e+00
+21:40:44    reuse main result for inhomo noise=1.0e-02: main_inhomo_seed1 (kappa=1.2052e-04 err=0.43%)
+21:40:46  
+21:40:46  ========================================================================
+21:40:46  Run: abl_noise_inhomo_5e-2  kind=inhomo  seed=1  kappa_init=1.0e-03  noise=5.0e-02
+21:40:46  ========================================================================
+21:40:46  params=25,410  sensors=5  data_points=1000
+21:40:46  === Adam (15000 epochs, T=500.0) ===
+21:40:46     ep=    0  loss=8.864e+01  pde=3.71e+00  data=4.25e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:42:27     ep=  500  loss=1.790e+00  pde=2.73e-01  data=7.58e-04  kappa=2.4918e-04  err=107.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:44:15     ep= 1000  loss=1.610e+00  pde=2.54e-01  data=6.78e-04  kappa=1.7569e-04  err= 46.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:46:06     ep= 1500  loss=1.495e+00  pde=2.36e-01  data=6.29e-04  kappa=1.4669e-04  err= 22.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:47:56     ep= 2000  loss=1.432e+00  pde=2.21e-01  data=6.05e-04  kappa=1.2934e-04  err=  7.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:49:29     ep= 2500  loss=1.398e+00  pde=2.21e-01  data=5.88e-04  kappa=1.1781e-04  err=  1.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:50:55     ep= 3000  loss=1.366e+00  pde=2.07e-01  data=5.79e-04  kappa=1.1726e-04  err=  2.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:52:20     ep= 3500  loss=1.326e+00  pde=1.96e-01  data=5.65e-04  kappa=1.1415e-04  err=  4.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:53:45     ep= 4000  loss=1.369e+00  pde=1.97e-01  data=5.86e-04  kappa=1.0945e-04  err=  8.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:55:10     ep= 4500  loss=1.268e+00  pde=1.79e-01  data=5.45e-04  kappa=1.1494e-04  err=  4.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:56:38     ep= 5000  loss=1.242e+00  pde=1.69e-01  data=5.37e-04  kappa=1.0132e-04  err= 15.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:58:11     ep= 5500  loss=1.224e+00  pde=1.66e-01  data=5.29e-04  kappa=1.0878e-04  err=  9.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+21:59:44     ep= 6000  loss=1.208e+00  pde=1.65e-01  data=5.22e-04  kappa=1.1445e-04  err=  4.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:01:21     ep= 6500  loss=1.196e+00  pde=1.63e-01  data=5.16e-04  kappa=1.0483e-04  err= 12.6%  lr_net=5.00e-04  lr_kap=5.00e-03
+22:03:00     ep= 7000  loss=1.187e+00  pde=1.61e-01  data=5.13e-04  kappa=1.0424e-04  err= 13.1%  lr_net=2.50e-04  lr_kap=2.50e-03
+22:04:33     ep= 7500  loss=1.188e+00  pde=1.67e-01  data=5.11e-04  kappa=1.0945e-04  err=  8.8%  lr_net=1.25e-04  lr_kap=1.25e-03
+22:06:09     ep= 8000  loss=1.178e+00  pde=1.59e-01  data=5.09e-04  kappa=1.1444e-04  err=  4.6%  lr_net=6.25e-05  lr_kap=6.25e-04
+22:07:37     ep= 8500  loss=1.183e+00  pde=1.66e-01  data=5.09e-04  kappa=1.1613e-04  err=  3.2%  lr_net=3.13e-05  lr_kap=3.13e-04
+22:09:14     ep= 9000  loss=1.182e+00  pde=1.67e-01  data=5.08e-04  kappa=1.1681e-04  err=  2.7%  lr_net=3.13e-05  lr_kap=3.13e-04
+22:10:42     ep= 9500  loss=1.166e+00  pde=1.52e-01  data=5.07e-04  kappa=1.1703e-04  err=  2.5%  lr_net=1.56e-05  lr_kap=1.56e-04
+22:12:07     ep=10000  loss=1.174e+00  pde=1.61e-01  data=5.07e-04  kappa=1.1715e-04  err=  2.4%  lr_net=7.81e-06  lr_kap=7.81e-05
+22:13:38     ep=10500  loss=1.174e+00  pde=1.60e-01  data=5.07e-04  kappa=1.1708e-04  err=  2.4%  lr_net=3.91e-06  lr_kap=3.91e-05
+22:15:23     ep=11000  loss=1.172e+00  pde=1.59e-01  data=5.06e-04  kappa=1.1701e-04  err=  2.5%  lr_net=1.95e-06  lr_kap=1.95e-05
+22:16:58     ep=11500  loss=1.176e+00  pde=1.63e-01  data=5.06e-04  kappa=1.1696e-04  err=  2.5%  lr_net=1.00e-06  lr_kap=9.77e-06
+22:18:26     ep=12000  loss=1.174e+00  pde=1.61e-01  data=5.06e-04  kappa=1.1697e-04  err=  2.5%  lr_net=1.00e-06  lr_kap=4.88e-06
+22:19:51     ep=12500  loss=1.161e+00  pde=1.49e-01  data=5.06e-04  kappa=1.1696e-04  err=  2.5%  lr_net=1.00e-06  lr_kap=2.44e-06
+22:21:22     ep=13000  loss=1.174e+00  pde=1.62e-01  data=5.06e-04  kappa=1.1695e-04  err=  2.5%  lr_net=1.00e-06  lr_kap=1.22e-06
+22:22:58     ep=13500  loss=1.171e+00  pde=1.59e-01  data=5.06e-04  kappa=1.1696e-04  err=  2.5%  lr_net=1.00e-06  lr_kap=1.00e-06
+22:24:37     ep=14000  loss=1.169e+00  pde=1.57e-01  data=5.06e-04  kappa=1.1696e-04  err=  2.5%  lr_net=1.00e-06  lr_kap=1.00e-06
+22:26:12     ep=14500  loss=1.165e+00  pde=1.54e-01  data=5.05e-04  kappa=1.1696e-04  err=  2.5%  lr_net=1.00e-06  lr_kap=1.00e-06
+22:27:50  === L-BFGS (300 steps) ===
+22:27:55     step=   0  loss=1.158e+00  kappa=1.1695e-04  err=  2.5%
+22:28:53     step=  50  loss=1.158e+00  kappa=1.1695e-04  err=  2.5%
+22:29:49     step= 100  loss=1.158e+00  kappa=1.1695e-04  err=  2.5%
+22:30:46     step= 150  loss=1.158e+00  kappa=1.1695e-04  err=  2.5%
+22:31:42     step= 200  loss=1.158e+00  kappa=1.1695e-04  err=  2.5%
+22:32:39     step= 250  loss=1.158e+00  kappa=1.1695e-04  err=  2.5%
+22:33:35  
+22:33:35  FINAL  abl_noise_inhomo_5e-2  kappa=1.169530e-04  rel_err=2.54%  L2_field=5.5546e-02  loss=1.158e+00  elapsed=3169.3s  log_loss_slope=-0.136  conv_epoch=-1  |PDE|_mean=2.255e-01  |PDE|_max=1.997e+00
+22:33:36  
+22:33:36  ========================================================================
+22:33:36  Run: abl_noise_inhomo_1e-1  kind=inhomo  seed=1  kappa_init=1.0e-03  noise=1.0e-01
+22:33:36  ========================================================================
+22:33:36  params=25,410  sensors=5  data_points=1000
+22:33:36  === Adam (15000 epochs, T=500.0) ===
+22:33:36     ep=    0  loss=9.009e+01  pde=3.71e+00  data=4.32e-02  kappa=9.9005e-04  err=725.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:35:11     ep=  500  loss=3.144e+00  pde=2.79e-01  data=1.43e-03  kappa=2.4807e-04  err=106.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:36:40     ep= 1000  loss=2.953e+00  pde=2.61e-01  data=1.35e-03  kappa=1.7600e-04  err= 46.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:38:20     ep= 1500  loss=2.864e+00  pde=2.52e-01  data=1.31e-03  kappa=1.4536e-04  err= 21.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:39:58     ep= 2000  loss=2.783e+00  pde=2.41e-01  data=1.27e-03  kappa=1.2508e-04  err=  4.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:41:33     ep= 2500  loss=2.733e+00  pde=2.42e-01  data=1.25e-03  kappa=1.1151e-04  err=  7.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:43:08     ep= 3000  loss=2.692e+00  pde=2.34e-01  data=1.23e-03  kappa=1.1268e-04  err=  6.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:44:44     ep= 3500  loss=2.631e+00  pde=2.28e-01  data=1.20e-03  kappa=1.0637e-04  err= 11.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:46:20     ep= 4000  loss=2.590e+00  pde=2.27e-01  data=1.18e-03  kappa=1.0111e-04  err= 15.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:47:54     ep= 4500  loss=2.552e+00  pde=2.26e-01  data=1.16e-03  kappa=1.1274e-04  err=  6.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:49:31     ep= 5000  loss=2.550e+00  pde=2.26e-01  data=1.16e-03  kappa=9.9826e-05  err= 16.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:51:08     ep= 5500  loss=2.548e+00  pde=2.31e-01  data=1.16e-03  kappa=1.0757e-04  err= 10.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:52:46     ep= 6000  loss=2.446e+00  pde=2.26e-01  data=1.11e-03  kappa=1.1160e-04  err=  7.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:54:19     ep= 6500  loss=2.537e+00  pde=2.52e-01  data=1.14e-03  kappa=9.2026e-05  err= 23.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:55:52     ep= 7000  loss=2.382e+00  pde=2.48e-01  data=1.07e-03  kappa=9.4237e-05  err= 21.5%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:57:23     ep= 7500  loss=2.353e+00  pde=2.45e-01  data=1.05e-03  kappa=1.1846e-04  err=  1.3%  lr_net=1.00e-03  lr_kap=1.00e-02
+22:58:46     ep= 8000  loss=2.317e+00  pde=2.56e-01  data=1.03e-03  kappa=1.1788e-04  err=  1.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:00:08     ep= 8500  loss=2.296e+00  pde=2.63e-01  data=1.02e-03  kappa=1.2409e-04  err=  3.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:01:33     ep= 9000  loss=2.261e+00  pde=2.72e-01  data=9.94e-04  kappa=1.2647e-04  err=  5.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:03:09     ep= 9500  loss=2.253e+00  pde=2.62e-01  data=9.96e-04  kappa=1.0351e-04  err= 13.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:04:42     ep=10000  loss=2.186e+00  pde=2.74e-01  data=9.56e-04  kappa=9.9361e-05  err= 17.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:06:34     ep=10500  loss=2.160e+00  pde=2.85e-01  data=9.37e-04  kappa=1.0852e-04  err=  9.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:08:26     ep=11000  loss=2.135e+00  pde=2.82e-01  data=9.27e-04  kappa=1.1926e-04  err=  0.6%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:10:08     ep=11500  loss=2.104e+00  pde=2.97e-01  data=9.04e-04  kappa=8.1963e-05  err= 31.7%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:11:53     ep=12000  loss=2.042e+00  pde=2.82e-01  data=8.80e-04  kappa=1.1067e-04  err=  7.8%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:13:50     ep=12500  loss=2.002e+00  pde=2.84e-01  data=8.59e-04  kappa=9.2447e-05  err= 23.0%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:15:16     ep=13000  loss=1.993e+00  pde=3.17e-01  data=8.38e-04  kappa=1.1020e-04  err=  8.2%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:16:44     ep=13500  loss=1.952e+00  pde=3.13e-01  data=8.19e-04  kappa=1.0310e-04  err= 14.1%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:18:20     ep=14000  loss=1.977e+00  pde=3.17e-01  data=8.30e-04  kappa=9.0164e-05  err= 24.9%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:19:51     ep=14500  loss=1.881e+00  pde=3.00e-01  data=7.90e-04  kappa=8.2320e-05  err= 31.4%  lr_net=1.00e-03  lr_kap=1.00e-02
+23:21:19  === L-BFGS (300 steps) ===
+23:21:21     step=   0  loss=1.850e+00  kappa=8.6897e-05  err= 27.6%
+23:22:05     step=  50  loss=1.849e+00  kappa=8.6897e-05  err= 27.6%
+23:22:48     step= 100  loss=1.849e+00  kappa=8.6897e-05  err= 27.6%
+23:23:32     step= 150  loss=1.849e+00  kappa=8.6897e-05  err= 27.6%
+23:24:15     step= 200  loss=1.849e+00  kappa=8.6897e-05  err= 27.6%
+23:24:58     step= 250  loss=1.849e+00  kappa=8.6897e-05  err= 27.6%
+23:25:40  
+23:25:40  FINAL  abl_noise_inhomo_1e-1  kappa=8.689691e-05  rel_err=27.59%  L2_field=6.0067e-02  loss=1.849e+00  elapsed=3124.0s  log_loss_slope=-0.155  conv_epoch=-1  |PDE|_mean=3.895e-01  |PDE|_max=2.737e+00
+23:25:42  
+23:25:42  All results saved to: <repo>\results_diploma\20260526_112742
+23:25:42  Subdirs: main/ ablation_kappa/ ablation_noise/

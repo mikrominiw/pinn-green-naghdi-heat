@@ -1,0 +1,33 @@
+============================================================
+СТАТИСТИКА: hard vs soft по интервалам T
+============================================================
+
+[homo, T=3]
+  hard: mean=1.196e-03 std=1.30e-04 n=3
+  soft: mean=6.952e-01 std=2.93e-02 n=3
+  Welch t-test (hard vs soft): stat=-41.048 p=0.0006
+
+[homo, T=30]
+  hard: mean=2.001e-02 std=4.84e-05 n=3
+  soft: mean=8.507e-01 std=1.07e-02 n=3
+  Welch t-test (hard vs soft): stat=-134.734 p=0.0001
+
+[homo, T=100]
+  hard: mean=6.635e-02 std=8.45e-05 n=3
+  soft: mean=8.531e-01 std=9.06e-03 n=3
+  Welch t-test (hard vs soft): stat=-150.419 p=0.0000
+
+[inhomo, T=3]
+  hard: mean=1.002e-02 std=5.24e-04 n=3
+  soft: mean=4.756e-01 std=5.46e-03 n=3
+  Welch t-test (hard vs soft): stat=-146.900 p=0.0000
+
+[inhomo, T=30]
+  hard: mean=1.061e-01 std=1.71e-03 n=3
+  soft: mean=7.171e-01 std=1.82e-02 n=3
+  Welch t-test (hard vs soft): stat=-57.867 p=0.0003
+
+[inhomo, T=100]
+  hard: mean=1.535e-01 std=4.02e-03 n=3
+  soft: mean=7.027e-01 std=1.85e-02 n=3
+  Welch t-test (hard vs soft): stat=-50.372 p=0.0002

@@ -1,0 +1,504 @@
+10:07:34  Run ID : 20260528_100734
+10:07:34  Device : cuda  (NVIDIA GeForce RTX 3060 Laptop GPU)
+10:07:34  
+10:07:34  ============================================================
+10:07:34  FORWARD PROBLEM — PINN DIPLOMA
+10:07:34  Исследования: A) hard vs soft и зависимость от интервала T;
+10:07:34                B) размер сети (Optuna Grid) + TPE-подбор LR.
+10:07:34  T_LIST=[3.0, 30.0, 100.0]  Источники=['homo', 'inhomo']  Анзацы=['hard', 'soft']  Seeds=[16, 5, 22]
+10:07:34  FLAT_EPOCHS=8000  LBFGS=200  N_PDE=15000  KAPPA=0.00012  n_freq=4
+10:07:34  ============================================================
+10:07:34  
+10:07:34  ############################################################
+10:07:34  ИССЛЕДОВАНИЕ A — hard vs soft и зависимость от интервала T
+10:07:34  ############################################################
+10:07:34    Building analytical reference for 'homo', T=3 ...
+10:07:34    [A_homo_hard_T3_s16] source=homo ansatz=hard seed=16 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+10:08:47    [A_homo_hard_T3_s16] ep= 1000  loss=8.785e-04  pde=8.78e-04
+10:09:53    [A_homo_hard_T3_s16] ep= 2000  loss=1.544e-04  pde=1.54e-04
+10:10:58    [A_homo_hard_T3_s16] ep= 3000  loss=5.019e-05  pde=5.02e-05
+10:11:11    [A_homo_hard_T3_s16] ранняя остановка на эпохе 3205 (плато 1500 эпох, loss=1.492e-04)
+10:11:21    [A_homo_hard_T3_s16] L-BFGS ранняя остановка на шаге 22 (плато 20 шагов, loss=1.486e-05)
+10:11:21    [A_homo_hard_T3_s16] DONE  L2=1.318e-03  Linf=1.795e-03  t=227s
+10:11:27    [A_homo_hard_T3_s5] source=homo ansatz=hard seed=5 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+10:12:31    [A_homo_hard_T3_s5] ep= 1000  loss=1.738e-03  pde=1.74e-03
+10:13:36    [A_homo_hard_T3_s5] ep= 2000  loss=4.005e-05  pde=4.00e-05
+10:14:40    [A_homo_hard_T3_s5] ep= 3000  loss=1.174e-04  pde=1.17e-04
+10:15:44    [A_homo_hard_T3_s5] ep= 4000  loss=1.327e-05  pde=1.33e-05
+10:16:48    [A_homo_hard_T3_s5] ep= 5000  loss=5.290e-05  pde=5.29e-05
+10:17:08    [A_homo_hard_T3_s5] ранняя остановка на эпохе 5310 (плато 1500 эпох, loss=1.745e-04)
+10:17:20    [A_homo_hard_T3_s5] L-BFGS ранняя остановка на шаге 22 (плато 20 шагов, loss=6.807e-06)
+10:17:20    [A_homo_hard_T3_s5] DONE  L2=1.210e-03  Linf=1.620e-03  t=354s
+10:17:20    [A_homo_hard_T3_s22] source=homo ansatz=hard seed=22 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+10:18:27    [A_homo_hard_T3_s22] ep= 1000  loss=3.355e-04  pde=3.36e-04
+10:19:31    [A_homo_hard_T3_s22] ep= 2000  loss=1.308e-03  pde=1.31e-03
+10:20:35    [A_homo_hard_T3_s22] ep= 3000  loss=4.368e-04  pde=4.37e-04
+10:21:39    [A_homo_hard_T3_s22] ep= 4000  loss=2.244e-04  pde=2.24e-04
+10:22:43    [A_homo_hard_T3_s22] ep= 5000  loss=1.184e-04  pde=1.18e-04
+10:23:49    [A_homo_hard_T3_s22] ep= 6000  loss=9.773e-06  pde=9.77e-06
+10:24:54    [A_homo_hard_T3_s22] ep= 7000  loss=2.361e-05  pde=2.36e-05
+10:25:59    [A_homo_hard_T3_s22] ep= 8000  loss=3.783e-05  pde=3.78e-05
+10:26:09    [A_homo_hard_T3_s22] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=4.838e-06)
+10:26:09    [A_homo_hard_T3_s22] DONE  L2=1.060e-03  Linf=1.377e-03  t=529s
+10:26:09    [A_homo_soft_T3_s16] source=homo ansatz=soft seed=16 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+10:27:08    [A_homo_soft_T3_s16] ep= 1000  loss=5.637e+00  pde=5.79e+00  ic1=9.46e-02  ic2=3.17e-02  bc=2.45e-02
+10:28:06    [A_homo_soft_T3_s16] ep= 2000  loss=6.695e-01  pde=3.71e-01  ic1=7.38e-02  ic2=1.11e-02  bc=4.23e-02
+10:29:04    [A_homo_soft_T3_s16] ep= 3000  loss=1.119e-01  pde=2.43e-01  ic1=3.20e-02  ic2=5.62e-03  bc=8.78e-03
+10:30:03    [A_homo_soft_T3_s16] ep= 4000  loss=4.896e-02  pde=5.37e-01  ic1=6.78e-03  ic2=3.38e-03  bc=7.32e-03
+10:31:01    [A_homo_soft_T3_s16] ep= 5000  loss=2.030e-02  pde=3.21e-01  ic1=5.13e-03  ic2=2.86e-03  bc=7.19e-03
+10:31:59    [A_homo_soft_T3_s16] ep= 6000  loss=3.249e-03  pde=9.88e-02  ic1=9.14e-04  ic2=1.25e-04  bc=4.57e-03
+10:32:58    [A_homo_soft_T3_s16] ep= 7000  loss=2.241e-03  pde=7.80e-02  ic1=8.90e-04  ic2=5.07e-04  bc=4.00e-03
+10:33:59    [A_homo_soft_T3_s16] ep= 8000  loss=1.061e-03  pde=5.11e-02  ic1=4.68e-04  ic2=1.44e-04  bc=3.95e-03
+10:34:11    [A_homo_soft_T3_s16] L-BFGS ранняя остановка на шаге 22 (плато 20 шагов, loss=7.819e-04)
+10:34:11    [A_homo_soft_T3_s16] DONE  L2=6.645e-01  Linf=8.884e-01  t=481s
+10:34:17    [A_homo_soft_T3_s5] source=homo ansatz=soft seed=5 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+10:35:16    [A_homo_soft_T3_s5] ep= 1000  loss=5.026e+00  pde=5.81e+00  ic1=1.01e-01  ic2=1.02e-02  bc=2.01e-02
+10:36:13    [A_homo_soft_T3_s5] ep= 2000  loss=4.888e-01  pde=3.31e-01  ic1=7.63e-02  ic2=1.83e-04  bc=1.95e-02
+10:37:11    [A_homo_soft_T3_s5] ep= 3000  loss=9.771e-02  pde=2.02e-01  ic1=3.90e-02  ic2=2.75e-04  bc=9.71e-03
+10:38:10    [A_homo_soft_T3_s5] ep= 4000  loss=1.984e-02  pde=1.25e-01  ic1=6.96e-03  ic2=1.73e-04  bc=6.67e-03
+10:39:09    [A_homo_soft_T3_s5] ep= 5000  loss=7.642e-03  pde=6.95e-02  ic1=2.51e-03  ic2=5.31e-04  bc=5.72e-03
+10:40:07    [A_homo_soft_T3_s5] ep= 6000  loss=4.714e-03  pde=8.34e-02  ic1=2.79e-03  ic2=3.34e-04  bc=4.71e-03
+10:41:06    [A_homo_soft_T3_s5] ep= 7000  loss=1.933e-03  pde=5.43e-02  ic1=8.87e-04  ic2=1.62e-04  bc=4.90e-03
+10:42:05    [A_homo_soft_T3_s5] ep= 8000  loss=9.310e-04  pde=3.48e-02  ic1=3.65e-04  ic2=1.22e-04  bc=4.38e-03
+10:42:18    [A_homo_soft_T3_s5] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=7.813e-04)
+10:42:18    [A_homo_soft_T3_s5] DONE  L2=6.984e-01  Linf=9.166e-01  t=481s
+10:42:18    [A_homo_soft_T3_s22] source=homo ansatz=soft seed=22 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+10:43:20    [A_homo_soft_T3_s22] ep= 1000  loss=8.634e+00  pde=1.07e+01  ic1=1.05e-01  ic2=2.62e-02  bc=1.94e-02
+10:44:21    [A_homo_soft_T3_s22] ep= 2000  loss=9.365e-01  pde=5.40e-01  ic1=8.68e-02  ic2=1.41e-02  bc=2.60e-02
+10:45:23    [A_homo_soft_T3_s22] ep= 3000  loss=1.978e-01  pde=4.90e-01  ic1=6.14e-02  ic2=1.66e-03  bc=2.87e-02
+10:46:24    [A_homo_soft_T3_s22] ep= 4000  loss=4.805e-02  pde=2.37e-01  ic1=1.86e-02  ic2=5.41e-03  bc=7.78e-03
+10:47:22    [A_homo_soft_T3_s22] ep= 5000  loss=1.700e-02  pde=3.32e-01  ic1=4.85e-03  ic2=2.16e-03  bc=6.82e-03
+10:48:20    [A_homo_soft_T3_s22] ep= 6000  loss=3.860e-03  pde=1.12e-01  ic1=2.51e-03  ic2=2.65e-04  bc=5.25e-03
+10:49:19    [A_homo_soft_T3_s22] ep= 7000  loss=1.675e-03  pde=6.53e-02  ic1=7.89e-04  ic2=1.88e-04  bc=5.28e-03
+10:50:21    [A_homo_soft_T3_s22] ep= 8000  loss=1.485e-03  pde=5.55e-02  ic1=1.91e-03  ic2=9.25e-05  bc=5.16e-03
+10:50:34    [A_homo_soft_T3_s22] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=7.964e-04)
+10:50:34    [A_homo_soft_T3_s22] DONE  L2=7.228e-01  Linf=9.090e-01  t=496s
+10:50:34    Building analytical reference for 'homo', T=30 ...
+10:50:34    [A_homo_hard_T30_s16] source=homo ansatz=hard seed=16 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+10:51:44    [A_homo_hard_T30_s16] ep= 1000  loss=8.598e-04  pde=8.60e-04
+10:52:54    [A_homo_hard_T30_s16] ep= 2000  loss=2.632e-04  pde=2.63e-04
+10:54:04    [A_homo_hard_T30_s16] ep= 3000  loss=4.295e-05  pde=4.30e-05
+10:55:09    [A_homo_hard_T30_s16] ep= 4000  loss=1.702e-04  pde=1.70e-04
+10:56:15    [A_homo_hard_T30_s16] ep= 5000  loss=3.059e-05  pde=3.06e-05
+10:57:24    [A_homo_hard_T30_s16] ep= 6000  loss=2.318e-04  pde=2.32e-04
+10:58:36    [A_homo_hard_T30_s16] ep= 7000  loss=5.156e-05  pde=5.16e-05
+10:59:43    [A_homo_hard_T30_s16] ep= 8000  loss=1.805e-05  pde=1.80e-05
+10:59:51    [A_homo_hard_T30_s16] L-BFGS ранняя остановка на шаге 22 (плато 20 шагов, loss=1.390e-05)
+10:59:51    [A_homo_hard_T30_s16] DONE  L2=2.002e-02  Linf=3.294e-02  t=557s
+10:59:58    [A_homo_hard_T30_s5] source=homo ansatz=hard seed=5 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+11:01:05    [A_homo_hard_T30_s5] ep= 1000  loss=9.400e-05  pde=9.40e-05
+11:02:13    [A_homo_hard_T30_s5] ep= 2000  loss=8.035e-04  pde=8.03e-04
+11:03:20    [A_homo_hard_T30_s5] ep= 3000  loss=4.310e-05  pde=4.31e-05
+11:04:27    [A_homo_hard_T30_s5] ep= 4000  loss=8.233e-05  pde=8.23e-05
+11:05:32    [A_homo_hard_T30_s5] ep= 5000  loss=4.313e-05  pde=4.31e-05
+11:06:17    [A_homo_hard_T30_s5] ранняя остановка на эпохе 5685 (плато 1500 эпох, loss=5.221e-05)
+11:06:27    [A_homo_hard_T30_s5] L-BFGS ранняя остановка на шаге 22 (плато 20 шагов, loss=1.548e-05)
+11:06:27    [A_homo_hard_T30_s5] DONE  L2=1.996e-02  Linf=3.279e-02  t=389s
+11:06:27    [A_homo_hard_T30_s22] source=homo ansatz=hard seed=22 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+11:07:34    [A_homo_hard_T30_s22] ep= 1000  loss=1.787e-04  pde=1.79e-04
+11:08:40    [A_homo_hard_T30_s22] ep= 2000  loss=4.917e-04  pde=4.92e-04
+11:09:46    [A_homo_hard_T30_s22] ep= 3000  loss=5.354e-04  pde=5.35e-04
+11:10:52    [A_homo_hard_T30_s22] ep= 4000  loss=5.935e-04  pde=5.94e-04
+11:11:57    [A_homo_hard_T30_s22] ep= 5000  loss=4.198e-04  pde=4.20e-04
+11:13:03    [A_homo_hard_T30_s22] ep= 6000  loss=6.021e-05  pde=6.02e-05
+11:14:09    [A_homo_hard_T30_s22] ep= 7000  loss=1.871e-05  pde=1.87e-05
+11:15:15    [A_homo_hard_T30_s22] ep= 8000  loss=1.957e-05  pde=1.96e-05
+11:15:25    [A_homo_hard_T30_s22] L-BFGS ранняя остановка на шаге 22 (плато 20 шагов, loss=1.418e-05)
+11:15:25    [A_homo_hard_T30_s22] DONE  L2=2.005e-02  Linf=3.307e-02  t=538s
+11:15:25    [A_homo_soft_T30_s16] source=homo ansatz=soft seed=16 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+11:16:26    [A_homo_soft_T30_s16] ep= 1000  loss=5.707e+00  pde=5.16e+00  ic1=9.18e-02  ic2=4.62e-02  bc=2.85e-02
+11:17:26    [A_homo_soft_T30_s16] ep= 2000  loss=6.234e-01  pde=5.11e-01  ic1=7.88e-02  ic2=6.88e-03  bc=2.76e-02
+11:18:25    [A_homo_soft_T30_s16] ep= 3000  loss=1.188e-01  pde=2.82e-01  ic1=4.05e-02  ic2=4.70e-03  bc=6.13e-03
+11:19:25    [A_homo_soft_T30_s16] ep= 4000  loss=4.801e-02  pde=3.51e-01  ic1=6.03e-03  ic2=7.28e-03  bc=3.64e-03
+11:20:25    [A_homo_soft_T30_s16] ep= 5000  loss=1.103e-02  pde=1.60e-01  ic1=1.03e-03  ic2=3.35e-03  bc=1.14e-03
+11:21:25    [A_homo_soft_T30_s16] ep= 6000  loss=4.036e-03  pde=1.01e-01  ic1=1.71e-03  ic2=2.88e-04  bc=2.03e-03
+11:22:26    [A_homo_soft_T30_s16] ep= 7000  loss=1.148e-03  pde=5.85e-02  ic1=2.05e-04  ic2=3.40e-04  bc=5.45e-04
+11:23:27    [A_homo_soft_T30_s16] ep= 8000  loss=9.225e-04  pde=4.80e-02  ic1=5.25e-04  ic2=1.81e-04  bc=5.70e-04
+11:23:43    [A_homo_soft_T30_s16] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=4.482e-04)
+11:23:43    [A_homo_soft_T30_s16] DONE  L2=8.438e-01  Linf=9.506e-01  t=498s
+11:23:52    [A_homo_soft_T30_s5] source=homo ansatz=soft seed=5 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+11:24:53    [A_homo_soft_T30_s5] ep= 1000  loss=4.863e+00  pde=4.40e+00  ic1=9.76e-02  ic2=3.19e-02  bc=2.14e-02
+11:25:53    [A_homo_soft_T30_s5] ep= 2000  loss=6.754e-01  pde=7.44e-01  ic1=8.10e-02  ic2=3.06e-03  bc=2.28e-02
+11:26:53    [A_homo_soft_T30_s5] ep= 3000  loss=1.067e-01  pde=1.15e-01  ic1=6.05e-02  ic2=1.49e-04  bc=8.12e-03
+11:27:54    [A_homo_soft_T30_s5] ep= 4000  loss=2.188e-02  pde=1.66e-01  ic1=7.81e-03  ic2=1.37e-03  bc=2.75e-03
+11:28:53    [A_homo_soft_T30_s5] ep= 5000  loss=5.498e-03  pde=9.77e-02  ic1=1.56e-03  ic2=5.71e-04  bc=1.11e-03
+11:29:53    [A_homo_soft_T30_s5] ep= 6000  loss=2.692e-03  pde=6.88e-02  ic1=7.16e-04  ic2=1.14e-03  bc=5.90e-04
+11:30:53    [A_homo_soft_T30_s5] ep= 7000  loss=1.179e-03  pde=5.20e-02  ic1=5.16e-04  ic2=1.96e-05  bc=8.87e-04
+11:31:52    [A_homo_soft_T30_s5] ep= 8000  loss=7.633e-04  pde=3.75e-02  ic1=6.16e-04  ic2=1.08e-04  bc=3.60e-04
+11:32:08    [A_homo_soft_T30_s5] L-BFGS ранняя остановка на шаге 24 (плато 20 шагов, loss=3.889e-04)
+11:32:08    [A_homo_soft_T30_s5] DONE  L2=8.630e-01  Linf=9.582e-01  t=497s
+11:32:08    [A_homo_soft_T30_s22] source=homo ansatz=soft seed=22 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+11:33:08    [A_homo_soft_T30_s22] ep= 1000  loss=1.017e+01  pde=1.43e+01  ic1=1.03e-01  ic2=1.00e-02  bc=1.96e-02
+11:34:07    [A_homo_soft_T30_s22] ep= 2000  loss=1.373e+00  pde=1.47e+00  ic1=8.74e-02  ic2=2.02e-02  bc=2.19e-02
+11:35:07    [A_homo_soft_T30_s22] ep= 3000  loss=2.385e-01  pde=3.31e-01  ic1=8.51e-02  ic2=3.58e-03  bc=1.26e-02
+11:36:14    [A_homo_soft_T30_s22] ep= 4000  loss=6.754e-02  pde=3.89e-01  ic1=4.80e-02  ic2=2.62e-03  bc=9.54e-03
+11:37:16    [A_homo_soft_T30_s22] ep= 5000  loss=1.035e-02  pde=1.21e-01  ic1=9.08e-03  ic2=1.70e-03  bc=2.11e-03
+11:38:15    [A_homo_soft_T30_s22] ep= 6000  loss=2.655e-03  pde=1.06e-01  ic1=1.38e-03  ic2=4.23e-04  bc=1.26e-03
+11:39:14    [A_homo_soft_T30_s22] ep= 7000  loss=1.566e-03  pde=7.74e-02  ic1=8.86e-04  ic2=6.01e-04  bc=9.71e-04
+11:40:15    [A_homo_soft_T30_s22] ep= 8000  loss=9.775e-04  pde=5.38e-02  ic1=2.71e-04  ic2=7.57e-04  bc=1.08e-03
+11:40:34    [A_homo_soft_T30_s22] L-BFGS ранняя остановка на шаге 24 (плато 20 шагов, loss=4.404e-04)
+11:40:34    [A_homo_soft_T30_s22] DONE  L2=8.454e-01  Linf=9.429e-01  t=505s
+11:40:34    Building analytical reference for 'homo', T=100 ...
+11:40:34    [A_homo_hard_T100_s16] source=homo ansatz=hard seed=16 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+11:41:41    [A_homo_hard_T100_s16] ep= 1000  loss=3.921e-04  pde=3.92e-04
+11:42:48    [A_homo_hard_T100_s16] ep= 2000  loss=4.046e-05  pde=4.05e-05
+11:43:55    [A_homo_hard_T100_s16] ep= 3000  loss=6.238e-05  pde=6.24e-05
+11:44:27    [A_homo_hard_T100_s16] ранняя остановка на эпохе 3487 (плато 1500 эпох, loss=8.905e-05)
+11:44:39    [A_homo_hard_T100_s16] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=2.024e-05)
+11:44:39    [A_homo_hard_T100_s16] DONE  L2=6.636e-02  Linf=9.359e-02  t=245s
+11:44:46    [A_homo_hard_T100_s5] source=homo ansatz=hard seed=5 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+11:45:52    [A_homo_hard_T100_s5] ep= 1000  loss=2.485e-04  pde=2.48e-04
+11:46:59    [A_homo_hard_T100_s5] ep= 2000  loss=8.140e-05  pde=8.14e-05
+11:48:05    [A_homo_hard_T100_s5] ep= 3000  loss=4.241e-05  pde=4.24e-05
+11:49:12    [A_homo_hard_T100_s5] ep= 4000  loss=2.661e-05  pde=2.66e-05
+11:50:20    [A_homo_hard_T100_s5] ep= 5000  loss=6.329e-05  pde=6.33e-05
+11:51:30    [A_homo_hard_T100_s5] ep= 6000  loss=5.494e-05  pde=5.49e-05
+11:52:32    [A_homo_hard_T100_s5] ранняя остановка на эпохе 6922 (плато 1500 эпох, loss=5.469e-05)
+11:52:43    [A_homo_hard_T100_s5] L-BFGS ранняя остановка на шаге 22 (плато 20 шагов, loss=1.484e-05)
+11:52:43    [A_homo_hard_T100_s5] DONE  L2=6.626e-02  Linf=9.340e-02  t=477s
+11:52:43    [A_homo_hard_T100_s22] source=homo ansatz=hard seed=22 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+11:53:50    [A_homo_hard_T100_s22] ep= 1000  loss=6.010e-05  pde=6.01e-05
+11:54:59    [A_homo_hard_T100_s22] ep= 2000  loss=4.989e-04  pde=4.99e-04
+11:56:07    [A_homo_hard_T100_s22] ep= 3000  loss=8.609e-04  pde=8.61e-04
+11:57:16    [A_homo_hard_T100_s22] ep= 4000  loss=1.158e-04  pde=1.16e-04
+11:58:27    [A_homo_hard_T100_s22] ep= 5000  loss=3.468e-04  pde=3.47e-04
+11:59:32    [A_homo_hard_T100_s22] ранняя остановка на эпохе 5981 (плато 1500 эпох, loss=3.592e-04)
+11:59:46    [A_homo_hard_T100_s22] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=1.575e-05)
+11:59:46    [A_homo_hard_T100_s22] DONE  L2=6.643e-02  Linf=9.374e-02  t=423s
+11:59:46    [A_homo_soft_T100_s16] source=homo ansatz=soft seed=16 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+12:00:47    [A_homo_soft_T100_s16] ep= 1000  loss=6.355e+00  pde=8.69e+00  ic1=1.01e-01  ic2=2.25e-03  bc=2.05e-02
+12:01:48    [A_homo_soft_T100_s16] ep= 2000  loss=5.687e-01  pde=6.54e-01  ic1=8.39e-02  ic2=2.66e-03  bc=1.91e-02
+12:02:53    [A_homo_soft_T100_s16] ep= 3000  loss=1.593e-01  pde=2.89e-01  ic1=4.42e-02  ic2=1.02e-02  bc=9.20e-03
+12:03:57    [A_homo_soft_T100_s16] ep= 4000  loss=4.692e-02  pde=3.09e-01  ic1=5.05e-03  ic2=8.42e-03  bc=3.56e-03
+12:05:01    [A_homo_soft_T100_s16] ep= 5000  loss=1.542e-02  pde=1.47e-01  ic1=2.28e-03  ic2=5.31e-03  bc=2.79e-03
+12:06:02    [A_homo_soft_T100_s16] ep= 6000  loss=1.930e-03  pde=7.06e-02  ic1=4.93e-04  ic2=2.44e-04  bc=6.00e-04
+12:07:04    [A_homo_soft_T100_s16] ep= 7000  loss=1.057e-03  pde=4.74e-02  ic1=2.74e-04  ic2=3.21e-04  bc=4.85e-04
+12:08:05    [A_homo_soft_T100_s16] ep= 8000  loss=5.729e-04  pde=3.73e-02  ic1=2.25e-04  ic2=1.09e-04  bc=3.39e-04
+12:08:28    [A_homo_soft_T100_s16] L-BFGS ранняя остановка на шаге 24 (плато 20 шагов, loss=3.495e-04)
+12:08:28    [A_homo_soft_T100_s16] DONE  L2=8.515e-01  Linf=8.917e-01  t=522s
+12:08:36    [A_homo_soft_T100_s5] source=homo ansatz=soft seed=5 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+12:09:36    [A_homo_soft_T100_s5] ep= 1000  loss=6.479e+00  pde=9.32e+00  ic1=1.00e-01  ic2=1.41e-04  bc=1.21e-02
+12:10:36    [A_homo_soft_T100_s5] ep= 2000  loss=5.111e-01  pde=1.56e-01  ic1=8.37e-02  ic2=1.87e-03  bc=1.87e-02
+12:11:39    [A_homo_soft_T100_s5] ep= 3000  loss=1.131e-01  pde=1.24e-01  ic1=5.80e-02  ic2=6.83e-04  bc=1.03e-02
+12:12:37    [A_homo_soft_T100_s5] ep= 4000  loss=1.938e-02  pde=1.38e-01  ic1=9.21e-03  ic2=5.84e-04  bc=2.06e-03
+12:13:37    [A_homo_soft_T100_s5] ep= 5000  loss=1.142e-02  pde=1.71e-01  ic1=1.66e-03  ic2=3.13e-03  bc=1.01e-03
+12:14:41    [A_homo_soft_T100_s5] ep= 6000  loss=2.443e-03  pde=6.16e-02  ic1=9.48e-04  ic2=6.49e-04  bc=6.81e-04
+12:15:51    [A_homo_soft_T100_s5] ep= 7000  loss=1.322e-03  pde=4.97e-02  ic1=6.39e-04  ic2=1.01e-04  bc=9.31e-04
+12:16:56    [A_homo_soft_T100_s5] ep= 8000  loss=6.178e-04  pde=3.83e-02  ic1=1.91e-04  ic2=2.75e-04  bc=2.63e-04
+12:17:10    [A_homo_soft_T100_s5] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=3.608e-04)
+12:17:10    [A_homo_soft_T100_s5] DONE  L2=8.628e-01  Linf=9.022e-01  t=514s
+12:17:10    [A_homo_soft_T100_s22] source=homo ansatz=soft seed=22 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+12:18:11    [A_homo_soft_T100_s22] ep= 1000  loss=9.150e+00  pde=1.27e+01  ic1=1.11e-01  ic2=7.80e-03  bc=1.36e-02
+12:19:10    [A_homo_soft_T100_s22] ep= 2000  loss=1.435e+00  pde=2.94e+00  ic1=9.06e-02  ic2=4.80e-04  bc=2.22e-02
+12:20:07    [A_homo_soft_T100_s22] ep= 3000  loss=2.909e-01  pde=4.85e-01  ic1=8.76e-02  ic2=6.55e-03  bc=1.08e-02
+12:21:05    [A_homo_soft_T100_s22] ep= 4000  loss=6.287e-02  pde=1.31e-01  ic1=6.57e-02  ic2=3.82e-03  bc=8.48e-03
+12:22:03    [A_homo_soft_T100_s22] ep= 5000  loss=1.734e-02  pde=2.00e-01  ic1=1.03e-02  ic2=4.74e-03  bc=4.18e-03
+12:23:02    [A_homo_soft_T100_s22] ep= 6000  loss=2.752e-03  pde=1.14e-01  ic1=1.62e-03  ic2=4.55e-04  bc=1.39e-03
+12:24:02    [A_homo_soft_T100_s22] ep= 7000  loss=1.187e-03  pde=6.01e-02  ic1=7.13e-04  ic2=5.14e-04  bc=7.44e-04
+12:25:02    [A_homo_soft_T100_s22] ep= 8000  loss=6.258e-04  pde=4.30e-02  ic1=5.51e-04  ic2=2.15e-04  bc=6.12e-04
+12:25:12    [A_homo_soft_T100_s22] L-BFGS ранняя остановка на шаге 22 (плато 20 шагов, loss=4.199e-04)
+12:25:12    [A_homo_soft_T100_s22] DONE  L2=8.449e-01  Linf=8.863e-01  t=482s
+12:25:13    Building analytical reference for 'inhomo', T=3 ...
+12:25:17    [A_inhomo_hard_T3_s16] source=inhomo ansatz=hard seed=16 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+12:26:24    [A_inhomo_hard_T3_s16] ep= 1000  loss=2.162e-01  pde=2.16e-01
+12:27:29    [A_inhomo_hard_T3_s16] ep= 2000  loss=1.289e-01  pde=1.29e-01
+12:28:34    [A_inhomo_hard_T3_s16] ep= 3000  loss=1.246e-01  pde=1.25e-01
+12:29:39    [A_inhomo_hard_T3_s16] ep= 4000  loss=6.172e-02  pde=6.17e-02
+12:30:43    [A_inhomo_hard_T3_s16] ep= 5000  loss=5.617e-02  pde=5.62e-02
+12:31:50    [A_inhomo_hard_T3_s16] ep= 6000  loss=4.964e-02  pde=4.96e-02
+12:32:57    [A_inhomo_hard_T3_s16] ep= 7000  loss=4.182e-02  pde=4.18e-02
+12:34:03    [A_inhomo_hard_T3_s16] ep= 8000  loss=3.837e-02  pde=3.84e-02
+12:34:53    [A_inhomo_hard_T3_s16] L-BFGS ранняя остановка на шаге 29 (плато 20 шагов, loss=1.636e-02)
+12:34:56    [A_inhomo_hard_T3_s16] DONE  L2=1.057e-02  Linf=1.685e-02  t=577s
+12:35:20    [A_inhomo_hard_T3_s5] source=inhomo ansatz=hard seed=5 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+12:36:31    [A_inhomo_hard_T3_s5] ep= 1000  loss=2.233e-01  pde=2.23e-01
+12:37:37    [A_inhomo_hard_T3_s5] ep= 2000  loss=1.886e-01  pde=1.89e-01
+12:38:44    [A_inhomo_hard_T3_s5] ep= 3000  loss=1.126e-01  pde=1.13e-01
+12:39:51    [A_inhomo_hard_T3_s5] ep= 4000  loss=8.135e-02  pde=8.14e-02
+12:40:57    [A_inhomo_hard_T3_s5] ep= 5000  loss=7.302e-02  pde=7.30e-02
+12:42:04    [A_inhomo_hard_T3_s5] ep= 6000  loss=4.178e-02  pde=4.18e-02
+12:43:10    [A_inhomo_hard_T3_s5] ep= 7000  loss=3.794e-02  pde=3.79e-02
+12:44:17    [A_inhomo_hard_T3_s5] ep= 8000  loss=3.491e-02  pde=3.49e-02
+12:45:05    [A_inhomo_hard_T3_s5] L-BFGS ранняя остановка на шаге 29 (плато 20 шагов, loss=1.757e-02)
+12:45:08    [A_inhomo_hard_T3_s5] DONE  L2=9.525e-03  Linf=1.545e-02  t=585s
+12:45:08    [A_inhomo_hard_T3_s22] source=inhomo ansatz=hard seed=22 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+12:46:17    [A_inhomo_hard_T3_s22] ep= 1000  loss=2.875e-01  pde=2.88e-01
+12:47:23    [A_inhomo_hard_T3_s22] ep= 2000  loss=1.562e-01  pde=1.56e-01
+12:48:30    [A_inhomo_hard_T3_s22] ep= 3000  loss=8.555e-02  pde=8.56e-02
+12:49:37    [A_inhomo_hard_T3_s22] ep= 4000  loss=5.783e-02  pde=5.78e-02
+12:50:43    [A_inhomo_hard_T3_s22] ep= 5000  loss=5.026e-02  pde=5.03e-02
+12:51:50    [A_inhomo_hard_T3_s22] ep= 6000  loss=4.148e-02  pde=4.15e-02
+12:52:56    [A_inhomo_hard_T3_s22] ep= 7000  loss=3.563e-02  pde=3.56e-02
+12:54:02    [A_inhomo_hard_T3_s22] ep= 8000  loss=3.246e-02  pde=3.25e-02
+12:54:57    [A_inhomo_hard_T3_s22] L-BFGS ранняя остановка на шаге 31 (плато 20 шагов, loss=1.364e-02)
+12:55:00    [A_inhomo_hard_T3_s22] DONE  L2=9.966e-03  Linf=1.597e-02  t=589s
+12:55:00    [A_inhomo_soft_T3_s16] source=inhomo ansatz=soft seed=16 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+12:56:02    [A_inhomo_soft_T3_s16] ep= 1000  loss=6.401e+00  pde=9.36e+00  ic1=8.23e-02  ic2=9.45e-03  bc=2.80e-02
+12:57:02    [A_inhomo_soft_T3_s16] ep= 2000  loss=4.723e-01  pde=8.32e-01  ic1=4.26e-02  ic2=6.42e-03  bc=1.54e-02
+12:58:02    [A_inhomo_soft_T3_s16] ep= 3000  loss=2.444e-01  pde=1.70e+00  ic1=1.01e-02  ic2=5.70e-03  bc=7.92e-03
+12:59:02    [A_inhomo_soft_T3_s16] ep= 4000  loss=7.342e-02  pde=9.37e-01  ic1=4.93e-03  ic2=3.10e-03  bc=5.52e-03
+13:00:02    [A_inhomo_soft_T3_s16] ep= 5000  loss=2.745e-02  pde=5.00e-01  ic1=3.90e-03  ic2=3.54e-03  bc=6.05e-03
+13:01:02    [A_inhomo_soft_T3_s16] ep= 6000  loss=4.112e-03  pde=1.40e-01  ic1=5.53e-04  ic2=9.85e-04  bc=3.01e-03
+13:02:02    [A_inhomo_soft_T3_s16] ep= 7000  loss=1.334e-03  pde=7.16e-02  ic1=2.92e-04  ic2=9.82e-05  bc=2.46e-03
+13:03:02    [A_inhomo_soft_T3_s16] ep= 8000  loss=8.559e-04  pde=6.08e-02  ic1=3.21e-04  ic2=3.16e-05  bc=2.38e-03
+13:03:15    [A_inhomo_soft_T3_s16] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=6.426e-04)
+13:03:18    [A_inhomo_soft_T3_s16] DONE  L2=4.747e-01  Linf=5.858e-01  t=496s
+13:03:38    [A_inhomo_soft_T3_s5] source=inhomo ansatz=soft seed=5 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+13:04:40    [A_inhomo_soft_T3_s5] ep= 1000  loss=6.167e+00  pde=7.85e+00  ic1=8.50e-02  ic2=3.22e-02  bc=2.70e-02
+13:05:40    [A_inhomo_soft_T3_s5] ep= 2000  loss=7.421e-01  pde=1.69e+00  ic1=5.36e-02  ic2=9.85e-03  bc=1.14e-02
+13:06:40    [A_inhomo_soft_T3_s5] ep= 3000  loss=1.420e-01  pde=4.20e-01  ic1=1.08e-02  ic2=8.36e-03  bc=1.25e-02
+13:07:41    [A_inhomo_soft_T3_s5] ep= 4000  loss=4.787e-02  pde=4.35e-01  ic1=2.63e-03  ic2=4.86e-03  bc=4.39e-03
+13:08:41    [A_inhomo_soft_T3_s5] ep= 5000  loss=2.670e-02  pde=6.00e-01  ic1=1.35e-03  ic2=2.48e-03  bc=5.79e-03
+13:09:41    [A_inhomo_soft_T3_s5] ep= 6000  loss=6.000e-03  pde=1.37e-01  ic1=1.93e-03  ic2=9.41e-04  bc=3.58e-03
+13:10:41    [A_inhomo_soft_T3_s5] ep= 7000  loss=1.499e-03  pde=8.10e-02  ic1=2.36e-04  ic2=1.85e-04  bc=2.03e-03
+13:11:41    [A_inhomo_soft_T3_s5] ep= 8000  loss=8.206e-04  pde=4.64e-02  ic1=3.07e-04  ic2=1.22e-04  bc=1.81e-03
+13:11:52    [A_inhomo_soft_T3_s5] L-BFGS ранняя остановка на шаге 22 (плато 20 шагов, loss=5.340e-04)
+13:11:54    [A_inhomo_soft_T3_s5] DONE  L2=4.815e-01  Linf=6.003e-01  t=494s
+13:11:54    [A_inhomo_soft_T3_s22] source=inhomo ansatz=soft seed=22 T=3 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+13:12:57    [A_inhomo_soft_T3_s22] ep= 1000  loss=7.873e+00  pde=9.87e+00  ic1=9.27e-02  ic2=3.66e-02  bc=1.85e-02
+13:13:57    [A_inhomo_soft_T3_s22] ep= 2000  loss=1.272e+00  pde=2.22e+00  ic1=5.98e-02  ic2=2.20e-02  bc=3.41e-02
+13:14:57    [A_inhomo_soft_T3_s22] ep= 3000  loss=1.730e-01  pde=7.51e-01  ic1=2.21e-02  ic2=5.98e-03  bc=1.08e-02
+13:15:57    [A_inhomo_soft_T3_s22] ep= 4000  loss=4.713e-02  pde=4.42e-01  ic1=5.17e-03  ic2=4.21e-03  bc=4.87e-03
+13:16:57    [A_inhomo_soft_T3_s22] ep= 5000  loss=1.724e-02  pde=1.91e-01  ic1=3.31e-03  ic2=3.38e-03  bc=5.85e-03
+13:17:57    [A_inhomo_soft_T3_s22] ep= 6000  loss=6.459e-03  pde=2.78e-01  ic1=1.61e-03  ic2=6.48e-04  bc=3.78e-03
+13:18:57    [A_inhomo_soft_T3_s22] ep= 7000  loss=1.736e-03  pde=8.49e-02  ic1=3.63e-04  ic2=5.40e-04  bc=2.65e-03
+13:19:58    [A_inhomo_soft_T3_s22] ep= 8000  loss=9.101e-04  pde=5.70e-02  ic1=2.92e-04  ic2=3.46e-04  bc=2.20e-03
+13:20:10    [A_inhomo_soft_T3_s22] L-BFGS ранняя остановка на шаге 22 (плато 20 шагов, loss=5.686e-04)
+13:20:13    [A_inhomo_soft_T3_s22] DONE  L2=4.707e-01  Linf=5.743e-01  t=496s
+13:20:13    Building analytical reference for 'inhomo', T=30 ...
+13:20:47    [A_inhomo_hard_T30_s16] source=inhomo ansatz=hard seed=16 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+13:21:54    [A_inhomo_hard_T30_s16] ep= 1000  loss=2.414e-01  pde=2.41e-01
+13:23:01    [A_inhomo_hard_T30_s16] ep= 2000  loss=1.606e-01  pde=1.61e-01
+13:24:07    [A_inhomo_hard_T30_s16] ep= 3000  loss=1.328e-01  pde=1.33e-01
+13:25:14    [A_inhomo_hard_T30_s16] ep= 4000  loss=1.293e-01  pde=1.29e-01
+13:26:21    [A_inhomo_hard_T30_s16] ep= 5000  loss=1.481e-01  pde=1.48e-01
+13:27:28    [A_inhomo_hard_T30_s16] ep= 6000  loss=1.011e-01  pde=1.01e-01
+13:28:35    [A_inhomo_hard_T30_s16] ep= 7000  loss=8.396e-02  pde=8.40e-02
+13:29:41    [A_inhomo_hard_T30_s16] ep= 8000  loss=9.637e-02  pde=9.64e-02
+13:30:42    [A_inhomo_hard_T30_s16] L-BFGS ранняя остановка на шаге 31 (плато 20 шагов, loss=4.128e-02)
+13:30:44    [A_inhomo_hard_T30_s16] DONE  L2=1.066e-01  Linf=1.212e-01  t=595s
+13:31:18    [A_inhomo_hard_T30_s5] source=inhomo ansatz=hard seed=5 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+13:32:26    [A_inhomo_hard_T30_s5] ep= 1000  loss=2.330e-01  pde=2.33e-01
+13:33:33    [A_inhomo_hard_T30_s5] ep= 2000  loss=1.692e-01  pde=1.69e-01
+13:34:39    [A_inhomo_hard_T30_s5] ep= 3000  loss=1.280e-01  pde=1.28e-01
+13:35:46    [A_inhomo_hard_T30_s5] ep= 4000  loss=1.023e-01  pde=1.02e-01
+13:36:53    [A_inhomo_hard_T30_s5] ep= 5000  loss=9.529e-02  pde=9.53e-02
+13:37:59    [A_inhomo_hard_T30_s5] ep= 6000  loss=8.370e-02  pde=8.37e-02
+13:39:06    [A_inhomo_hard_T30_s5] ep= 7000  loss=8.169e-02  pde=8.17e-02
+13:40:13    [A_inhomo_hard_T30_s5] ep= 8000  loss=7.760e-02  pde=7.76e-02
+13:41:00    [A_inhomo_hard_T30_s5] L-BFGS ранняя остановка на шаге 29 (плато 20 шагов, loss=4.728e-02)
+13:41:02    [A_inhomo_hard_T30_s5] DONE  L2=1.042e-01  Linf=1.128e-01  t=583s
+13:41:03    [A_inhomo_hard_T30_s22] source=inhomo ansatz=hard seed=22 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+13:42:11    [A_inhomo_hard_T30_s22] ep= 1000  loss=3.000e-01  pde=3.00e-01
+13:43:18    [A_inhomo_hard_T30_s22] ep= 2000  loss=1.878e-01  pde=1.88e-01
+13:44:25    [A_inhomo_hard_T30_s22] ep= 3000  loss=1.203e-01  pde=1.20e-01
+13:45:31    [A_inhomo_hard_T30_s22] ep= 4000  loss=1.058e-01  pde=1.06e-01
+13:46:38    [A_inhomo_hard_T30_s22] ep= 5000  loss=9.426e-02  pde=9.43e-02
+13:47:45    [A_inhomo_hard_T30_s22] ep= 6000  loss=8.553e-02  pde=8.55e-02
+13:48:51    [A_inhomo_hard_T30_s22] ep= 7000  loss=8.307e-02  pde=8.31e-02
+13:49:58    [A_inhomo_hard_T30_s22] ep= 8000  loss=7.001e-02  pde=7.00e-02
+13:50:36    [A_inhomo_hard_T30_s22] L-BFGS ранняя остановка на шаге 27 (плато 20 шагов, loss=4.465e-02)
+13:50:39    [A_inhomo_hard_T30_s22] DONE  L2=1.075e-01  Linf=1.230e-01  t=574s
+13:50:39    [A_inhomo_soft_T30_s16] source=inhomo ansatz=soft seed=16 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+13:51:41    [A_inhomo_soft_T30_s16] ep= 1000  loss=6.507e+00  pde=9.27e+00  ic1=9.26e-02  ic2=1.80e-02  bc=1.55e-02
+13:52:41    [A_inhomo_soft_T30_s16] ep= 2000  loss=6.769e-01  pde=1.16e+00  ic1=4.56e-02  ic2=1.04e-02  bc=3.39e-02
+13:53:41    [A_inhomo_soft_T30_s16] ep= 3000  loss=1.590e-01  pde=6.84e-01  ic1=9.26e-03  ic2=8.66e-03  bc=9.28e-03
+13:54:42    [A_inhomo_soft_T30_s16] ep= 4000  loss=5.578e-02  pde=4.56e-01  ic1=5.10e-03  ic2=5.17e-03  bc=5.54e-03
+13:55:42    [A_inhomo_soft_T30_s16] ep= 5000  loss=1.892e-02  pde=1.85e-01  ic1=3.33e-03  ic2=4.30e-03  bc=3.55e-03
+13:56:42    [A_inhomo_soft_T30_s16] ep= 6000  loss=3.160e-03  pde=8.36e-02  ic1=8.95e-04  ic2=7.26e-04  bc=9.80e-04
+13:57:42    [A_inhomo_soft_T30_s16] ep= 7000  loss=9.449e-04  pde=5.77e-02  ic1=1.75e-04  ic2=4.52e-05  bc=5.36e-04
+13:58:43    [A_inhomo_soft_T30_s16] ep= 8000  loss=8.117e-04  pde=6.58e-02  ic1=8.34e-05  ic2=2.76e-04  bc=4.97e-04
+13:58:55    [A_inhomo_soft_T30_s16] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=4.101e-04)
+13:58:58    [A_inhomo_soft_T30_s16] DONE  L2=7.323e-01  Linf=8.336e-01  t=496s
+13:59:27    [A_inhomo_soft_T30_s5] source=inhomo ansatz=soft seed=5 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+14:00:25    [A_inhomo_soft_T30_s5] ep= 1000  loss=4.463e+00  pde=4.10e+00  ic1=9.22e-02  ic2=3.56e-02  bc=1.73e-02
+14:01:24    [A_inhomo_soft_T30_s5] ep= 2000  loss=8.580e-01  pde=1.83e+00  ic1=5.81e-02  ic2=1.54e-02  bc=7.39e-03
+14:02:22    [A_inhomo_soft_T30_s5] ep= 3000  loss=2.202e-01  pde=7.96e-01  ic1=1.22e-02  ic2=1.85e-02  bc=6.52e-03
+14:03:21    [A_inhomo_soft_T30_s5] ep= 4000  loss=7.788e-02  pde=7.93e-01  ic1=9.16e-03  ic2=4.15e-03  bc=5.77e-03
+14:04:19    [A_inhomo_soft_T30_s5] ep= 5000  loss=1.521e-02  pde=1.63e-01  ic1=1.64e-03  ic2=4.41e-03  bc=1.76e-03
+14:05:22    [A_inhomo_soft_T30_s5] ep= 6000  loss=2.500e-03  pde=5.96e-02  ic1=7.49e-04  ic2=4.73e-04  bc=7.03e-04
+14:06:22    [A_inhomo_soft_T30_s5] ep= 7000  loss=1.070e-03  pde=4.27e-02  ic1=3.47e-04  ic2=2.09e-04  bc=3.85e-04
+14:07:22    [A_inhomo_soft_T30_s5] ep= 8000  loss=6.341e-04  pde=3.25e-02  ic1=6.69e-05  ic2=4.72e-04  bc=2.64e-04
+14:07:35    [A_inhomo_soft_T30_s5] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=3.260e-04)
+14:07:37    [A_inhomo_soft_T30_s5] DONE  L2=7.220e-01  Linf=8.149e-01  t=488s
+14:07:37    [A_inhomo_soft_T30_s22] source=inhomo ansatz=soft seed=22 T=30 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+14:08:40    [A_inhomo_soft_T30_s22] ep= 1000  loss=7.418e+00  pde=9.36e+00  ic1=9.14e-02  ic2=2.81e-02  bc=2.05e-02
+14:09:40    [A_inhomo_soft_T30_s22] ep= 2000  loss=1.452e+00  pde=4.37e+00  ic1=6.43e-02  ic2=2.54e-03  bc=2.07e-02
+14:10:41    [A_inhomo_soft_T30_s22] ep= 3000  loss=2.666e-01  pde=1.40e+00  ic1=3.15e-02  ic2=5.14e-03  bc=2.04e-02
+14:11:41    [A_inhomo_soft_T30_s22] ep= 4000  loss=5.606e-02  pde=3.92e-01  ic1=6.80e-03  ic2=6.68e-03  bc=6.88e-03
+14:12:42    [A_inhomo_soft_T30_s22] ep= 5000  loss=1.720e-02  pde=2.48e-01  ic1=2.86e-03  ic2=3.81e-03  bc=2.92e-03
+14:13:42    [A_inhomo_soft_T30_s22] ep= 6000  loss=3.767e-03  pde=8.52e-02  ic1=1.66e-03  ic2=1.13e-03  bc=1.25e-03
+14:14:43    [A_inhomo_soft_T30_s22] ep= 7000  loss=1.657e-03  pde=6.18e-02  ic1=7.89e-04  ic2=4.98e-04  bc=1.09e-03
+14:15:43    [A_inhomo_soft_T30_s22] ep= 8000  loss=7.179e-04  pde=4.42e-02  ic1=1.22e-04  ic2=4.58e-04  bc=5.10e-04
+14:16:02    [A_inhomo_soft_T30_s22] L-BFGS ранняя остановка на шаге 24 (плато 20 шагов, loss=3.663e-04)
+14:16:05    [A_inhomo_soft_T30_s22] DONE  L2=6.969e-01  Linf=7.997e-01  t=505s
+14:16:05    Building analytical reference for 'inhomo', T=100 ...
+14:17:17    [A_inhomo_hard_T100_s16] source=inhomo ansatz=hard seed=16 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+14:18:24    [A_inhomo_hard_T100_s16] ep= 1000  loss=2.596e-01  pde=2.60e-01
+14:19:31    [A_inhomo_hard_T100_s16] ep= 2000  loss=1.682e-01  pde=1.68e-01
+14:20:38    [A_inhomo_hard_T100_s16] ep= 3000  loss=1.772e-01  pde=1.77e-01
+14:21:44    [A_inhomo_hard_T100_s16] ep= 4000  loss=1.065e-01  pde=1.07e-01
+14:22:51    [A_inhomo_hard_T100_s16] ep= 5000  loss=1.212e-01  pde=1.21e-01
+14:23:59    [A_inhomo_hard_T100_s16] ep= 6000  loss=1.220e-01  pde=1.22e-01
+14:25:06    [A_inhomo_hard_T100_s16] ep= 7000  loss=9.125e-02  pde=9.12e-02
+14:26:12    [A_inhomo_hard_T100_s16] ep= 8000  loss=8.724e-02  pde=8.72e-02
+14:26:57    [A_inhomo_hard_T100_s16] L-BFGS ранняя остановка на шаге 28 (плато 20 шагов, loss=4.789e-02)
+14:27:00    [A_inhomo_hard_T100_s16] DONE  L2=1.581e-01  Linf=1.809e-01  t=580s
+14:27:34    [A_inhomo_hard_T100_s5] source=inhomo ansatz=hard seed=5 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+14:28:43    [A_inhomo_hard_T100_s5] ep= 1000  loss=2.297e-01  pde=2.30e-01
+14:29:49    [A_inhomo_hard_T100_s5] ep= 2000  loss=1.631e-01  pde=1.63e-01
+14:30:56    [A_inhomo_hard_T100_s5] ep= 3000  loss=1.247e-01  pde=1.25e-01
+14:32:03    [A_inhomo_hard_T100_s5] ep= 4000  loss=1.026e-01  pde=1.03e-01
+14:33:10    [A_inhomo_hard_T100_s5] ep= 5000  loss=9.581e-02  pde=9.58e-02
+14:34:16    [A_inhomo_hard_T100_s5] ep= 6000  loss=8.355e-02  pde=8.35e-02
+14:35:23    [A_inhomo_hard_T100_s5] ep= 7000  loss=8.121e-02  pde=8.12e-02
+14:36:30    [A_inhomo_hard_T100_s5] ep= 8000  loss=7.801e-02  pde=7.80e-02
+14:37:05    [A_inhomo_hard_T100_s5] L-BFGS ранняя остановка на шаге 26 (плато 20 шагов, loss=5.298e-02)
+14:37:08    [A_inhomo_hard_T100_s5] DONE  L2=1.517e-01  Linf=1.631e-01  t=571s
+14:37:08    [A_inhomo_hard_T100_s22] source=inhomo ansatz=hard seed=22 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,473
+14:38:16    [A_inhomo_hard_T100_s22] ep= 1000  loss=2.248e-01  pde=2.25e-01
+14:39:22    [A_inhomo_hard_T100_s22] ep= 2000  loss=2.023e-01  pde=2.02e-01
+14:40:29    [A_inhomo_hard_T100_s22] ep= 3000  loss=1.233e-01  pde=1.23e-01
+14:41:35    [A_inhomo_hard_T100_s22] ep= 4000  loss=1.071e-01  pde=1.07e-01
+14:42:42    [A_inhomo_hard_T100_s22] ep= 5000  loss=1.077e-01  pde=1.08e-01
+14:43:49    [A_inhomo_hard_T100_s22] ep= 6000  loss=9.088e-02  pde=9.09e-02
+14:44:55    [A_inhomo_hard_T100_s22] ep= 7000  loss=8.506e-02  pde=8.51e-02
+14:46:02    [A_inhomo_hard_T100_s22] ep= 8000  loss=7.533e-02  pde=7.53e-02
+14:46:47    [A_inhomo_hard_T100_s22] L-BFGS ранняя остановка на шаге 29 (плато 20 шагов, loss=4.348e-02)
+14:46:49    [A_inhomo_hard_T100_s22] DONE  L2=1.507e-01  Linf=1.680e-01  t=579s
+14:46:49    [A_inhomo_soft_T100_s16] source=inhomo ansatz=soft seed=16 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+14:47:51    [A_inhomo_soft_T100_s16] ep= 1000  loss=5.405e+00  pde=6.91e+00  ic1=8.57e-02  ic2=1.83e-02  bc=2.64e-02
+14:48:51    [A_inhomo_soft_T100_s16] ep= 2000  loss=5.829e-01  pde=7.60e-01  ic1=4.09e-02  ic2=1.81e-02  bc=1.36e-02
+14:49:51    [A_inhomo_soft_T100_s16] ep= 3000  loss=1.231e-01  pde=6.11e-01  ic1=7.24e-03  ic2=6.69e-03  bc=3.16e-03
+14:50:51    [A_inhomo_soft_T100_s16] ep= 4000  loss=4.154e-02  pde=3.16e-01  ic1=2.20e-03  ic2=6.24e-03  bc=2.01e-03
+14:51:52    [A_inhomo_soft_T100_s16] ep= 5000  loss=1.898e-02  pde=3.55e-01  ic1=1.30e-03  ic2=4.19e-03  bc=1.07e-03
+14:52:51    [A_inhomo_soft_T100_s16] ep= 6000  loss=2.290e-03  pde=8.09e-02  ic1=3.43e-04  ic2=4.71e-04  bc=7.07e-04
+14:53:52    [A_inhomo_soft_T100_s16] ep= 7000  loss=1.677e-03  pde=5.73e-02  ic1=6.13e-04  ic2=4.22e-04  bc=9.68e-04
+14:54:52    [A_inhomo_soft_T100_s16] ep= 8000  loss=6.893e-04  pde=3.98e-02  ic1=1.11e-04  ic2=4.43e-04  bc=3.71e-04
+14:55:06    [A_inhomo_soft_T100_s16] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=3.804e-04)
+14:55:09    [A_inhomo_soft_T100_s16] DONE  L2=7.197e-01  Linf=7.651e-01  t=497s
+14:55:46    [A_inhomo_soft_T100_s5] source=inhomo ansatz=soft seed=5 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+14:56:48    [A_inhomo_soft_T100_s5] ep= 1000  loss=4.978e+00  pde=4.21e+00  ic1=9.37e-02  ic2=5.22e-02  bc=1.46e-02
+14:57:48    [A_inhomo_soft_T100_s5] ep= 2000  loss=7.145e-01  pde=9.69e-01  ic1=5.08e-02  ic2=1.61e-02  bc=1.67e-02
+14:58:48    [A_inhomo_soft_T100_s5] ep= 3000  loss=1.636e-01  pde=9.29e-01  ic1=9.03e-03  ic2=6.31e-03  bc=6.41e-03
+14:59:49    [A_inhomo_soft_T100_s5] ep= 4000  loss=4.417e-02  pde=2.86e-01  ic1=2.76e-03  ic2=6.02e-03  bc=4.54e-03
+15:00:49    [A_inhomo_soft_T100_s5] ep= 5000  loss=1.687e-02  pde=1.39e-01  ic1=2.25e-03  ic2=4.33e-03  bc=3.29e-03
+15:01:50    [A_inhomo_soft_T100_s5] ep= 6000  loss=2.238e-03  pde=6.12e-02  ic1=2.83e-04  ic2=7.92e-04  bc=4.97e-04
+15:02:50    [A_inhomo_soft_T100_s5] ep= 7000  loss=1.328e-03  pde=4.10e-02  ic1=5.90e-04  ic2=1.53e-04  bc=5.68e-04
+15:03:50    [A_inhomo_soft_T100_s5] ep= 8000  loss=6.283e-04  pde=3.67e-02  ic1=6.50e-05  ic2=3.74e-04  bc=2.15e-04
+15:04:04    [A_inhomo_soft_T100_s5] L-BFGS ранняя остановка на шаге 23 (плато 20 шагов, loss=2.915e-04)
+15:04:06    [A_inhomo_soft_T100_s5] DONE  L2=7.052e-01  Linf=7.362e-01  t=497s
+15:04:06    [A_inhomo_soft_T100_s22] source=inhomo ansatz=soft seed=22 T=100 lr=1.00e-03 hidden=64 blocks=2 params=17,477
+15:05:08    [A_inhomo_soft_T100_s22] ep= 1000  loss=9.425e+00  pde=1.11e+01  ic1=1.02e-01  ic2=6.54e-02  bc=1.65e-02
+15:06:08    [A_inhomo_soft_T100_s22] ep= 2000  loss=1.172e+00  pde=2.78e+00  ic1=7.93e-02  ic2=7.74e-03  bc=1.07e-02
+15:07:08    [A_inhomo_soft_T100_s22] ep= 3000  loss=1.942e-01  pde=5.95e-01  ic1=3.15e-02  ic2=9.43e-03  bc=1.17e-02
+15:08:08    [A_inhomo_soft_T100_s22] ep= 4000  loss=4.614e-02  pde=3.96e-01  ic1=5.92e-03  ic2=5.94e-03  bc=2.69e-03
+15:09:08    [A_inhomo_soft_T100_s22] ep= 5000  loss=1.346e-02  pde=1.91e-01  ic1=1.63e-03  ic2=3.85e-03  bc=2.11e-03
+15:10:08    [A_inhomo_soft_T100_s22] ep= 6000  loss=1.776e-03  pde=7.44e-02  ic1=3.38e-04  ic2=3.03e-04  bc=7.84e-04
+15:11:08    [A_inhomo_soft_T100_s22] ep= 7000  loss=9.639e-04  pde=6.24e-02  ic1=1.42e-04  ic2=2.35e-04  bc=5.07e-04
+15:12:08    [A_inhomo_soft_T100_s22] ep= 8000  loss=8.330e-04  pde=4.41e-02  ic1=3.99e-04  ic2=3.57e-04  bc=7.29e-04
+15:12:32    [A_inhomo_soft_T100_s22] L-BFGS ранняя остановка на шаге 25 (плато 20 шагов, loss=3.289e-04)
+15:12:35    [A_inhomo_soft_T100_s22] DONE  L2=6.831e-01  Linf=7.254e-01  t=506s
+15:12:42  ============================================================
+15:12:42  СТАТИСТИКА: hard vs soft по интервалам T
+15:12:42  ============================================================
+15:12:42  
+15:12:42  [homo, T=3]
+15:12:42    hard: mean=1.196e-03 std=1.30e-04 n=3
+15:12:42    soft: mean=6.952e-01 std=2.93e-02 n=3
+15:12:42    Welch t-test (hard vs soft): stat=-41.048 p=0.0006
+15:12:42  
+15:12:42  [homo, T=30]
+15:12:42    hard: mean=2.001e-02 std=4.84e-05 n=3
+15:12:42    soft: mean=8.507e-01 std=1.07e-02 n=3
+15:12:42    Welch t-test (hard vs soft): stat=-134.734 p=0.0001
+15:12:42  
+15:12:42  [homo, T=100]
+15:12:42    hard: mean=6.635e-02 std=8.45e-05 n=3
+15:12:42    soft: mean=8.531e-01 std=9.06e-03 n=3
+15:12:42    Welch t-test (hard vs soft): stat=-150.419 p=0.0000
+15:12:42  
+15:12:42  [inhomo, T=3]
+15:12:42    hard: mean=1.002e-02 std=5.24e-04 n=3
+15:12:42    soft: mean=4.756e-01 std=5.46e-03 n=3
+15:12:42    Welch t-test (hard vs soft): stat=-146.900 p=0.0000
+15:12:42  
+15:12:42  [inhomo, T=30]
+15:12:42    hard: mean=1.061e-01 std=1.71e-03 n=3
+15:12:42    soft: mean=7.171e-01 std=1.82e-02 n=3
+15:12:42    Welch t-test (hard vs soft): stat=-57.867 p=0.0003
+15:12:42  
+15:12:42  [inhomo, T=100]
+15:12:42    hard: mean=1.535e-01 std=4.02e-03 n=3
+15:12:42    soft: mean=7.027e-01 std=1.85e-02 n=3
+15:12:42    Welch t-test (hard vs soft): stat=-50.372 p=0.0002
+15:12:42  
+15:12:42  
+15:12:42  ############################################################
+15:12:42  ИССЛЕДОВАНИЕ B — размер сети, источник=homo, T=30, анзац=hard
+15:12:42  ############################################################
+15:12:42    Перебор 16 конфигураций × 3000 эпох ...
+15:15:18    trial  1/16  h= 16 b=2  p= 1,297  L2=2.048e-02  t=156s
+15:18:37    trial  2/16  h= 32 b=3  p= 6,753  L2=1.956e-02  t=198s
+15:20:40    trial  3/16  h= 48 b=1  p= 5,329  L2=2.029e-02  t=123s
+15:23:39    trial  4/16  h= 48 b=2  p=10,033  L2=2.044e-02  t=180s
+15:26:59    trial  5/16  h= 64 b=2  p=17,473  L2=2.021e-02  t=200s
+15:28:52    trial  6/16  h= 32 b=1  p= 2,529  L2=2.027e-02  t=113s
+15:32:07    trial  7/16  h= 16 b=3  p= 1,841  L2=1.989e-02  t=195s
+15:36:39    trial  8/16  h= 64 b=3  p=25,793  L2=2.007e-02  t=272s
+15:40:40    trial  9/16  h= 48 b=3  p=14,737  L2=2.060e-02  t=241s
+15:44:45    trial 10/16  h= 32 b=4  p= 8,865  L2=2.103e-02  t=245s
+15:50:30    trial 11/16  h= 64 b=4  p=34,113  L2=1.994e-02  t=345s
+15:55:30    trial 12/16  h= 48 b=4  p=19,441  L2=1.969e-02  t=301s
+15:59:25    trial 13/16  h= 16 b=4  p= 2,385  L2=1.985e-02  t=235s
+16:01:13    trial 14/16  h= 16 b=1  p=   753  L2=1.999e-02  t=108s
+16:03:48    trial 15/16  h= 32 b=2  p= 4,641  L2=2.033e-02  t=155s
+16:05:56    trial 16/16  h= 64 b=1  p= 9,153  L2=2.015e-02  t=128s
+16:05:57    [по качеству]       h=32 b=3 p=6,753 L2=1.956e-02 t=198s
+16:05:57    [качество/скорость] h=16 b=1 p=753 L2=1.999e-02 t=108s
+16:05:57    TPE-подбор LR на h=32, b=3 (10×2000) ...
+16:08:14    trial  1/10  lr=3.575e-04  L2=1.969e-02  t=138s
+16:10:26    trial  2/10  lr=2.537e-03  L2=2.003e-02  t=131s
+16:12:40    trial  3/10  lr=1.206e-03  L2=1.976e-02  t=134s
+16:14:54    trial  4/10  lr=7.661e-04  L2=1.977e-02  t=134s
+16:17:07    trial  5/10  lr=1.700e-04  L2=1.951e-02  t=133s
+16:19:23    trial  6/10  lr=1.700e-04  L2=1.952e-02  t=136s
+16:21:37    trial  7/10  lr=1.218e-04  L2=1.936e-02  t=134s
+16:23:52    trial  8/10  lr=1.903e-03  L2=2.093e-02  t=135s
+16:26:04    trial  9/10  lr=7.725e-04  L2=1.977e-02  t=132s
+16:28:20    trial 10/10  lr=1.111e-03  L2=2.006e-02  t=136s
+16:28:20    Лучший LR=1.2184e-04 (L2=1.936e-02)
+16:28:21    [final_quality_homo_h32_b3] source=homo ansatz=hard seed=16 T=30 lr=1.22e-04 hidden=32 blocks=3 params=6,753
+16:29:29    [final_quality_homo_h32_b3] ep= 1000  loss=7.347e-04  pde=7.35e-04
+16:30:35    [final_quality_homo_h32_b3] ep= 2000  loss=3.812e-04  pde=3.81e-04
+16:31:43    [final_quality_homo_h32_b3] ep= 3000  loss=1.777e-04  pde=1.78e-04
+16:32:49    [final_quality_homo_h32_b3] ep= 4000  loss=1.052e-04  pde=1.05e-04
+16:33:55    [final_quality_homo_h32_b3] ep= 5000  loss=9.881e-05  pde=9.88e-05
+16:35:01    [final_quality_homo_h32_b3] ep= 6000  loss=9.160e-05  pde=9.16e-05
+16:36:10    [final_quality_homo_h32_b3] ep= 7000  loss=4.429e-05  pde=4.43e-05
+16:37:15    [final_quality_homo_h32_b3] ep= 8000  loss=4.951e-05  pde=4.95e-05
+16:37:25    [final_quality_homo_h32_b3] L-BFGS ранняя остановка на шаге 22 (плато 20 шагов, loss=3.701e-05)
+16:37:25    [final_quality_homo_h32_b3] DONE  L2=1.984e-02  Linf=3.263e-02  t=545s
+16:37:34    Финал [quality]: L2=1.984e-02 Linf=3.263e-02
+16:37:34    [final_tradeoff_homo_h16_b1] source=homo ansatz=hard seed=16 T=30 lr=1.00e-03 hidden=16 blocks=1 params=753
+16:38:13    [final_tradeoff_homo_h16_b1] ep= 1000  loss=4.160e-04  pde=4.16e-04
+16:38:50    [final_tradeoff_homo_h16_b1] ep= 2000  loss=1.854e-04  pde=1.85e-04
+16:39:28    [final_tradeoff_homo_h16_b1] ep= 3000  loss=5.034e-05  pde=5.03e-05
+16:40:06    [final_tradeoff_homo_h16_b1] ep= 4000  loss=6.608e-05  pde=6.61e-05
+16:40:42    [final_tradeoff_homo_h16_b1] ep= 5000  loss=3.352e-05  pde=3.35e-05
+16:41:19    [final_tradeoff_homo_h16_b1] ep= 6000  loss=2.248e-05  pde=2.25e-05
+16:41:55    [final_tradeoff_homo_h16_b1] ep= 7000  loss=2.341e-05  pde=2.34e-05
+16:42:32    [final_tradeoff_homo_h16_b1] ep= 8000  loss=2.524e-05  pde=2.52e-05
+16:42:57    [final_tradeoff_homo_h16_b1] L-BFGS  50  loss=1.320e-05
+16:43:00    [final_tradeoff_homo_h16_b1] L-BFGS ранняя остановка на шаге 80 (плато 20 шагов, loss=1.319e-05)
+16:43:00    [final_tradeoff_homo_h16_b1] DONE  L2=2.012e-02  Linf=3.319e-02  t=326s
+16:43:08    Финал [tradeoff]: L2=2.012e-02 Linf=3.319e-02
+16:43:08  
+16:43:08  ============================================================
+16:43:08  SUMMARY
+16:43:08    study_T        n=36  L2 mean=3.876e-01  best=1.060e-03
+16:43:08    arch_trials    n=1  L2 mean=1.956e-02  best=1.956e-02
+16:43:08    lr_search      n=1  L2 mean=1.936e-02  best=1.936e-02
+16:43:08    final          n=2  L2 mean=1.998e-02  best=1.984e-02
+16:43:08  Results: <repo>\diplom\forward\results\20260528_100734
+16:43:08  Done.
